@@ -1,0 +1,54 @@
+| ra_number  |of_number  |se_number  |race_id|office_id|ra_num_winners|rt_number  |rt_party_name|of_description  |ot_number  |ot_name |se_name |of_scope|race_order |el_date |ra_uncontested|ra_tabulate|st_postal|ra_national_b|ra_runoff_cands|
+|  21745|  21390|  0|R  |S| 1|  2|GOP  ||  2|U.S. Senate ||S   |299|20160426| 0|  1|MD   |1|  0|
+|  21748|  21000|  1|R  |H| 1|  2|GOP  |Eastern Shore   |  3|U.S. House  |District 1  |L   |340|20160426| 0|  1|MD   |1|  0|
+|  21750|  21001|  2|R  |H| 1|  2|GOP  |Baltimore subs  |  3|U.S. House  |District 2  |L   |360|20160426| 0|  1|MD   |1|  0|
+|  21753|  21002|  3|R  |H| 1|  2|GOP  |Baltimore subs  |  3|U.S. House  |District 3  |L   |380|20160426| 0|  1|MD   |1|  0|
+|  21755|  21003|  4|R  |H| 1|  2|GOP  |DC subs |  3|U.S. House  |District 4  |L   |400|20160426| 0|  1|MD   |1|  0|
+|  21759|  21004|  5|R  |H| 1|  2|GOP  |South   |  3|U.S. House  |District 5  |L   |420|20160426| 0|  1|MD   |1|  0|
+|  21761|  21005|  6|R  |H| 1|  2|GOP  |West|  3|U.S. House  |District 6  |L   |440|20160426| 0|  1|MD   |1|  0|
+|  21763|  21006|  7|R  |H| 1|  2|GOP  |N Centrl, Baltimore City|  3|U.S. House  |District 7  |L   |500|20160426| 0|  1|MD   |1|  0|
+|  21765|  21007|  8|R  |H| 1|  2|GOP  |DC subs/North Central   |  3|U.S. House  |District 8  |L   |530|20160426| 0|  1|MD   |1|  0|
+|  21836|  21000|  1|D  |H| 1|  1|Dem  |Eastern Shore   |  3|U.S. House  |District 1  |L   |330|20160426| 0|  1|MD   |1|  0|
+|  21837|  21001|  2|D  |H| 1|  1|Dem  |Baltimore subs  |  3|U.S. House  |District 2  |L   |350|20160426| 1|  0|MD   |1|  0|
+|  21838|  21002|  3|D  |H| 1|  1|Dem  |Baltimore subs  |  3|U.S. House  |District 3  |L   |370|20160426| 0|  1|MD   |1|  0|
+|  21839|  21003|  4|D  |H| 1|  1|Dem  |DC subs |  3|U.S. House  |District 4  |L   |390|20160426| 0|  1|MD   |1|  0|
+|  21840|  21004|  5|D  |H| 1|  1|Dem  |South   |  3|U.S. House  |District 5  |L   |410|20160426| 0|  1|MD   |1|  0|
+|  21841|  21005|  6|D  |H| 1|  1|Dem  |West|  3|U.S. House  |District 6  |L   |430|20160426| 0|  1|MD   |1|  0|
+|  21842|  21006|  7|D  |H| 1|  1|Dem  |N Centrl, Baltimore City|  3|U.S. House  |District 7  |L   |490|20160426| 0|  1|MD   |1|  0|
+|  21843|  21007|  8|D  |H| 1|  1|Dem  |DC subs/North Central   |  3|U.S. House  |District 8  |L   |520|20160426| 0|  1|MD   |1|  0|
+|  21940|  21390|  0|D  |S| 1|  1|Dem  ||  2|U.S. Senate ||S   |298|20160426| 0|  1|MD   |1|  0|
+|  22221|  21445|  0|D  |M| 1|  1|Dem  || 18|Mayor   |Baltimore City  |L   |740|20160426| 0|  1|MD   |0|  0|
+|  22222|  21445|  0|R  |M| 1|  2|GOP  || 18|Mayor   |Baltimore City  |L   |750|20160426| 0|  1|MD   |0|  0|
+|  22225|  21467|  1|D  |N| 1|  1|Dem  || 14|Baltimore City Council  |District 1  |L   |   4430|20160426| 0|  1|MD   |0|  0|
+|  22226|  21467|  1|R  |N| 3|  2|GOP  || 14|Baltimore City Council  |District 1  |L   |   4440|20160426| 0|  1|MD   |0|  0|
+|  22227|  21468|  2|D  |N| 1|  1|Dem  || 14|Baltimore City Council  |District 2  |L   |   4460|20160426| 0|  1|MD   |0|  0|
+|  22228|  21468|  2|R  |N| 3|  2|GOP  || 14|Baltimore City Council  |District 2  |L   |   4470|20160426| 0|  1|MD   |0|  0|
+|  22229|  21469|  3|D  |N| 1|  1|Dem  || 14|Baltimore City Council  |District 3  |L   |   4490|20160426| 0|  1|MD   |0|  0|
+|  22230|  21469|  3|R  |N| 1|  2|GOP  || 14|Baltimore City Council  |District 3  |L   |   4500|20160426| 0|  1|MD   |0|  0|
+|  22231|  21128|  4|D  |N| 1|  1|Dem  || 14|Baltimore City Council  |District 4  |L   |   4520|20160426| 0|  1|MD   |0|  0|
+|  22232|  21128|  4|R  |N| 3|  2|GOP  || 14|Baltimore City Council  |District 4  |L   |   4530|20160426| 0|  1|MD   |0|  0|
+|  22233|  21470|  5|D  |N| 1|  1|Dem  || 14|Baltimore City Council  |District 5  |L   |   4550|20160426| 0|  1|MD   |0|  0|
+|  22234|  21470|  5|R  |N| 1|  2|GOP  || 14|Baltimore City Council  |District 5  |L   |   4560|20160426| 0|  1|MD   |0|  0|
+|  22235|  21471|  6|D  |N| 1|  1|Dem  || 14|Baltimore City Council  |District 6  |L   |   4660|20160426| 0|  1|MD   |0|  0|
+|  22237|  21472|  0|D  |N| 1|  1|Dem  || 14|Baltimore City Council  |President   |L   |   4390|20160426| 0|  1|MD   |0|  0|
+|  22238|  21472|  0|R  |N| 1|  2|GOP  || 14|Baltimore City Council  |President   |L   |   4400|20160426| 0|  1|MD   |0|  0|
+|  22585|  21533|  7|D  |N| 1|  1|Dem  || 14|Baltimore City Council  |District 7  |L   |   5610|20160426| 0|  1|MD   |0|  0|
+|  22586|  21471|  6|R  |N| 1|  2|GOP  || 14|Baltimore City Council  |District 6  |L   |   5620|20160426| 0|  1|MD   |0|  0|
+|  22587|  21533|  7|R  |N| 1|  2|GOP  || 14|Baltimore City Council  |District 7  |L   |   5630|20160426| 0|  1|MD   |0|  0|
+|  22588|  21534|  8|D  |N| 1|  1|Dem  || 14|Baltimore City Council  |District 8  |L   |   5640|20160426| 0|  1|MD   |0|  0|
+|  22589|  21534|  8|R  |N| 1|  2|GOP  || 14|Baltimore City Council  |District 8  |L   |   5650|20160426| 0|  1|MD   |0|  0|
+|  22590|  21535|  9|D  |N| 1|  1|Dem  || 14|Baltimore City Council  |District 9  |L   |   5660|20160426| 0|  1|MD   |0|  0|
+|  22591|  21536| 10|D  |N| 1|  1|Dem  || 14|Baltimore City Council  |District 10 |L   |   5680|20160426| 0|  1|MD   |0|  0|
+|  22592|  21537| 11|D  |N| 1|  1|Dem  || 14|Baltimore City Council  |District 11 |L   |   5700|20160426| 0|  1|MD   |0|  0|
+|  22593|  21539| 13|D  |N| 1|  1|Dem  || 14|Baltimore City Council  |District 13 |L   |   5760|20160426| 0|  1|MD   |0|  0|
+|  22594|  21540| 14|D  |N| 1|  1|Dem  || 14|Baltimore City Council  |District 14 |L   |   5780|20160426| 0|  1|MD   |0|  0|
+|  22596|  21538| 12|D  |N| 1|  1|Dem  || 14|Baltimore City Council  |District 12 |L   |   5720|20160426| 0|  1|MD   |0|  0|
+|  22648|  21535|  9|R  |N| 1|  2|GOP  || 14|Baltimore City Council  |District 9  |L   |   5670|20160426| 0|  1|MD   |0|  0|
+|  22649|  21536| 10|R  |N| 1|  2|GOP  || 14|Baltimore City Council  |District 10 |L   |   5690|20160426| 0|  1|MD   |0|  0|
+|  22650|  21537| 11|R  |N| 1|  2|GOP  || 14|Baltimore City Council  |District 11 |L   |   5710|20160426| 0|  1|MD   |0|  0|
+|  22651|  21538| 12|R  |N| 1|  2|GOP  || 14|Baltimore City Council  |District 12 |L   |   5730|20160426| 0|  1|MD   |0|  0|
+|  22652|  21539| 13|R  |N| 1|  2|GOP  || 14|Baltimore City Council  |District 13 |L   |   5770|20160426| 0|  1|MD   |0|  0|
+|  22653|  21540| 14|R  |N| 1|  2|GOP  || 14|Baltimore City Council  |District 14 |L   |   5790|20160426| 0|  1|MD   |0|  0|
+|  22818|  21587|  0|D  |P| 1|  1|Dem  ||  1|President   ||S   |198|20160426| 0|  1|MD   |1|  0|
+|  22819|  21587|  0|R  |P| 1|  2|GOP  ||  1|President   ||S   |199|20160426| 0|  1|MD   |1|  0|
+

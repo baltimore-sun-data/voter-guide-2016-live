@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en"> <!--<![endif]-->
+  <head>
+
+    	<!-- Basic Page Needs
+      ================================================== -->
+    	<meta charset="utf-8">
+    	<title> Bill Reference - Election Center</title>
+    	<meta name="description" content="">
+    	<meta name="author" content="">
+
+    	<!-- Mobile Specific Metas
+      ================================================== -->
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+    	
+    	<!-- CSS
+      ================================================== -->
+
+      <link rel="stylesheet" type="text/css" href="http://data.baltimoresun.com/voter-guide/stylesheets/base.css" />
+      <link rel="stylesheet" type="text/css" href="http://data.baltimoresun.com/voter-guide/stylesheets/fonts.css" />
+      <link rel="stylesheet" type="text/css" href="http://data.baltimoresun.com/voter-guide/stylesheets/style.css" />
+      <link rel="stylesheet" type="text/css" href="http://data.baltimoresun.com/voter-guide/stylesheets/splash.css" />
+
+        <!-- Javascript
+      ================================================== -->
+
+      <!--[if lt IE 9]>
+      <script src="html5shiv.js"></script>
+      <![endif]-->
+
+      <!-- <script src="scripts/modernizr.js"> </script> -->
+
+      <script language="javascript" src="http://data.baltimoresun.com/voter-guide/scripts/jquery-1.10.2.min.js"> </script>
+      <script language="javascript" src="http://data.baltimoresun.com/voter-guide/scripts/jquery.easing.1.3.js"> </script>
+
+      <script language="javascript" src="http://data.baltimoresun.com/voter-guide/scripts/questionnaire-data.js"> </script>
+      <script language="javascript" src="http://data.baltimoresun.com/voter-guide/scripts/javascript.js"> </script>
+      <script language="javascript" src="http://data.baltimoresun.com/voter-guide/scripts/jquery.scrollTo-1.4.3.1-min.js"> </script>
+
+      <script>
+        $(document).ready(function(){
+          app.bill_reference_nav();
+        });
+      </script>
+
+    <!-- FONTS
+      ================================================== -->
+
+      <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+      <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
+      <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <![endif]-->
+
+   
+      <!-- Facebook Stuff -->
+
+      <meta property="og:title" content="" />
+      <meta property="og:url" content="http://data.baltimoresun.com/" />
+      <meta property="og:image" content="" />
+
+      <!-- /Facebook Stuff -->
+
+      <!-- TWITTER STUFF -->
+
+      <meta name="twitter:card" content="summary">
+      <meta name="twitter:site" content="@baltimoresun">
+      <meta name="twitter:creator" content="">
+      <meta name="twitter:title" content="">
+      <meta name="twitter:description" content="">
+      <meta name="twitter:image" content="">
+      <meta name="twitter:domain" content="baltimoresun.com">
+
+
+      <!-- Soundcite -->
+      <script type='text/javascript' src='http://connect.soundcloud.com/sdk.js'></script>
+      <script type='text/javascript' src='http://cdn.knightlab.com/libs/soundcite/latest/js/soundcite.min.js'></script>
+
+      <!-- Baltimore Sun Ad Scripts -->
+
+      <script type="text/JavaScript">
+        var cachebuster = Math.floor(Math.random()*10000000000);
+        var aax_src='1090';
+        var amzn_targs='';
+        var url = encodeURIComponent(document.location);
+        try { url = encodeURIComponent("" + window.top.location); } catch(e) {}
+        document.write("<scr"+"ipt src='//aax-us-east.amazon-Adsystem.com/e/dtb/bid?src=" + aax_src + "&u="+url+"&cb=" + Math.round(Math.random()*10000000) + "'></scr"+"ipt>");
+        document.close();
+      </script>
+
+      <!-- /Baltimore Sun Ad Scripts -->
+  
+
+  </head>
+  <body>
+
+    <div id="top-bar">
+      <div id="top-bar-content">
+          <div id="mobile-nav">
+            <span class="icon-menu"></span><span class="text">SECTIONS</span>
+          </div>
+          <div id="mobile-nav-drop">
+            <ul>
+              <li><a href="http://elections.baltimoresun.com/"><span class="icon-play"></span>  News </a> </li>
+              <li><a href="http://elections.baltimoresun.com/candidates/"><span class="icon-play"></span>  Candidate Surveys </a> </li>
+              <li><a href="http://data.baltimoresun.com/voter-guide"><span class="icon-play"></span>  Voter Guide </a> </li>
+              <li><a href="http://elections.baltimoresun.com/"><span class="icon-play"></span>  Results </a> </li>
+            </ul>
+          </div>
+          <div id="star-and-logo">
+            <div id="top-bar-star"><a class="full" href="http://elections.beta.baltimoresun.com/"></a><span class="icon-star"></span></div>
+            <div id="election-center-logo"><a class="full" href="http://elections.beta.baltimoresun.com/"></a> ELECTION CENTER </div>
+          </div>
+          <div id="top-nav">
+            <ul>
+              <li> <a href="http://elections.baltimoresun.com/"> NEWS </a> </li>
+              <li> <a href="http://elections.baltimoresun.com/candidates/"> CANDIDATE SURVEYS </a> </li>
+              <li> <a href="http://data.baltimoresun.com/voter-guide"> VOTER GUIDE </a> </li>
+              <li> <a href="http://elections.baltimoresun.com/results"> RESULTS </a> </li>
+            </ul>
+          </div>
+
+          <a href="http://www.baltimoresun.com"><img border="0" id="top-sun-logo" src="images/header-sun-logo.png" width="190" /></a>
+
+      </div>
+    </div>
+
+
+      
+     <div id="leaderboard-ad">
+      <script type="text/javascript">
+  oz_api = "valuation";
+  oz_site = "7476/21966";
+  oz_zone = "76186";
+  oz_ad_slot_size = "728x90";
+</script>
+<script type="text/javascript" src="http://tap-cdn.rubiconproject.com/partner/scripts/rubicon/dorothy.js?pc=7476/21966">
+</script>
+<script type="text/javascript" language="JavaScript">
+try {
+var rp = new RubiconInsight();
+rubicon_targeting = rp.getAsDFPKeyValues(rp_valuation.estimate);
+} catch(e) {
+  rubicon_targeting = '';
+}
+</script>
+<script type='text/javascript'>function readCookie(name) {   var nameEQ = name + "=";   var ca = document.cookie.split(';');   for(var i=0;i < ca.length;i++) {   var c = ca[i];   while (c.charAt(0)==' ') c = c.substring(1,c.length);   if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);   }   return null;   }   var x = readCookie('c_mId');   if (x)  {   try {if (typeof adTargetConsumerInfo == 'undefined') {document.write('<scr'+'ipt type="text/javascript" src="include-member-ad.javascript"></scr'+'ipt>');   }   } catch(err) {}}   else {var adTargetConsumerInfo = ';rg=ur';var adTargetYieldExInfo = '';}</script><script type='text/javascript'>   var ordString=';ord=' + cachebuster;   var scriptSrc='http://ad.doubleclick.net/N4011/adj/trb.baltimoresun/biz;;ptype=s;slug=bs-bz-economic-plans-20140510;pos=T;dcopt=ist;sz=728x90;tile=1;at=Politics;at=Business;at=EconomyBusinessandFinance;at=Elections;at=PublicTransportation;iab=law;iab=biz;';   var noscriptHref='http://ad.doubleclick.net/N4011/jump/trb.baltimoresun/biz;;ptype=s;slug=bs-bz-economic-plans-20140510;pos=T;sz=728x90;tile=1;at=Politics;at=Business;at=EconomyBusinessandFinance;at=Elections;at=PublicTransportation;iab=law;iab=biz?" target="_blank" rel="nofollow"';   var noscriptSrc='http://ad.doubleclick.net/N4011/ad/trb.baltimoresun/biz;;ptype=s;slug=bs-bz-economic-plans-20140510;pos=T;dcopt=ist;sz=728x90;tile=1;at=Politics;at=Business;at=EconomyBusinessandFinance;at=Elections;at=PublicTransportation;iab=law;iab=biz?" width="728" height="90" border="0" alt=""';   var noscriptHrefEndOfStr=' target="_blank" rel="nofollow"';   var noscriptSrcEndOfString=' width="728" height="90" border="0" alt=""';   indexOfHrefQuestion='243';   indexOfLastImgSrcQuestion='251';   var yieldExParam=';u=';   var ptypeStr='ptype|s!';   var posStr='pos|T!';   var revenueScienceStr='';   var sizeStr='sz|728x90!';   try {       if (adTargetConsumerInfo != undefined && adTargetYieldExInfo != undefined) {           scriptSrc = scriptSrc.substring(0, scriptSrc.length -1) + adTargetConsumerInfo + yieldExParam + ptypeStr + posStr + sizeStr + revenueScienceStr + adTargetYieldExInfo + amzn_targs + rubicon_targeting + window.Krux.dfppKeyValues + ordString + '?';           noscriptHref = noscriptHref.substring(0, indexOfHrefQuestion) + adTargetConsumerInfo + yieldExParam + ptypeStr + posStr + sizeStr + revenueScienceStr + adTargetYieldExInfo + amzn_targs + rubicon_targeting + window.Krux.dfppKeyValues + ordString + '?' + noscriptHrefEndOfStr;           noscriptSrc = noscriptSrc.substring(0, indexOfLastImgSrcQuestion) + adTargetConsumerInfo + yieldExParam + ptypeStr + posStr + sizeStr + revenueScienceStr + adTargetYieldExInfo + amzn_targs + rubicon_targeting + window.Krux.dfppKeyValues + ordString + '?' + noscriptSrcEndOfString;       }   } catch(err) {}   document.write('<scr'+'ipt type="text/javascript" src="'+scriptSrc+'"></scr'+'ipt>');   document.write('<noscript><a href="'+noscriptHref+'><img scr="'+noscriptSrc+'></a></noscript>');</script>
+    </div>
+     
+
+    <div id="page-header">
+
+      <div id="page-header-text"><span class="icon-star mobile-hide"></span> &nbsp;<span class="icon-star"></span>&nbsp;&nbsp; VOTER GUIDE 2014 &nbsp;&nbsp;<span class="icon-star"></span> &nbsp;<span class="icon-star mobile-hide"></span> </div>
+
+    </div>
+
+    <div class="container">
+
+      <section class="splash-section" id="bills">
+        <header class="section-header democrat">
+          Bill Reference for Questionnaires
+          <div class="header-underline"></div>
+        </header>
+
+        <div class="group">
+          <div class="span-70 left">
+            <p class="emphasis blue"> See below for a complete glossary of every bill mentioned in the questionnaires.</p>
+        
+            <p>The Baltimore Sun Editorial Board developed questionnaires for candidates for state and local races to be used both in the endorsement process and in The Sun’s online voters guide. We will make endorsements in the Democratic and Republican primaries for governor, the Democratic primary for Attorney General and for selected General Assembly and local races. </p>
+
+            <p>The editorial board will determine endorsements based on candidates’ answers to the questionnaires, additional research and interviews. They will be announced in June. </p>
+
+            <p>The board developed questionnaires for candidates for state and local races to be used both in the endorsement process and in The Sun’s online voters guide. </p>
+
+            <p>We will make endorsements in the Democratic and Republican primaries for governor, the Democratic primary for Attorney General and for selected General Assembly and local races. </p>
+
+          </div>
+
+          <!--
+          <div id="jump-to" class="span-30 right">
+            <div id="jump-header"> Jump to: </div>
+            <div class="group">
+              <div class="span-50 left">
+                <ul>
+                  <li data-jump="hb1213"> HB1213/SB994 </li>
+                  <li data-jump="hb1213"> HB1213/SB994 </li>
+                  <li data-jump="hb1213"> HB1213/SB994 </li>
+                  <li data-jump="hb1213"> HB1213/SB994 </li>
+                  <li data-jump="hb1213"> HB1213/SB994 </li>
+                  <li data-jump="hb1213"> HB1213/SB994 </li>
+                  <li data-jump="hb1213"> HB1213/SB994 </li>
+                  <li data-jump="hb1213"> HB1213/SB994 </li>
+                  <li data-jump="hb1213"> HB1213/SB994 </li>
+                  <li data-jump="hb1213"> HB1213/SB994 </li>
+                  <li data-jump="hb1213"> HB1213/SB994 </li>
+                  <li data-jump="hb1213"> HB1213/SB994 </li>                
+                </ul>
+              </div>
+              <div class="span-50 right">
+                <ul>
+                  <li data-jump="hb1213"> HB1213/SB994 </li>
+                  <li data-jump="hb1213"> HB1213/SB994 </li>
+                  <li data-jump="hb1213"> HB1213/SB994 </li>
+                  <li data-jump="hb1213"> HB1213/SB994 </li>
+                  <li data-jump="hb1213"> HB1213/SB994 </li>
+                  <li data-jump="hb1213"> HB1213/SB994 </li>
+                  <li data-jump="hb1213"> HB1213/SB994 </li>
+                  <li data-jump="hb1213"> HB1213/SB994 </li>
+                  <li data-jump="hb1213"> HB1213/SB994 </li>
+                  <li data-jump="hb1213"> HB1213/SB994 </li>
+                  <li data-jump="hb1213"> HB1213/SB994 </li>
+                  <li data-jump="hb1213"> HB1213/SB994 </li>                
+                </ul>
+              </div>
+            </div>
+          </div> -->
+
+
+        </div>
+    <div class="page-header">
+      <div><span class="icon-star"></span>&nbsp;<span class="icon-star"></span> &nbsp; </div>
+    </div>
+     
+
+         <div id="bill-nav">
+            <div> Jump to: </div>
+            <ul>
+              <li>2011</li>
+              <li>2012</li>
+              <li>2013</li>
+              <li>2014</li>
+              <li>Feedback</li>
+            </ul>
+          </div>
+
+    <div class="page-header">
+      <div><span class="icon-star"></span>&nbsp;<span class="icon-star"></span> &nbsp; </div>
+    </div>
+
+        <div id="year-2011" class="bill red">
+          <div class="bill-title">2011 - HB1213/SB994 - Alcohol tax increase</div>
+          <div class="bill-desc">Added a 3 percent sales tax surcharge to alcoholic beverages.</div>
+          <ul>
+            <li><a target="_blank" href="http://openstates.org/md/bills/2011/HB1213/">House Bill</a></li>
+            <li><a target="_blank" href="http://openstates.org/md/bills/2011/SB994/">Senate Bill</a></li>
+          </ul>
+        </div>
+
+        <div class="bill blue">
+          <div class="bill-title">2011 - HB470/SB167 - Dream Act</div>
+          <div class="bill-desc">Allowed immigrants without legal status in the United States to receive in-state tuition at Maryland’s public colleges and universities under certain circumstances.</div>
+          <ul>
+            <li><a target="_blank" href="http://openstates.org/md/bills/2011/HB470/">House Bill</a></li>
+            <li><a target="_blank" href="http://openstates.org/md/bills/2011/SB167/">Senate Bill</a></li>
+          </ul>
+        </div>
+
+
+        <div class="bill red">
+          <div class="bill-title">2011 - HB302/SB172 - Requiring governor to respond to parole recommendations for those serving life sentences</div>
+          <div class="bill-desc">Stipulated that Parole Commission recommendations would go into effect automatically after 180 days unless the governor intervened.</div>
+          <ul>
+            <li><a target="_blank" href="http://openstates.org/md/bills/2011/HB302/">House Bill</a></li>
+            <li><a target="_blank" href="http://openstates.org/md/bills/2011/SB172/">Senate Bill</a></li>
+          </ul>
+        </div>
+
+        <div class="bill blue">
+          <div class="bill-title">2011 special session - HB1/SB1</div>
+          <div class="bill-desc">Congressional redistricting after 2010 census – Established new congressional district boundaries to reflect shifts in population.</div>
+          <ul>
+            <li><a target="_blank" href="http://openstates.org/md/bills/2011s1/HB1/">House Bill</a></li>
+            <li><a target="_blank" href="http://openstates.org/md/bills/2011s1/SB1/">Senate Bill</a></li>
+          </ul>
+        </div>
+        
+        <div id="year-2012" class="bill red">
+          <div class="bill-title">2012 - HB438/SB241 - Gay marriage</div>
+          <div class="bill-desc">Overturned Maryland’s law defining marriage as the union of a man and a woman.</div>
+          <ul>
+            <li><a target="_blank" href="http://openstates.org/md/bills/2012/HB438/">House Bill</a></li>
+            <li><a target="_blank" href="http://openstates.org/md/bills/2011/SB241/">Senate Bill</a></li>
+          </ul>
+        </div>
+
+        <div class="bill blue">
+          <div class="bill-title">2012 - HB445/SB236 - Limiting residential subdivisions served by septic systems</div>
+          <div class="bill-desc">Required counties to establish “growth tiers” to encourage denser development and discourage large residential subdivisions served by septic systems rather than public water and sewer.</div>
+          <ul>
+            <li><a target="_blank" href="http://openstates.org/md/bills/2012/HB445/">House Bill</a></li>
+            <li><a target="_blank" href="http://openstates.org/md/bills/2012/SB236/">Senate Bill</a></li>
+          </ul>
+        </div>
+       
+        <div class="bill red">
+          <div class="bill-title">2012 - HB446/SB240 - Flush tax increase</div>
+          <div class="bill-desc">Doubled the Chesapeake Bay Restoration Fund fee from $2.50 to $5 a month, with the proceeds dedicated to upgrading wastewater treatment plants.</div>
+          <ul>
+            <li><a target="_blank" href="http://openstates.org/md/bills/2012/HB446/">House Bill</a></li>
+            <li><a target="_blank" href="http://openstates.org/md/bills/2012/SB240/">Senate Bill</a></li>
+          </ul>
+        </div>
+
+        <div class="bill blue">
+          <div class="bill-title">2012 - HB987/SB614 - Requiring local governments to enact stormwater remediation fees</div>
+          <div class="bill-desc">Mandated that counties enact fees to pay for stormwater remediation projects necessary to meet the Environmental Protection Agency’s “pollution diet” for the Chesapeake Bay.</div>
+          <ul>
+            <li><a target="_blank" href="http://openstates.org/md/bills/2012/HB445/">House Bill</a></li>
+            <li><a target="_blank" href="http://openstates.org/md/bills/2012/SB236/">Senate Bill</a></li>
+          </ul>
+        </div>
+     
+        <div class="bill red">
+          <div class="bill-title">2012 - HB1801/SB1301 - Shifting some teacher pension costs to the counties</div>
+          <div class="bill-desc">Determined that county governments and Baltimore City would be responsible for a portion of the funding for teachers, an expense that had previously been paid exclusively by the state government.</div>
+          <ul>
+            <li><a target="_blank" href="http://openstates.org/md/bills/2012s1/HB1801/">House Bill</a></li>
+            <li><a target="_blank" href="http://openstates.org/md/bills/2012s1/SB1301/">Senate Bill</a></li>
+          </ul>
+        </div>
+
+        <div class="bill blue">
+          <div class="bill-title">2012 - HB1802/SB1302 - Increase in income tax rates on high earners/increased tobacco taxes</div>
+          <div class="bill-desc">Raised individual income tax rates on the top 20 percent of earners, increased the tax on tobacco products other than cigarettes and cigars.</div>
+          <ul>
+            <li><a target="_blank" href="http://openstates.org/md/bills/2012s1/HB1802/">House Bill</a></li>
+            <li><a target="_blank" href="http://openstates.org/md/bills/2012s1/SB1302/">Senate Bill</a></li>
+          </ul>
+        </div>
+
+        <div class="bill red">
+          <div class="bill-title">2012 - HB1/SB1 - Casino expansion and authorization of table games</div>
+          <div class="bill-desc">Authorized a voter referendum on whether the state should allow a sixth casino (to be built in Prince George’s County) and whether table games should be legalized.</div>
+          <ul>
+            <li><a target="_blank" href="http://openstates.org/md/bills/2012s2/HB1/">House Bill</a></li>
+            <li><a target="_blank" href="http://openstates.org/md/bills/2012s2/SB1/">Senate Bill</a></li>
+          </ul>
+        </div>
+
+        <div id="year-2013" class="bill blue">
+          <div class="bill-title">2013 - HB295/SB276 - Death penalty repeal</div>
+          <div class="bill-desc">Changed the severest criminal penalty in Maryland law from capital punishment to life without the possibility of parole.</div>
+          <ul>
+            <li><a target="_blank" href="http://openstates.org/md/bills/2013/HB295/">House Bill</a></li>
+            <li><a target="_blank" href="http://openstates.org/md/bills/2013/SB276/">Senate Bill</a></li>
+          </ul>
+        </div>
+
+
+        <div class="bill red">
+          <div class="bill-title">2013 - HB860/SB743</div>
+          <div class="bill-desc">Baltimore City Schools construction and renovation – Established a new financing mechanism that will allow $1.1 billion in new construction and renovation to Baltimore City schools in the coming years.</div>
+          <ul>
+            <li><a target="_blank" href="http://openstates.org/md/bills/2013/HB860/">House Bill</a></li>
+            <li><a target="_blank" href="http://openstates.org/md/bills/2013/SB743/">Senate Bill</a></li>
+          </ul>
+        </div>
+
+        <div class="bill blue">
+          <div class="bill-title">2013 - HB226/SB275 - Offshore wind</div>
+          <div class="bill-desc">Authorized a surcharge of up to $1.50 per month on an average residential customer’s electric bill to help finance a proposed off-shore wind farm near Ocean City.</div>
+          <ul>
+            <li><a target="_blank" href="http://openstates.org/md/bills/2013/HB226/">House Bill</a></li>
+            <li><a target="_blank" href="http://openstates.org/md/bills/2013/SB275/">Senate Bill</a></li>
+          </ul>
+        </div>
+
+        <div class="bill red">
+          <div class="bill-title">2013 - HB294/SB281- Gun control -- handgun licensing, assault weapons ban, etc.</div>
+          <div class="bill-desc">Banned assault rifles and high-capacity ammunition magazines; tightened laws related to the prohibition on gun ownership by those who have been treated for mental illness; and established a licensing system for handgun purchasers.</div>
+          <ul>
+            <li><a target="_blank" href="http://openstates.org/md/bills/2013/HB294/">House Bill</a></li>
+            <li><a target="_blank" href="http://openstates.org/md/bills/2013/SB281/">Senate Bill</a></li>
+          </ul>
+        </div>
+
+        <div class="bill blue">
+          <div class="bill-title">2013 - HB1515/SB1054 - Gas tax increase to fund transportation projects</div>
+          <div class="bill-desc">Imposed a new sales tax on gas, to be phased in over three years, and indexed the existing per-gallon tax to inflation, with a total expected impact of 20 cents a gallon by 2016; dedicated the proceeds to road construction and mass transit.</div>
+          <ul>
+            <li><a target="_blank" href="http://openstates.org/md/bills/2013/HB1515/">House Bill</a></li>
+            <li><a target="_blank" href="http://openstates.org/md/bills/2013/SB1054/">Senate Bill</a></li>
+          </ul>
+        </div>
+ 
+        <div id="year-2014" class="bill red">
+          <div class="bill-title">2014 - HB295/SB331 - Minimum wage increase</div>
+          <div class="bill-desc">Increased Maryland’s minimum wage to $10.10 an hour by 2018.</div>
+          <ul>
+            <li><a target="_blank" href="http://openstates.org/md/bills/2014/HB295/">House Bill</a></li>
+            <li><a target="_blank" href="http://openstates.org/md/bills/2014/SB331/">Senate Bill</a></li>
+          </ul>
+        </div>
+
+        <div class="bill blue">
+          <div class="bill-title">2014 - SB364- Marijuana decriminalization</div>
+          <div class="bill-desc">Eliminated criminal penalties for the possession of small amounts (less than 10 grams) of marijuana.</div>
+          <ul>
+            <li><a target="_blank" href="http://openstates.org/md/bills/2014/SB364/">Senate Bill</a></li>
+          </ul>
+        </div>
+ 
+ 
+        <div class="bill red">
+          <div class="bill-title">2014 - HB1232/SB973 - Bail reform</div>
+          <div class="bill-desc">Would have replaced bail commissioner hearings with a computerized risk-assessment tool to determine whether criminal defendants should be released or held after arrest.</div>
+          <ul>
+            <li><a target="_blank" href="http://openstates.org/md/bills/2014/HB1232/">House Bill</a></li>
+            <li><a target="_blank" href="http://openstates.org/md/bills/2014/SB973/">Senate Bill</a></li>
+          </ul>
+        </div>
+
+        <div class="bill blue">
+          <div class="bill-title">2014 - HB1265/SB212 - Transgender anti-discrimination bill</div>
+          <div class="bill-desc">Banned discrimination in employment, housing and public accommodations for transgender people.</div>
+          <ul>
+            <li><a target="_blank" href="http://openstates.org/md/bills/2014/HB1265/">House Bill</a></li>
+            <li><a target="_blank" href="http://openstates.org/md/bills/2014/SB212/">Senate Bill</a></li>
+          </ul>
+        </div>
+
+        <div class="bill red">
+          <div class="bill-title">2014 - HB1298/SB395 - Combined reporting method for corporate income tax</div>
+          <div class="bill-desc">Would have changed the way corporate taxes are calculated in an effort to prevent multi-state corporations from hiding profits in states with lower or no corporate income tax.</div>
+          <ul>
+            <li><a target="_blank" href="http://openstates.org/md/bills/2014/HB1298/">House Bill</a></li>
+            <li><a target="_blank" href="http://openstates.org/md/bills/2014/SB395/">Senate Bill</a></li>
+          </ul>
+        </div>
+
+        <div class="bill blue">
+          <div class="bill-title">2014 - HB418/SB691 - Public campaign financing</div>
+          <div class="bill-desc">Would have established a system of public campaign financing for races for attorney general, comptroller and the General Assembly.</div>
+          <ul>
+            <li><a target="_blank" href="http://openstates.org/md/bills/2014/HB418/">House Bill</a></li>
+            <li><a target="_blank" href="http://openstates.org/md/bills/2014/SB691/">Senate Bill</a></li>
+          </ul>
+        </div>
+
+        <div class="bill red">
+          <div class="bill-title">2014 - HB1213 - Congressional redistricting commission</div>
+          <div class="bill-desc">Would have established a commission comprised of equal numbers of Democrats and Republicans and a smaller number of independent members to re-draw the state’s congressional district boundaries after each census.</div>
+          <ul>
+            <li><a target="_blank" href="http://openstates.org/md/bills/2014/HB1213/">House Bill</a></li>
+          </ul>
+        </div>
+
+        <div class="bill blue">
+          <div class="bill-title">2014 - HB384/SB290 - Hybrid school board for Baltimore County</div>
+          <div class="bill-desc">Changed the composition of the Baltimore County school board to include seven elected members and four appointed members.</div>
+          <ul>
+            <li><a target="_blank" href="http://openstates.org/md/bills/2014/HB384/">House Bill</a></li>
+            <li><a target="_blank" href="http://openstates.org/md/bills/2014/SB290/">Senate Bill</a></li>
+          </ul>
+        </div>
+
+    <div id="year-feedback" class="page-header">
+      <div><span class="icon-star"></span>&nbsp;<span class="icon-star"></span> &nbsp; </div>
+    </div>
+     
+      <p class="explainer"> Please submit feedback or corrections to <span class="emphasis blue">kagordon@baltsun.com</span> </p>
+
+
+
+
+ 
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+      </section> <!-- /bills -->
+
+
+
+
+    </div> <!-- /container -->
+
+
+<!-- START OMNITURE // hive:metrics-tribune -->
+<!-- SiteCatalyst code version: H.1.
+Copyright 1997-2005 Omniture, Inc. More info available at
+http://www.omniture.com -->
+
+
+
+<script type="text/javascript">adblock=true;</script>
+<script type="text/javascript" src="http://www.baltimoresun.com/hive/javascripts/metrics/adframe.js"></script>
+<script type="text/javascript" src="http://www.baltimoresun.com/hive/javascripts/metrics/s_code_trb.js"></script>
+
+
+<script language="JavaScript">
+
+
+          s.pageName="Voter Guide 2014 - Baltimore Sun / news / maryland / politics - story."; 
+        
+        s.prop38="story";
+        s.eVar21="story";
+
+  s.server="www.baltimoresun.com"; 
+    s.channel="Baltimore Sun:news";
+
+s.prop3="";
+
+( function(){
+  if( window.registration && window.registration.user && window.registration.user.isLoggedIn()){
+    s.prop28 = registration.getMetricsId();
+  } else if ( window.carnival ) {
+      var carnival_username_c_unm = readCookie('c_unm');
+      var carnival_masterid_c_mid = carnival.metrics.getMetricsId();
+      if( carnival_username_c_unm!=null && carnival_masterid_c_mid ){
+        s.prop28 = carnival_masterid_c_mid;
+      }
+  }
+
+  if( !s.prop28 ){
+    s.prop28 = ""; 
+  }
+})();
+
+s.prop32="";
+ 
+s.prop36="Page 1";
+
+
+/* Taxonomy Variables */
+s.prop46="";
+
+/* E-commerce Variables */
+s.events=""; 
+
+
+/* P2P blog variables */
+
+  s.prop52=s.pageName;
+
+
+s.eVar20="Baltimore Sun";
+
+  s.hier1="Baltimore Sun:news:maryland:politics"; 
+    s.hier2="news:maryland:politics";
+    s.hier4="news:maryland:politics";
+  
+  
+        
+    s.eVar42="";
+  s.prop44="bal-voter-guide-2014-20140515";
+
+if(adblock)
+{
+  s.prop54="ad blocking";
+}
+
+
+s.prop64="05/15/2014 09:22";
+
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code) 
+-->  
+</script>
+<script language="JavaScript"><!--
+if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+//--></script><!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version: H.1. -->
+
+
+<!-- START REVENUE SCIENCE PIXELLING CODE -->
+<script src="http://js.revsci.net/gateway/gw.js?csid=B08725"></script>
+<script>
+DM_addEncToLoc("Site", (s.server));
+DM_addEncToLoc("channel", (s.channel));
+DM_addEncToLoc("keyword", (s.prop3));
+DM_cat(s.hier1);
+DM_tag();
+</script>
+<!-- END REVENUE SCIENCE PIXELLING CODE -->
+
+<script type="text/javascript">
+    (function() { 
+     var old = s.ot; 
+     s.ot = function(el) { 
+         return el.tagUrn ? '' : old(el); 
+     }; 
+  })(); 
+</script>
+
+
+<!-- Time: Thu May 15 06:28:17 PDT 2014-->
+
+
+<!-- START Nielsen Online SiteCensus V6.0 -->
+<!-- COPYRIGHT 2010 Nielsen Online -->
+<script type="text/javascript">
+  (function () {
+    var d = new Image(1, 1);
+    d.onerror = d.onload = function () {
+      d.onerror = d.onload = null;
+    };
+    d.src = ["//secure-us.imrworldwide.com/cgi-bin/m?ci=us-400338h&cg=0&cc=1&si=", escape(window.location.href), "&rp=", escape(document.referrer), "&ts=compact&rnd=", (new Date()).getTime()].join('');
+  })();
+</script>
+<noscript>
+  <div>
+    <img src="//secure-us.imrworldwide.com/cgi-bin/m?ci=us-400338h&amp;cg=0&amp;cc=1&amp;ts=noscript"
+    width="1" height="1" alt="" />
+  </div>
+</noscript>
+<!-- END Nielsen Online SiteCensus V6.0 -->
+
+      
+
+  </body>
+</html>

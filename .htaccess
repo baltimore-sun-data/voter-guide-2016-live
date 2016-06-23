@@ -1,0 +1,5 @@
+AuthUserFile /.htpasswd
+AuthName "Please Log In"
+AuthType Basic
+
+require user baltsun

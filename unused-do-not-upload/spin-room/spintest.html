@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Owl Carousel - jsFiddle demo</title>
+  
+  <script type='text/javascript' src='//code.jquery.com/jquery-1.10.1.js'></script>
+  
+  
+  
+  
+  <link rel="stylesheet" type="text/css" href="/css/result-light.css">
+  
+    
+      <link rel="stylesheet" type="text/css" href="http://owlgraphic.com/owlcarousel/owl-carousel/owl.theme.css">
+    
+  
+    
+      <link rel="stylesheet" type="text/css" href="http://owlgraphic.com/owlcarousel/owl-carousel/owl.carousel.css">
+    
+  
+    
+      <script type='text/javascript' src="http://owlgraphic.com/owlcarousel/owl-carousel/owl.carousel.min.js"></script>
+    
+  
+  <style type='text/css'>
+    #owl-demo .item{
+    padding: 10px 0px;
+    margin: 10px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 0px;
+    text-align: center;
+    width: auto;
+}
+  </style>
+  
+
+
+<script type='text/javascript'>//<![CDATA[ 
+$(function(){
+$(document).ready(function() {
+    //Sort random function
+  function random(owlSelector){
+    owlSelector.children().sort(function(){
+        return Math.round(Math.random()) - 0.5;
+    }).each(function(){
+      $(this).appendTo(owlSelector);
+    });
+  }
+ 
+  var owl = $("#owl-demo");
+ 
+  owl.owlCarousel({
+     
+      itemsCustom : [
+        [0, 2],
+        [450, 4],
+        [600, 7],
+        [700, 9],
+        [1000, 10],
+        [1200, 12],
+        [1400, 13],
+        [1600, 15]
+      ],
+      navigation : false,
+      pagination : true
+ 
+  });
+ 
+});
+});//]]>  
+
+</script>
+
+
+</head>
+<body>
+  <div id="owl-demo" class="owl-carousel owl-theme">
+  <div class="item"><a class="twitter-timeline" href="https://twitter.com/ltgovbrown" data-widget-id="471367910863015936">Tweets by @ltgovbrown</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></div>
+  <div class="item"><h1></h1></div>
+  <div class="item">  <a class="twitter-timeline" href="https://twitter.com/heathermizeur" data-widget-id="471352663829774336">Tweets by @heathermizeur</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></div>
+  <div class="item"></div>
+  <div class="item">    <a class="twitter-timeline" href="https://twitter.com/DougGansler" data-widget-id="471367900482113538">Tweets by @DougGansler</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</div>
+  <div class="item"><h1></h1></div>
+  <div class="item"><a class="twitter-timeline" href="https://twitter.com/Hogan4Governor" data-widget-id="471367854277656577">Tweets by @Hogan4Governor</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</div>
+  <div class="item"><h1></h1></div>
+  <div class="item">             <a class="twitter-timeline" href="https://twitter.com/RonGeorge2014" data-widget-id="471367926071562240">Tweets by @RonGeorge2014</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</div>
+  <div class="item"><h1></h1></div>
+  <div class="item">            <a class="twitter-timeline" href="https://twitter.com/Charles_Lollar" data-widget-id="471367944211951616">Tweets by @Charles_Lollar</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</div>
+  <div class="item"><h1></h1></div>
+  <div class="item"><a class="twitter-timeline" href="https://twitter.com/DavidCraig2014" data-widget-id="471367957797298176">Tweets by @DavidCraig2014</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</div>
+  <div class="item"><h1></h1></div>
+</div>
+  
+</body>
+
+
+</html>
+

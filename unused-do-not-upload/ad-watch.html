@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en"> <!--<![endif]-->
+  <head>
+
+    	<!-- Basic Page Needs
+      ================================================== -->
+    	<meta charset="utf-8">
+    	<title> Ad Watch - Election Center</title>
+    	<meta name="description" content="">
+    	<meta name="author" content="">
+
+    	<!-- Mobile Specific Metas
+      ================================================== -->
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+    	
+    	<!-- CSS
+      ================================================== -->
+
+      <link rel="stylesheet" type="text/css" href="stylesheets/base.css" />
+      <link rel="stylesheet" type="text/css" href="stylesheets/fonts.css" />
+      <link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
+      <link rel="stylesheet" type="text/css" href="stylesheets/splash.css" />
+
+        <!-- Javascript
+      ================================================== -->
+
+      <!--[if lt IE 9]>
+      <script src="html5shiv.js"></script>
+      <![endif]-->
+
+      <!-- <script src="scripts/modernizr.js"> </script> -->
+
+      <script language="javascript" src="scripts/jquery-1.10.2.min.js"> </script>
+      <script language="javascript" src="scripts/jquery.easing.1.3.js"> </script>
+      <script src="//www.google.com/jsapi?key=AIzaSyA5m1Nc8ws2BbmPRwKu5gFradvD_hgq6G0" type="text/javascript"></script>
+      <script src="scripts/date.format-ck.js"></script>      
+      <script src="scripts/adwatch-rss.js"></script>
+      
+      <script>
+
+        //Brown's RSS feed
+        var feed_url = "http://www.baltimoresun.com/mobile/maryland/politics/adwatch/rss2.0.xml";
+
+        //Load the url
+        google.setOnLoadCallback(function(){
+          on_load(feed_url);
+        });
+
+
+
+      </script>
+      <script language="javascript" src="scripts/questionnaire-data.js"> </script>
+      <script language="javascript" src="scripts/javascript.js"> </script>
+      <script language="javascript" src="scripts/jquery.scrollTo-1.4.3.1-min.js"> </script>
+
+      
+    <!-- FONTS
+      ================================================== -->
+
+      <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+      <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
+      <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <![endif]-->
+
+   
+      <!-- Facebook Stuff -->
+
+      <meta property="og:title" content="" />
+      <meta property="og:url" content="http://data.baltimoresun.com/" />
+      <meta property="og:image" content="" />
+
+      <!-- /Facebook Stuff -->
+
+      <!-- TWITTER STUFF -->
+
+      <meta name="twitter:card" content="summary">
+      <meta name="twitter:site" content="@baltimoresun">
+      <meta name="twitter:creator" content="">
+      <meta name="twitter:title" content="">
+      <meta name="twitter:description" content="">
+      <meta name="twitter:image" content="">
+      <meta name="twitter:domain" content="baltimoresun.com">
+
+      <!-- Baltimore Sun Ad Scripts -->
+
+      <script type="text/JavaScript">
+        var cachebuster = Math.floor(Math.random()*10000000000);
+        var aax_src='1090';
+        var amzn_targs='';
+        var url = encodeURIComponent(document.location);
+        try { url = encodeURIComponent("" + window.top.location); } catch(e) {}
+        document.write("<scr"+"ipt src='//aax-us-east.amazon-Adsystem.com/e/dtb/bid?src=" + aax_src + "&u="+url+"&cb=" + Math.round(Math.random()*10000000) + "'></scr"+"ipt>");
+        document.close();
+      </script>
+
+      <!-- /Baltimore Sun Ad Scripts -->
+  
+
+  </head>
+  <body>
+
+    <div id="top-bar">
+      <div id="top-bar-content">
+          <div id="mobile-nav">
+            <span class="icon-menu"></span><span class="text">SECTIONS</span>
+          </div>
+          <div id="mobile-nav-drop">
+            <ul>
+              <li><a href="http://elections.baltimoresun.com/"><span class="icon-play"></span>  News </a> </li>
+              <li><a href="http://elections.baltimoresun.com/candidates/"><span class="icon-play"></span>  Candidate Surveys </a> </li>
+              <li><a href="http://data.baltimoresun.com/voter-guide"><span class="icon-play"></span>  Voter Guide </a> </li>
+              <li><a href="http://elections.baltimoresun.com/results"><span class="icon-play"></span>  Results </a> </li>            </ul>
+          </div>
+          <div id="star-and-logo">
+            <div id="top-bar-star"><a class="full" href="http://elections.beta.baltimoresun.com/"></a><span class="icon-star"></span></div>
+            <div id="election-center-logo"><a class="full" href="http://elections.beta.baltimoresun.com/"></a> ELECTION CENTER </div>
+          </div>
+          <div id="top-nav">
+            <ul>
+              <li> <a href="http://elections.baltimoresun.com/"> NEWS </a> </li>
+              <li> <a href="http://elections.baltimoresun.com/candidates/"> CANDIDATE SURVEYS </a> </li>
+              <li> <a href="http://data.baltimoresun.com/voter-guide"> VOTER GUIDE </a> </li>
+           <li><a href="http://elections.baltimoresun.com/results"><span class="icon-play"></span>  Results </a> </li>
+            </ul>
+          </div>
+
+          <a href="http://www.baltimoresun.com"><img border="0" id="top-sun-logo" src="http://data.baltimoresun.com/voter-guide/images/header-sun-logo.png" width="190" /></a>
+
+      </div>
+    </div>
+
+
+      
+     <div id="leaderboard-ad">
+      <script type="text/javascript">
+  oz_api = "valuation";
+  oz_site = "7476/21966";
+  oz_zone = "76186";
+  oz_ad_slot_size = "728x90";
+</script>
+<script type="text/javascript" src="http://tap-cdn.rubiconproject.com/partner/scripts/rubicon/dorothy.js?pc=7476/21966">
+</script>
+<script type="text/javascript" language="JavaScript">
+try {
+var rp = new RubiconInsight();
+rubicon_targeting = rp.getAsDFPKeyValues(rp_valuation.estimate);
+} catch(e) {
+  rubicon_targeting = '';
+}
+</script>
+<script type='text/javascript'>function readCookie(name) {   var nameEQ = name + "=";   var ca = document.cookie.split(';');   for(var i=0;i < ca.length;i++) {   var c = ca[i];   while (c.charAt(0)==' ') c = c.substring(1,c.length);   if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);   }   return null;   }   var x = readCookie('c_mId');   if (x)  {   try {if (typeof adTargetConsumerInfo == 'undefined') {document.write('<scr'+'ipt type="text/javascript" src="include-member-ad.javascript"></scr'+'ipt>');   }   } catch(err) {}}   else {var adTargetConsumerInfo = ';rg=ur';var adTargetYieldExInfo = '';}</script><script type='text/javascript'>   var ordString=';ord=' + cachebuster;   var scriptSrc='http://ad.doubleclick.net/N4011/adj/trb.baltimoresun/biz;;ptype=s;slug=bs-bz-economic-plans-20140510;pos=T;dcopt=ist;sz=728x90;tile=1;at=Politics;at=Business;at=EconomyBusinessandFinance;at=Elections;at=PublicTransportation;iab=law;iab=biz;';   var noscriptHref='http://ad.doubleclick.net/N4011/jump/trb.baltimoresun/biz;;ptype=s;slug=bs-bz-economic-plans-20140510;pos=T;sz=728x90;tile=1;at=Politics;at=Business;at=EconomyBusinessandFinance;at=Elections;at=PublicTransportation;iab=law;iab=biz?" target="_blank" rel="nofollow"';   var noscriptSrc='http://ad.doubleclick.net/N4011/ad/trb.baltimoresun/biz;;ptype=s;slug=bs-bz-economic-plans-20140510;pos=T;dcopt=ist;sz=728x90;tile=1;at=Politics;at=Business;at=EconomyBusinessandFinance;at=Elections;at=PublicTransportation;iab=law;iab=biz?" width="728" height="90" border="0" alt=""';   var noscriptHrefEndOfStr=' target="_blank" rel="nofollow"';   var noscriptSrcEndOfString=' width="728" height="90" border="0" alt=""';   indexOfHrefQuestion='243';   indexOfLastImgSrcQuestion='251';   var yieldExParam=';u=';   var ptypeStr='ptype|s!';   var posStr='pos|T!';   var revenueScienceStr='';   var sizeStr='sz|728x90!';   try {       if (adTargetConsumerInfo != undefined && adTargetYieldExInfo != undefined) {           scriptSrc = scriptSrc.substring(0, scriptSrc.length -1) + adTargetConsumerInfo + yieldExParam + ptypeStr + posStr + sizeStr + revenueScienceStr + adTargetYieldExInfo + amzn_targs + rubicon_targeting + window.Krux.dfppKeyValues + ordString + '?';           noscriptHref = noscriptHref.substring(0, indexOfHrefQuestion) + adTargetConsumerInfo + yieldExParam + ptypeStr + posStr + sizeStr + revenueScienceStr + adTargetYieldExInfo + amzn_targs + rubicon_targeting + window.Krux.dfppKeyValues + ordString + '?' + noscriptHrefEndOfStr;           noscriptSrc = noscriptSrc.substring(0, indexOfLastImgSrcQuestion) + adTargetConsumerInfo + yieldExParam + ptypeStr + posStr + sizeStr + revenueScienceStr + adTargetYieldExInfo + amzn_targs + rubicon_targeting + window.Krux.dfppKeyValues + ordString + '?' + noscriptSrcEndOfString;       }   } catch(err) {}   document.write('<scr'+'ipt type="text/javascript" src="'+scriptSrc+'"></scr'+'ipt>');   document.write('<noscript><a href="'+noscriptHref+'><img scr="'+noscriptSrc+'></a></noscript>');</script>
+    </div>
+     
+
+    <div id="page-header">
+
+      <div id="page-header-text"><span class="icon-star mobile-hide"></span> &nbsp;<span class="icon-star"></span>&nbsp;&nbsp; AD WATCH &nbsp;&nbsp;<span class="icon-star"></span> &nbsp;<span class="icon-star mobile-hide"></span> </div>
+
+    </div>
+
+    <div class="container">
+
+      <div id="lead-story">
+
+        <img src="images/loading.gif" width="150" />
+        <!--<a href="#"><img class="lead-image" border="0" src="http://www.trbimg.com/img-538a7ee8/turbine/bs-md-republican-debate-20140530/400/400x225" /></a>
+        <div class="lead-head"><a href="#">Md. campaigns adopt national voter targeting techniques</a></div>
+        <div class="story-date">May 31, 2014, 7:27 p.m.</div>
+        <div class="lead-lede">When Lt. Gov. Anthony Brown's gubernatorial campaign wanted to make sure that likely primary voters saw a video ad, his staff didn't rely solely on television stations to deliver the message. They also arranged for it to run on the computer screens of individuals the ...</div>
+        -->
+      </div>
+
+      <div class="page-header">
+       <div><span class="icon-star"></span>&nbsp;<span class="icon-star"></span> &nbsp; </div>
+      </div>
+
+      <div id="reg-stories" class="span-65 left">
+
+      <!--
+        <div class="reg-story">
+          <a href="#"><img class="reg-image" border="0" src="http://www.trbimg.com/img-538cc817/turbine/bs-md-ci-moit-investigation-20140602/187/187x105" /></a>
+          <div class="reg-head"><a href="#"> MPT debate shows why Brown avoids television</a></div>
+          <div class="story-date">June 2, 2014, 8:19 p.m.</div>
+          <div class="reg-lede">Last week, I thought Lt. Governor Anthony Brown was the loser among Democratic candidates for not showing up at WBFF’s ...</div>
+        </div>
+      -->
+        <img src="images/loading.gif" width="150" />
+
+      </div>
+
+      <div id="cube-ad-container" class="span-30 right">
+
+         <div id="cube-ad" class="span-35 right">
+          <div id="ad-holder">
+            
+             <table class="cubeAd">
+        
+      <tr>
+        <td id="rightrail_ad_td" vAlign="middle">
+                
+                    <script type="text/javascript">
+  oz_api = "valuation";
+  oz_site = "7476/21966";
+  oz_zone = "76186";
+  oz_ad_slot_size = "300x250";
+</script>
+<script type="text/javascript" src="http://tap-cdn.rubiconproject.com/partner/scripts/rubicon/dorothy.js?pc=7476/21966">
+</script>
+<script type="text/javascript" language="JavaScript">
+try {
+var rp = new RubiconInsight();
+rubicon_targeting = rp.getAsDFPKeyValues(rp_valuation.estimate);
+} catch(e) {
+  rubicon_targeting = '';
+}
+</script>
+<script type='text/javascript'>function readCookie(name) {   var nameEQ = name + "=";   var ca = document.cookie.split(';');   for(var i=0;i < ca.length;i++) {   var c = ca[i];   while (c.charAt(0)==' ') c = c.substring(1,c.length);   if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);   }   return null;   }   var x = readCookie('c_mId');   if (x)  {   try {if (typeof adTargetConsumerInfo == 'undefined') {document.write('<scr'+'ipt type="text/javascript" src="include-member-ad.javascript"></scr'+'ipt>');   }   } catch(err) {}}   else {var adTargetConsumerInfo = ';rg=ur';var adTargetYieldExInfo = '';}</script><script type='text/javascript'>   var ordString=';ord=' + cachebuster;   var scriptSrc='http://ad.doubleclick.net/N4011/adj/trb.baltimoresun/biz;;ptype=s;slug=bs-bz-economic-plans-20140510;pos=1;sz=300x250,336x280;tile=2;at=Politics;at=Business;at=EconomyBusinessandFinance;at=Elections;at=PublicTransportation;iab=law;iab=biz;';   var noscriptHref='http://ad.doubleclick.net/N4011/jump/trb.baltimoresun/biz;;ptype=s;slug=bs-bz-economic-plans-20140510;pos=1;sz=300x250,336x280;tile=2;at=Politics;at=Business;at=EconomyBusinessandFinance;at=Elections;at=PublicTransportation;iab=law;iab=biz?" target="_blank" rel="nofollow"';   var noscriptSrc='http://ad.doubleclick.net/N4011/ad/trb.baltimoresun/biz;;ptype=s;slug=bs-bz-economic-plans-20140510;pos=1;sz=300x250,336x280;tile=2;at=Politics;at=Business;at=EconomyBusinessandFinance;at=Elections;at=PublicTransportation;iab=law;iab=biz?" width="336" height="280" border="0" alt=""';   var noscriptHrefEndOfStr=' target="_blank" rel="nofollow"';   var noscriptSrcEndOfString=' width="336" height="280" border="0" alt=""';   indexOfHrefQuestion='252';   indexOfLastImgSrcQuestion='250';   var yieldExParam=';u=';   var ptypeStr='ptype|s!';   var posStr='pos|1!';   var revenueScienceStr='';   var sizeStr='sz|300x250^336x280!';   try {       if (adTargetConsumerInfo != undefined && adTargetYieldExInfo != undefined) {           scriptSrc = scriptSrc.substring(0, scriptSrc.length -1) + adTargetConsumerInfo + yieldExParam + ptypeStr + posStr + sizeStr + revenueScienceStr + adTargetYieldExInfo + amzn_targs + rubicon_targeting + window.Krux.dfppKeyValues + ordString + '?';           noscriptHref = noscriptHref.substring(0, indexOfHrefQuestion) + adTargetConsumerInfo + yieldExParam + ptypeStr + posStr + sizeStr + revenueScienceStr + adTargetYieldExInfo + amzn_targs + rubicon_targeting + window.Krux.dfppKeyValues + ordString + '?' + noscriptHrefEndOfStr;           noscriptSrc = noscriptSrc.substring(0, indexOfLastImgSrcQuestion) + adTargetConsumerInfo + yieldExParam + ptypeStr + posStr + sizeStr + revenueScienceStr + adTargetYieldExInfo + amzn_targs + rubicon_targeting + window.Krux.dfppKeyValues + ordString + '?' + noscriptSrcEndOfString;       }   } catch(err) {}   document.write('<scr'+'ipt type="text/javascript" src="'+scriptSrc+'"></scr'+'ipt>');   document.write('<noscript><a href="'+noscriptHref+'><img scr="'+noscriptSrc+'></a></noscript>');</script>
+                
+            </td>
+    </tr>
+    </table>
+  
+    
+
+      </div>
+
+     
+
+
+
+
+    
+    </div> <!-- /container -->
+
+
+<!-- START OMNITURE // hive:metrics-tribune -->
+<!-- SiteCatalyst code version: H.1.
+Copyright 1997-2005 Omniture, Inc. More info available at
+http://www.omniture.com -->
+
+
+
+<script type="text/javascript">adblock=true;</script>
+<script type="text/javascript" src="http://www.baltimoresun.com/hive/javascripts/metrics/adframe.js"></script>
+<script type="text/javascript" src="http://www.baltimoresun.com/hive/javascripts/metrics/s_code_trb.js"></script>
+
+
+<script language="JavaScript">
+
+
+          s.pageName="Voter Guide 2014 - Baltimore Sun / news / maryland / politics - story."; 
+        
+        s.prop38="story";
+        s.eVar21="story";
+
+  s.server="www.baltimoresun.com"; 
+    s.channel="Baltimore Sun:news";
+
+s.prop3="";
+
+( function(){
+  if( window.registration && window.registration.user && window.registration.user.isLoggedIn()){
+    s.prop28 = registration.getMetricsId();
+  } else if ( window.carnival ) {
+      var carnival_username_c_unm = readCookie('c_unm');
+      var carnival_masterid_c_mid = carnival.metrics.getMetricsId();
+      if( carnival_username_c_unm!=null && carnival_masterid_c_mid ){
+        s.prop28 = carnival_masterid_c_mid;
+      }
+  }
+
+  if( !s.prop28 ){
+    s.prop28 = ""; 
+  }
+})();
+
+s.prop32="";
+ 
+s.prop36="Page 1";
+
+
+/* Taxonomy Variables */
+s.prop46="";
+
+/* E-commerce Variables */
+s.events=""; 
+
+
+/* P2P blog variables */
+
+  s.prop52=s.pageName;
+
+
+s.eVar20="Baltimore Sun";
+
+  s.hier1="Baltimore Sun:news:maryland:politics"; 
+    s.hier2="news:maryland:politics";
+    s.hier4="news:maryland:politics";
+  
+  
+        
+    s.eVar42="";
+  s.prop44="bal-voter-guide-2014-20140515";
+
+if(adblock)
+{
+  s.prop54="ad blocking";
+}
+
+
+s.prop64="05/15/2014 09:22";
+
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code) 
+-->  
+</script>
+<script language="JavaScript"><!--
+if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+//--></script><!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version: H.1. -->
+
+
+<!-- START REVENUE SCIENCE PIXELLING CODE -->
+<script src="http://js.revsci.net/gateway/gw.js?csid=B08725"></script>
+<script>
+DM_addEncToLoc("Site", (s.server));
+DM_addEncToLoc("channel", (s.channel));
+DM_addEncToLoc("keyword", (s.prop3));
+DM_cat(s.hier1);
+DM_tag();
+</script>
+<!-- END REVENUE SCIENCE PIXELLING CODE -->
+
+<script type="text/javascript">
+    (function() { 
+     var old = s.ot; 
+     s.ot = function(el) { 
+         return el.tagUrn ? '' : old(el); 
+     }; 
+  })(); 
+</script>
+
+
+<!-- Time: Thu May 15 06:28:17 PDT 2014-->
+
+
+<!-- START Nielsen Online SiteCensus V6.0 -->
+<!-- COPYRIGHT 2010 Nielsen Online -->
+<script type="text/javascript">
+  (function () {
+    var d = new Image(1, 1);
+    d.onerror = d.onload = function () {
+      d.onerror = d.onload = null;
+    };
+    d.src = ["//secure-us.imrworldwide.com/cgi-bin/m?ci=us-400338h&cg=0&cc=1&si=", escape(window.location.href), "&rp=", escape(document.referrer), "&ts=compact&rnd=", (new Date()).getTime()].join('');
+  })();
+</script>
+<noscript>
+  <div>
+    <img src="//secure-us.imrworldwide.com/cgi-bin/m?ci=us-400338h&amp;cg=0&amp;cc=1&amp;ts=noscript"
+    width="1" height="1" alt="" />
+  </div>
+</noscript>
+<!-- END Nielsen Online SiteCensus V6.0 -->
+
+      
+
+  </body>
+</html>

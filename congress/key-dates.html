@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en"> <!--<![endif]-->
+  <head>
+
+    	<!-- Basic Page Needs
+      ================================================== -->
+      <meta charset="utf-8">
+      <title>Baltimore Sun Voter Guide</title>
+      <meta name="description" content="">
+      <meta name="author" content="">
+
+    	<!-- Mobile Specific Metas
+      ================================================== -->
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+
+      <!-- Javascript
+      ================================================== -->
+
+
+      <!--[if lt IE 9]>
+      <script src="html5shiv.js"></script>
+      <![endif]-->
+
+      <!-- <script src="scripts/modernizr.js"> </script> -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+      <script language="javascript" src="../scripts/jquery.easing.1.3.js"> </script>
+
+
+      <!-- CSS
+      ================================================== -->
+
+      <link rel="stylesheet" type="text/css" href="../stylesheets/base.css" />
+      <link rel="stylesheet" type="text/css" href="../stylesheets/fonts.css" />
+      <link rel="stylesheet" type="text/css" href="../stylesheets/style.css" />
+
+      <!--BOOTSTRAP and MORE JS
+      ================================================== -->
+      <link rel="stylesheet" href="../stylesheets/bootstrap.min.css">
+      <script src="../scripts/bootstrap.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="../stylesheets/buttons.css" />
+
+
+      <script src="//www.google.com/jsapi?key=AIzaSyA5m1Nc8ws2BbmPRwKu5gFradvD_hgq6G0" type="text/javascript"></script>
+      <script src="../scripts/google-rss.js"></script>
+      <script>
+
+        //News RSS feed
+        var feed_url = "http://www.baltimoresun.com/news/maryland/politics/rss2.0.xml";
+        //Load the url
+        google.setOnLoadCallback(function(){
+          on_load(feed_url);
+        });
+
+      </script>
+
+      <script language="javascript" src="../scripts/congress-candidate-data.js"> </script>
+      <script language="javascript" src="../scripts/javascript.js"> </script>
+      <script language="javascript" src="../scripts/jquery.scrollTo-1.4.3.1-min.js"> </script>
+
+
+
+    <!-- FONTS
+      ================================================== -->
+
+      <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900' rel='stylesheet' type='text/css'>
+
+      <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <![endif]-->
+
+   
+     <!-- Facebook Stuff -->
+
+      <meta property="og:title" content="Baltimore Sun Maryland Voter Guide 2016" />
+      <meta property="og:url" content="http://data.baltimoresun.com/voter-guide-2016/" />
+      <meta property="og:image" content="" />
+
+      <!-- /Facebook Stuff -->
+
+      <!-- TWITTER STUFF -->
+
+      <meta name="twitter:card" content="summary">
+      <meta name="twitter:site" content="@baltimoresun">
+      <meta name="twitter:creator" content="">
+      <meta name="twitter:title" content="Baltimore Sun Maryland Voter Guide 2016">
+      <meta name="twitter:description" content="Learn more about the upcoming election in the Baltimore Sun's 2016 Maryland Voter Guide:">
+      <meta name="twitter:image" content="">
+      <meta name="twitter:domain" content="baltimoresun.com">
+
+     
+
+
+
+
+      <!-- Baltimore Sun Ad Scripts -->
+
+      <!-- Start: GPT Async -->
+      <script type='text/javascript'>
+        var gptadslots=[];
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+        (function(){ var gads = document.createElement('script');
+          gads.async = true; gads.type = 'text/javascript';
+          var useSSL = 'https:' == document.location.protocol;
+          gads.src = (useSSL ? 'https:' : 'http:') + '//www.googletagservices.com/tag/js/gpt.js';
+          var node = document.getElementsByTagName('script')[0];
+          node.parentNode.insertBefore(gads, node);
+        })();
+      </script>
+
+      <!-- /Baltimore Sun Ad Scripts -->
+
+
+
+      <!-- Baltimore Sun Omniture -->
+
+          <script>  
+          ((((window.trb || (window.trb = {})).data || (trb.data = {})).metrics || (trb.data.metrics = {})).thirdparty = {  
+          pageName: 'bs:data:news:maryland:politics:voter-guide-2016:dataproject.', 
+          channel: 'news:maryland:politics',  
+          server: 'data.baltimoresun.com',  
+          hier1: 'baltimoresun:news:maryland:politics', 
+          hier2: 'news:maryland:politics',  
+          prop1: 'D=pageName',  
+          prop2: 'news',  
+          prop38: 'dataproject',  
+          prop57: 'D=c38',  
+          eVar20: 'baltimoresun', 
+          eVar21: 'D=c38',  
+          eVar34: 'D=ch', 
+          eVar35: 'D=pageName', 
+          events:'' 
+            
+          });   
+          </script> 
+
+      <!-- /Baltimore Sun Omniture -->
+
+
+      <!-- Page loading scripts -->
+
+        <script type="text/javascript"> 
+
+
+        //Write the twitter and facebook message for buttons
+        var socialMessage = "Learn more about the upcoming election in the Baltimore Sun's 2016 Maryland Voter Guide:";
+
+            //This populates the page with the correct json data and social message
+
+            $(document).ready(function(){
+            share(socialMessage);
+            //populateData(CouncilDistrict1);
+           });
+
+
+
+    if (location.href == "http://data.baltimoresun.com/voter-guide-2016/congress/congress.html")
+    location.href = "http://data.baltimoresun.com/voter-guide-2016/congress/congress.html?id=District1";
+
+
+
+          </script>
+
+      <!-- /Page loading scripts -->
+
+
+  </head>
+  <body>
+
+     <!--omniture call-->
+  <script src="http://www.baltimoresun.com/thirdpartyservice?disablenav=true&disablessor=true" async></script>  
+  <div data-trb-thirdpartynav></div>  
+
+    <div id="top-bar"> <!--tophat-->
+      <div id="top-bar-content">
+          <div id="mobile-nav">
+            <span class="icon-menu"></span><span class="text">SECTIONS</span>
+          </div>
+                 <div id="mobile-nav-drop">
+            <ul class="nav-links">
+
+           </ul>
+          </div>
+          <div id="star-and-logo">
+            <div class="election-center-logo blue"><a class="full" href="http://data.baltimoresun.com/voter-guide-2016/"></a>VOTER</div>
+            <div id="top-bar-star"><a class="full" href="http://data.baltimoresun.com/voter-guide-2016/"></a><span class="icon-star"></span></div>
+            <div class="election-center-logo red"><a class="full" href="http://data.baltimoresun.com/voter-guide-2016/"></a>GUIDE</div>
+          </div>
+          <div id="top-nav">
+            <ul class="nav-links">
+              
+           </ul>
+          </div>
+          <a href="http://www.baltimoresun.com"><img border="0" id="top-sun-logo" src="../images/header-sun-logo.png" width="190" /></a>
+
+      </div>
+    </div>
+
+
+
+
+
+
+      
+     <div id="leaderboard-ad">    <!-- leaderboard ad-->
+        <script type="text/javascript">
+              googletag.cmd.push(function() {
+
+                //Adslot 1 declaration
+                gptadslots[1]= googletag.defineSlot('/4011/trb.baltimoresun/news', [[728,90]],'div-gpt-ad-785317941620082696-1').setTargeting('pos',['1']).addService(googletag.pubads());
+
+                googletag.pubads().setTargeting('ptype',['s']);
+                googletag.pubads().enableAsyncRendering();
+                googletag.enableServices();
+              });
+            </script>
+            <!-- End: GPT -->
+
+            <!-- Beginning Async AdSlot 1 for Ad unit trb.baltimoresun/news  ### size: [[728,90]] -->
+            <!-- Adslot's refresh function: googletag.pubads().refresh([gptadslots[1]]) -->
+            <div id='div-gpt-ad-785317941620082696-1'>
+              <script type='text/javascript'>
+                googletag.cmd.push(function() { googletag.display('div-gpt-ad-785317941620082696-1'); });
+              </script>
+            </div>
+            <!-- End AdSlot 1 -->
+      </div>
+
+
+
+    <div id="page-header">  <!-- stars logo-->
+
+      <div id="page-header-text"><span class="icon-star mobile-hide"></span> &nbsp;<span class="icon-star"></span>&nbsp;&nbsp;KEY DATES &nbsp;&nbsp;<span class="icon-star"></span> &nbsp;<span class="icon-star mobile-hide"></span> </div>
+
+    </div>
+
+
+    <div id="social-icons">
+      <span class="icon-facebook top"></span><span class="icon-twitter top"></span>
+  </div>
+
+
+    <div class="container">
+
+        <section class="group" id="race-page-top">
+
+              <!-- race title --><h1 class="section-header-race blue bottom-border">KEY DATES</h1>
+
+           
+      </section>
+
+
+      <section id="top" class="group extra">
+
+
+            <p class="about"><strong>July 18-July 21:</strong> Republican National Convention</p><br>
+
+            <p class="about"><strong>July 25-July 29:</strong> Democratic National Convention</p><br>
+
+            <p class="about"><strong>Oct. 18:</strong> Deadline to register to vote in general election</p><br>
+
+            <p class="about"><strong>Oct. 27-Nov. 3:</strong> Early voting for general election</p><br>
+
+            <p class="about"><strong>Nov. 8:</strong> General election</p><br>
+ 
+
+
+      </section> 
+
+      
+    </div> <!-- /container -->
+
+     <div id="footer"></div>
+
+
+
+
+     <script>
+
+        //include the tophat links and footer
+        $(  "#footer" ).load(  "../footer.html" );
+        $(  ".nav-links" ).load(  "../nav-links.html" );
+      </script>
+
+
+
+
+ 
+
+  </body>
+</html>

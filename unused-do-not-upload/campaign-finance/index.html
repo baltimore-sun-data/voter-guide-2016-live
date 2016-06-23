@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en"> <!--<![endif]-->
+  <head>
+
+    <!-- Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Campaign Finance - Voter Guide - Election Center</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Metas
+    ================================================== -->
+
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+    
+    <!-- CSS
+    ================================================== -->
+
+      <link rel="stylesheet" type="text/css" href="../stylesheets/base.css" />
+      <link rel="stylesheet" type="text/css" href="stylesheets/fonts.css" />      
+      <link rel="stylesheet" type="text/css" href="../stylesheets/fonts.css" />
+      <link rel="stylesheet" type="text/css" href="../stylesheets/splash.css" />
+      <link rel="stylesheet" type="text/css" href="../stylesheets/style.css" />
+      <link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
+
+
+      <!-- Javascript
+    ================================================== -->
+
+
+    <script src="scripts/modernizr.js"> </script>
+    <script language="javascript" src="scripts/jquery-1.11.0.min.js"> </script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+    <script language="javascript" src="scripts/javascript.js"> </script>
+
+    
+  <!-- FONTS
+    ================================================== -->
+
+<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+
+<!-- Facebook Stuff -->
+
+      <meta property="og:title" content="Baltimore Sun Voter Guide - Campaign Finance" />
+      <meta property="og:url" content="http://data.baltimoresun.com/voter-guide/campaign-finance" />
+      <meta property="og:image" content="" />
+
+      <!-- /Facebook Stuff -->
+
+      <!-- TWITTER STUFF -->
+
+      <meta name="twitter:card" content="summary">
+      <meta name="twitter:site" content="@baltimoresun">
+      <meta name="twitter:creator" content="">
+      <meta name="twitter:title" content="Baltimore Sun Voter Guide - Campaign Finance">
+      <meta name="twitter:description" content="Learn more about campaign finance for gubernatorial candidates in the Baltimore Sun's 2014 Voter Guide">
+      <meta name="twitter:image" content="">
+      <meta name="twitter:domain" content="baltimoresun.com">
+
+      <!-- Baltimore Sun Ad Scripts -->
+
+      <script type="text/JavaScript">
+        var cachebuster = Math.floor(Math.random()*10000000000);
+        var aax_src='1090';
+        var amzn_targs='';
+        var url = encodeURIComponent(document.location);
+        try { url = encodeURIComponent("" + window.top.location); } catch(e) {}
+        document.write("<scr"+"ipt src='//aax-us-east.amazon-Adsystem.com/e/dtb/bid?src=" + aax_src + "&u="+url+"&cb=" + Math.round(Math.random()*10000000) + "'></scr"+"ipt>");
+        document.close();
+      </script>
+
+      <!-- /Baltimore Sun Ad Scripts -->
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+<style>
+
+#cash-graph {
+  border: 0px solid black;
+}
+
+.bar {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.grid .tick {
+    stroke: ;
+    opacity: 0.7;
+}
+.grid path {
+      stroke-width: 0;
+}
+
+
+.axis path {
+  display: none;
+}
+
+.axis line {
+  shape-rendering: crispEdges;
+  stroke: lightgrey;
+}
+
+.axis .minor line {
+  stroke: #777;  
+  stroke-dasharray: 2,2;
+}
+
+.d3-tip {
+  line-height: 1;
+  font-weight: bold;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fafafa;
+  border-radius: 2px;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+} 
+
+    #donut-chart-container {
+      background-color: #ffffff;
+      border: 0px solid gray;
+      font: 10px sans-serif;
+      text-shadow: none;
+      width: 520px;
+      float:left;
+    }
+    #donut-chart-container .total{
+      font-size: 18px;
+      font-weight: bold;
+    }
+    #donut-chart-container .units{
+      fill: gray;
+      font-size: 12px;
+    }
+    #donut-chart-container .label{
+      fill: #CCC;
+      font-size: 12px;
+      font-weight: bold;
+    }
+    #donut-chart-container .value{
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+
+#intro-text p {
+    font-family: Georgia, Times New Roman, serif !important;
+    padding: 10px 10px 0px 10px;
+    margin: 5px 0px 5px 0px;
+    font-size: 16px;
+  }
+
+.graph-img {
+  float:none;
+  padding: 12px 22px 0 0;
+  cursor: pointer
+}    
+
+.graph-img img {
+  float:left;
+}
+
+.graph-info {
+  float:left;
+  width: 400px;
+  border:1px solid black;
+}
+
+.graph-amount {
+  border: 1px solid blue;
+}
+
+.graph-details {
+  border-bottom: red;
+  width:350px;
+}
+
+#legend-container {
+  float: left;
+  width: 330px;
+  padding: 0 0 10px 0;
+  border: 1px solid #A9A9A9;
+  background-color: #F0F0F0;
+  margin: 105px 0 0 120px; }
+
+.legend-details {
+  margin: 25px;
+  clear: both; }
+
+.square {
+  float: left;
+  width: 55px;
+  height: 30px;
+  border: 1px solid black;
+  color: white;
+  text-align: center;
+  line-height: 200%;
+  margin: 5px 0px; }
+
+
+.label {
+  float: left;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  color: #333333;
+  margin: 8px 10px 10px 10px; }
+
+#source {
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  text-align: left;
+  line-height: 14px;
+  color: #333333;
+  padding: 30px 0 30px 0;
+  clear: both;
+  border-top: 0px solid #dadada; }
+
+footer {
+  margin: 50px 0 0 0; }  
+
+
+.chart {
+  background: none;
+  margin: 5px;
+}
+ 
+.chart rect {
+  stroke: white;
+  fill: #2c2f78;
+}
+ 
+.chart text {
+  fill: white;
+  font-family: Georgia, serif;
+  font-size: 18px;
+  padding-right: 20px;
+}
+ 
+.chart text.name {
+  fill: transparent;
+}
+ 
+.chart line {
+  stroke: #c1c1c1;
+}
+ 
+.chart .rule {
+  fill: #000;
+}
+ 
+/* removed the while stroke as we don't need it anymore */
+#step-5 .chart rect {
+  stroke: none;
+}
+ 
+/* a bit of hovering effect for each bar */
+#step-5 .chart rect:hover {
+  fill: #64707D;
+}  
+
+.party-box {
+  margin-left: 0% !important;
+  padding-bottom: 1% !important;
+}
+
+#explainer {
+  padding: 20px 10px 10px 20px;
+  background-color: #dfdfdf;
+  font-size: 16px;
+  font-family: Georgia, serif;
+
+}
+
+p.name {
+  font-size: 18px;
+}
+
+p.more {
+  text-decoration: none;
+  color: #104e8b;
+  font-weight: 800;
+}
+
+.candidate-box {
+  position: relative;
+  opacity: .6;
+}
+
+.candidate-box.selected {
+  opacity: 1;
+}
+
+.candidate-box.selected:after {
+  content: url(images/triangle.png);
+  position: absolute;
+  top: 235px;
+  left: 0%;
+  width: 100%;
+  height: 20px;
+}
+
+#donut-chart-container .units {
+  fill: #fff;
+}
+
+#donut-chart-container .value {
+  fill: #fff;
+}
+
+#cash-on-hand-label {
+
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #333333;
+  font-weight: bold;
+  padding-left: 30px;
+
+}
+
+g.label_group{
+  display: none;
+}
+
+  </style>    
+
+  
+
+
+  </head>
+
+  <body>
+
+    <div id="top-bar">
+      <div id="top-bar-content">
+          <div id="mobile-nav">
+            <span class="icon-menu"></span><span class="text">SECTIONS</span>
+          </div>
+          <div id="mobile-nav-drop">
+            <ul>
+              <li><a href="http://elections.baltimoresun.com/"><span class="icon-play"></span>  News </a> </li>
+              <li><a href="http://elections.baltimoresun.com/candidates/"><span class="icon-play"></span>  Candidate Surveys </a> </li>
+              <li><a href="http://data.baltimoresun.com/voter-guide"><span class="icon-play"></span>  Voter Guide </a> </li>
+              <li><a href="http://elections.baltimoresun.com/results"><span class="icon-play"></span>  Results </a> </li> 
+            </ul>
+          </div>
+          <div id="star-and-logo">
+            <div id="top-bar-star"><a class="full" href="http://elections.baltimoresun.com/"></a><span class="icon-star"></span></div>
+            <div id="election-center-logo"><a class="full" href="http://elections.baltimoresun.com/"></a> ELECTION CENTER </div>
+          </div>
+          <div id="top-nav">
+            <ul>
+              <li> <a href="http://elections.baltimoresun.com/"> NEWS </a> </li>
+              <li> <a href="http://elections.baltimoresun.com/candidates/"> CANDIDATE SURVEYS </a> </li>
+              <li> <a href="http://data.baltimoresun.com/voter-guide"> VOTER GUIDE </a> </li>
+               <li><a href="http://elections.baltimoresun.com/results"><span class="icon-play"></span>  RESULTS </a> </li> 
+             </ul>
+          </div>
+
+          <a href="http://www.baltimoresun.com"><img border="0" id="top-sun-logo" src="../images/header-sun-logo.png" width="190" /></a>
+
+      </div>
+    </div>
+
+      
+     <div id="leaderboard-ad">
+      <script type="text/javascript">
+  oz_api = "valuation";
+  oz_site = "7476/21966";
+  oz_zone = "76186";
+  oz_ad_slot_size = "728x90";
+</script>
+<script type="text/javascript" src="http://tap-cdn.rubiconproject.com/partner/scripts/rubicon/dorothy.js?pc=7476/21966">
+</script>
+<script type="text/javascript" language="JavaScript">
+try {
+var rp = new RubiconInsight();
+rubicon_targeting = rp.getAsDFPKeyValues(rp_valuation.estimate);
+} catch(e) {
+  rubicon_targeting = '';
+}
+</script>
+<script type='text/javascript'>function readCookie(name) {   var nameEQ = name + "=";   var ca = document.cookie.split(';');   for(var i=0;i < ca.length;i++) {   var c = ca[i];   while (c.charAt(0)==' ') c = c.substring(1,c.length);   if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);   }   return null;   }   var x = readCookie('c_mId');   if (x)  {   try {if (typeof adTargetConsumerInfo == 'undefined') {document.write('<scr'+'ipt type="text/javascript" src="include-member-ad.javascript"></scr'+'ipt>');   }   } catch(err) {}}   else {var adTargetConsumerInfo = ';rg=ur';var adTargetYieldExInfo = '';}</script><script type='text/javascript'>   var ordString=';ord=' + cachebuster;   var scriptSrc='http://ad.doubleclick.net/N4011/adj/trb.baltimoresun/biz;;ptype=s;slug=bs-bz-economic-plans-20140510;pos=T;dcopt=ist;sz=728x90;tile=1;at=Politics;at=Business;at=EconomyBusinessandFinance;at=Elections;at=PublicTransportation;iab=law;iab=biz;';   var noscriptHref='http://ad.doubleclick.net/N4011/jump/trb.baltimoresun/biz;;ptype=s;slug=bs-bz-economic-plans-20140510;pos=T;sz=728x90;tile=1;at=Politics;at=Business;at=EconomyBusinessandFinance;at=Elections;at=PublicTransportation;iab=law;iab=biz?" target="_blank" rel="nofollow"';   var noscriptSrc='http://ad.doubleclick.net/N4011/ad/trb.baltimoresun/biz;;ptype=s;slug=bs-bz-economic-plans-20140510;pos=T;dcopt=ist;sz=728x90;tile=1;at=Politics;at=Business;at=EconomyBusinessandFinance;at=Elections;at=PublicTransportation;iab=law;iab=biz?" width="728" height="90" border="0" alt=""';   var noscriptHrefEndOfStr=' target="_blank" rel="nofollow"';   var noscriptSrcEndOfString=' width="728" height="90" border="0" alt=""';   indexOfHrefQuestion='243';   indexOfLastImgSrcQuestion='251';   var yieldExParam=';u=';   var ptypeStr='ptype|s!';   var posStr='pos|T!';   var revenueScienceStr='';   var sizeStr='sz|728x90!';   try {       if (adTargetConsumerInfo != undefined && adTargetYieldExInfo != undefined) {           scriptSrc = scriptSrc.substring(0, scriptSrc.length -1) + adTargetConsumerInfo + yieldExParam + ptypeStr + posStr + sizeStr + revenueScienceStr + adTargetYieldExInfo + amzn_targs + rubicon_targeting + window.Krux.dfppKeyValues + ordString + '?';           noscriptHref = noscriptHref.substring(0, indexOfHrefQuestion) + adTargetConsumerInfo + yieldExParam + ptypeStr + posStr + sizeStr + revenueScienceStr + adTargetYieldExInfo + amzn_targs + rubicon_targeting + window.Krux.dfppKeyValues + ordString + '?' + noscriptHrefEndOfStr;           noscriptSrc = noscriptSrc.substring(0, indexOfLastImgSrcQuestion) + adTargetConsumerInfo + yieldExParam + ptypeStr + posStr + sizeStr + revenueScienceStr + adTargetYieldExInfo + amzn_targs + rubicon_targeting + window.Krux.dfppKeyValues + ordString + '?' + noscriptSrcEndOfString;       }   } catch(err) {}   document.write('<scr'+'ipt type="text/javascript" src="'+scriptSrc+'"></scr'+'ipt>');   document.write('<noscript><a href="'+noscriptHref+'><img scr="'+noscriptSrc+'></a></noscript>');</script>
+    </div>
+
+
+    <div id="page-header">
+
+      <div id="page-header-text"><span class="icon-star mobile-hide"></span> &nbsp;<span class="icon-star"></span>&nbsp;&nbsp; CAMPAIGN FINANCE &nbsp;&nbsp;<span class="icon-star"></span> &nbsp;<span class="icon-star mobile-hide"></span> </div>
+
+    </div>
+
+    <div id="container">
+
+
+       <header class="section-header">
+          General Election
+          <div class="header-underline"></div>
+        </header>
+
+
+      <section id="intro">
+
+
+        <div class="group">
+
+          <div id="intro-text">
+            <p>Candidates are required to file reports detailing contributors to their campaigns, campaign-related expenses and any loan monies received. <strong>The information below is from campaign finance reports filed with the state Oct. 24.</strong></p>
+          </div>
+
+
+        </div>
+
+      </section> <!-- /intro -->
+
+       <div class="total">
+        <div class="total-header">COMBINED CASH ON HAND: $836,033</div>
+      </div>
+      <div class="total-bar">
+        <div class="group"> 
+          <div class="total-dem bar" style="width: 47%;"></div>
+          <div class="total-rep bar" style="width: 53%;"></div>
+        </div>
+        <div class="total-labels">
+          <div class="group">
+            <div class="total-dem-label total-label"><img src="images/arrow-left.png">Brown: $394,129*</div>
+            <div class="total-rep-label total-label">Hogan: $441,904**<img src="images/arrow-right.png"></div>
+          </div>
+        </div>
+      </div>
+      <!-- /totals-->
+      <div id="winners">
+        <div class="winner">
+          <div class="winner-pic"><img src="images/brown.jpg">
+            <div class="winner-name democrat"><span>Anthony G. Brown</span></div>
+          </div>
+          <div class="winner-money">
+            <p>Accounts: </p>
+              <ul class="dem">
+                <li>Friends of Anthony Brown: $31,497</li>
+                <li>Brown-Ulman slate: $47,578</li>
+                <li>Friends of Ken Ulman: $49,080</li>
+                <li>Md. Democratic Party: $265,974</li>
+              </ul>              
+            <p class="asterisk">*Received $500,000 loan from Laborers International Union</p>          
+          </div>
+        </div>
+        <div id="winner-graphs"></div>
+
+        <div class="winner">
+          <div class="winner-pic"><img src="images/hogan.jpg">
+            <div class="winner-name republican"><span>Larry Hogan</span></div>
+          </div>
+          <div class="winner-money">
+              <p>Accounts: </p>
+              <ul class="rep">
+                <li>Hogan-Rutherford: $291,549</li>
+                <li>Md. Republican Party: $150,355</li>
+              </ul>              
+            <p class="asterisk">**Accepted public financing</p>    
+          </div>
+        </div>
+      </div>
+      <!-- /winners-->
+      
+
+        <header class="section-header">
+          Primary Election Summary
+          <div class="header-underline"></div>
+        </header>
+
+
+      <section id="intro">
+
+
+        <div class="group">
+
+          <div id="intro-text">
+            <p>Every gubernatorial candidate is required to file reports detailing contributors to their campaign, campaign-related expenses and any loan monies received. </p>
+           <!-- Democratic and Republican candidates for governor spent a total of at least $24,800,429 for the June primary election. -->
+          </div>
+
+
+        </div>
+
+      </section> <!-- /intro -->
+
+       <div class="total">
+        <div class="total-header">TOTAL SPENDING: $24,800,429</div>
+      </div>
+      <div class="total-bar">
+        <div class="group"> 
+          <div class="total-dem bar"></div>
+          <div class="total-rep bar"></div>
+        </div>
+        <div class="total-labels">
+          <div class="group">
+            <div class="total-dem-label total-label"><img src="images/arrow-left.png">Democrats: $21,518,199</div>
+            <div class="total-rep-label total-label">Republicans: $3,282,230<img src="images/arrow-right.png"></div>
+          </div>
+        </div>
+      </div>
+      <!-- /totals-->
+      <div id="losers">
+<!--         <div class="mobile-label">Other Primary Candidates      </div>
+ -->        <div class="loser-column democrat">
+          <div class="loser"><img src="images/circles/brown-circ.jpg">
+            <div class="loser-text">
+              <div class="loser-name">Anthony G. Brown</div>
+              <div class="loser-money democrat">Spent $11,261,328</div>
+            </div>
+          </div>
+          <div class="loser"><img src="images/circles/gansler-circ.jpg">
+            <div class="loser-text">
+              <div class="loser-name">Douglas F. Gansler</div>
+              <div class="loser-money democrat">Spent $7,504,450</div>
+            </div>
+          </div>
+          <div class="loser"><img src="images/circles/mizeur-circ.jpg">
+            <div class="loser-text">
+              <div class="loser-name">Heather R. Mizeur</div>
+              <div class="loser-money democrat">Spent $2,752,421</div>
+            </div>
+          </div>
+        </div>
+        <div class="loser-column republican">
+          <div class="loser"><img src="images/circles/hogan-circ.jpg">
+            <div class="loser-text">
+              <div class="loser-name">Larry Hogan</div>
+              <div class="loser-money republican">Spent $1,868,097</div>
+            </div>
+          </div>
+          <div class="loser"><img src="images/circles/craig-circ.jpg">
+            <div class="loser-text">
+              <div class="loser-name">David R. Craig</div>
+              <div class="loser-money republican">Spent $1,023,624</div>
+            </div>
+          </div>
+          <div class="loser"><img src="images/circles/george-circ.jpg">
+            <div class="loser-text">
+              <div class="loser-name">Ron George</div>
+              <div class="loser-money republican">Spent $241,738</div>
+            </div>
+          </div>
+          <div class="loser"><img src="images/circles/lollar-circ.jpg">
+            <div class="loser-text">
+              <div class="loser-name">Charles Lollar</div>
+              <div class="loser-money republican">Spent $148,771</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /losers-->
+
+        <header id="breakdown-header" class="section-header" style="margin-top: 30px;">
+          How They Spent It
+          <div class="header-underline"></div>
+        </header>
+        <div id="donut-candidates">
+          <div class="donut-candidate selected" data-name="brown"> Brown </div>
+          <div class="donut-candidate" data-name="gansler"> Gansler </div>
+          <div class="donut-candidate" data-name="mizeur"> Mizeur </div>
+          <div class="donut-candidate" data-name="hogan"> Hogan </div>           
+          <div class="donut-candidate" data-name="craig"> Craig </div>
+          <div class="donut-candidate" data-name="george"> George </div> 
+          <div class="donut-candidate" data-name="lollar"> Lollar </div>
+        </div>
+
+
+               <div id="donut-container">
+                      <div id="donut-chart-container"></div>
+
+                      <div id="legend-container">
+                        <div class="legend-details">
+                            <div id="salary-percent" class="square" style="background-color:#1f77b4;"></div>
+                            <div class="label">Salaries &amp; compensation</div>
+                        </div><!--/legend-details--> 
+                        
+                         <div class="legend-details">
+                            <div id="rent-percent" class="square" style="background-color:#aec7e8;"></div>
+                            <div class="label">Rent &amp; office supplies</div>
+                        </div><!--/legend-details--> 
+
+                         <div class="legend-details">
+                            <div id="media-percent" class="square" style="background-color:#ff7f0e;"></div>
+                            <div class="label">Media &amp; advertising</div>
+                        </div><!--/legend-details--> 
+
+                         <div class="legend-details">
+                            <div id="printing-percent" class="square" style="background-color:#ffbb78;"></div>
+                            <div class="label">Printing &amp; campaign materials</div>
+                        </div><!--/legend-details--> 
+
+                         <div class="legend-details">
+                            <div id="mailings-percent" class="square" style="background-color:#2ca02c;"></div>
+                            <div class="label">Mailings &amp; postage</div>
+                        </div><!--/legend-details--> 
+
+                         <div class="legend-details">
+                            <div id="fundraising-percent" class="square" style="background-color:#98df8a;"></div>
+                            <div class="label">Fundraising expenses</div>
+                        </div><!--/legend-details--> 
+
+                         <div class="legend-details">
+                            <div id="other-percent" class="square" style="background-color:#d62728;"></div>
+                            <div class="label">Other</div>
+                        </div><!--/legend-details-->    
+                    </div><!--/legend-container-->
+
+                    <div id="donut-committee"> Committee(s): <span> </span> </div>
+
+                    <div id="source">
+                    <strong>SOURCE: Maryland State Board of Elections</strong><br /><br />
+                    Methodology:
+                    <ol>
+                      <li>"Other" expenditures may include field expenses, equipment purchases, transfers, returned contributions, in-kind contributions and miscellaneous expenses. Note: Some figures initially included transfers to related committees. This falsely inflated spending and has been corrected. </li>
+                      <li>Totals do not include spending by active pre-existing committees of running mates for David Craig, Anthony Brown and Douglas Gansler.</li>
+                      <li>Expenditures for losing candidates are calculated from the beginning of the election cycle on Jan. 1, 2011, to the close of the post-primary reporting period on Aug. 19. They may include expenditures made before the candidate decided to run for governor. Some campaign committees may have spending beyond that date as they wind down.</li>
+                      <li>Expenditures for Larry Hogan are those of his primary election committee through Aug. 19. Spending by his new general election committee is not included.</li>
+                      <li>Anthony Brown’s spending is calculated through the primary election June 24. Some spending beyond that date is undoubtedly for primary expenses, but it is difficult to definitively separate primary from general election expenses.</li>
+                    </ol>
+                  </div>
+                      
+        </div><!--/donut-container-->
+
+    </div><!--/container-->
+
+    <div id ="main-container">
+        
+
+          <div id="graph-container">
+                          
+          <!--<div id="cash-graph"></div>-->
+
+
+           
+
+            <!--<div id="step-5"></div>-->
+
+            </div><!--/graph-container-->
+
+
+             
+
+                    
+                     
+
+        </div>
+
+       <footer>
+
+      <div id="logo"> <img src="../images/bs-logo-white@2x.png" width="153" /> </div>
+
+    </footer>
+
+
+
+<!-- START OMNITURE // hive:metrics-tribune -->
+<!-- SiteCatalyst code version: H.1.
+Copyright 1997-2005 Omniture, Inc. More info available at
+http://www.omniture.com -->
+
+
+
+<script type="text/javascript">adblock=true;</script>
+<script type="text/javascript" src="http://www.baltimoresun.com/hive/javascripts/metrics/adframe.js"></script>
+<script type="text/javascript" src="http://www.baltimoresun.com/hive/javascripts/metrics/s_code_trb.js"></script>
+
+
+<script language="JavaScript">
+
+
+          s.pageName="Voter Guide 2014 - Baltimore Sun / news / maryland / politics - story."; 
+        
+        s.prop38="story";
+        s.eVar21="story";
+
+  s.server="www.baltimoresun.com"; 
+    s.channel="Baltimore Sun:news";
+
+s.prop3="";
+
+( function(){
+  if( window.registration && window.registration.user && window.registration.user.isLoggedIn()){
+    s.prop28 = registration.getMetricsId();
+  } else if ( window.carnival ) {
+      var carnival_username_c_unm = readCookie('c_unm');
+      var carnival_masterid_c_mid = carnival.metrics.getMetricsId();
+      if( carnival_username_c_unm!=null && carnival_masterid_c_mid ){
+        s.prop28 = carnival_masterid_c_mid;
+      }
+  }
+
+  if( !s.prop28 ){
+    s.prop28 = ""; 
+  }
+})();
+
+s.prop32="";
+ 
+s.prop36="Page 1";
+
+
+/* Taxonomy Variables */
+s.prop46="";
+
+/* E-commerce Variables */
+s.events=""; 
+
+
+/* P2P blog variables */
+
+  s.prop52=s.pageName;
+
+
+s.eVar20="Baltimore Sun";
+
+  s.hier1="Baltimore Sun:news:maryland:politics"; 
+    s.hier2="news:maryland:politics";
+    s.hier4="news:maryland:politics";
+  
+  
+        
+    s.eVar42="";
+  s.prop44="bal-voter-guide-2014-20140515";
+
+if(adblock)
+{
+  s.prop54="ad blocking";
+}
+
+
+s.prop64="05/15/2014 09:22";
+
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code) 
+-->  
+</script>
+<script language="JavaScript"><!--
+if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+//--></script><!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version: H.1. -->
+
+
+<!-- START REVENUE SCIENCE PIXELLING CODE -->
+<script src="http://js.revsci.net/gateway/gw.js?csid=B08725"></script>
+<script>
+DM_addEncToLoc("Site", (s.server));
+DM_addEncToLoc("channel", (s.channel));
+DM_addEncToLoc("keyword", (s.prop3));
+DM_cat(s.hier1);
+DM_tag();
+</script>
+<!-- END REVENUE SCIENCE PIXELLING CODE -->
+
+<script type="text/javascript">
+    (function() { 
+     var old = s.ot; 
+     s.ot = function(el) { 
+         return el.tagUrn ? '' : old(el); 
+     }; 
+  })(); 
+</script>
+
+
+<!-- Time: Thu May 15 06:28:17 PDT 2014-->
+
+
+<!-- START Nielsen Online SiteCensus V6.0 -->
+<!-- COPYRIGHT 2010 Nielsen Online -->
+<script type="text/javascript">
+  (function () {
+    var d = new Image(1, 1);
+    d.onerror = d.onload = function () {
+      d.onerror = d.onload = null;
+    };
+    d.src = ["//secure-us.imrworldwide.com/cgi-bin/m?ci=us-400338h&cg=0&cc=1&si=", escape(window.location.href), "&rp=", escape(document.referrer), "&ts=compact&rnd=", (new Date()).getTime()].join('');
+  })();
+</script>
+<noscript>
+  <div>
+    <img src="//secure-us.imrworldwide.com/cgi-bin/m?ci=us-400338h&amp;cg=0&amp;cc=1&amp;ts=noscript"
+    width="1" height="1" alt="" />
+  </div>
+</noscript>
+<!-- END Nielsen Online SiteCensus V6.0 -->
+
+
+
+
+      </div><!--/main-container-->
+
+
+
+     <script src="charts/charts-d3.js"></script>
+     <script type="text/javascript" src="d3-tip
+
+              letter  frequency
+              A 4,079,745
+              B 5,203,796
+              C 548,535
+              D 190,976
+              E 0
+              F 153,889
+              G 5,731.js"></script>
+    <script>
+ 
+jQuery(function($) {
+  var names = ['brown', 'gansler', 'mizeur', 'craig', 'george', 'hogan', 'lollar'],
+      money = [1.92, 3.10, .961, 5, .010, 3, .018],
+      chart,
+      width = 900,
+      bar_height = 70,
+      height = bar_height * names.length;
+ 
+  /* step 1 */
+  chart = d3.select($("#step-1")[0])
+    .append('svg')
+    .attr('class', 'chart')
+    .attr('width', width)
+    .attr('height', height);
+ 
+  /* step 2 */
+  var x, y;
+ 
+  chart = d3.select($("#step-2")[0])
+    .append('svg')
+    .attr('class', 'chart')
+    .attr('width', width)
+    .attr('height', height);
+ 
+  x = d3.scale.linear()
+     .domain([0, d3.max(money)])
+     .range([0, width]);
+ 
+  y = d3.scale.ordinal()
+    .domain(money)
+    .rangeBands([0, height]);
+ 
+  chart.selectAll("rect")
+     .data(money)
+     .enter().append("rect")
+     .attr("x", 0)
+     .attr("y", y)
+     .attr("width", x)
+     .attr("height", bar_height);
+ 
+  /* step 3 */
+  chart = d3.select($("#step-3")[0])
+    .append('svg')
+    .attr('class', 'chart')
+    .attr('width', width)
+    .attr('height', height);
+ 
+  chart.selectAll("rect")
+    .data(money)
+    .enter().append("rect")
+    .attr("x", 0)
+    .attr("y", y)
+    .attr("width", x)
+    .attr("height", y.rangeBand());
+ 
+  chart.selectAll("text")
+    .data(money)
+    .enter().append("text")
+    .attr("x", x)
+    .attr("y", function(d){ return y(d) + y.rangeBand()/2; } )
+    .attr("dx", -5)
+    .attr("dy", ".36em")
+    .attr("text-anchor", "end")
+    .text(String);
+ 
+  /* step 4 */
+  var left_width = 100;
+ 
+  chart = d3.select($("#step-4")[0])
+    .append('svg')
+    .attr('class', 'chart')
+    .attr('width', left_width + width)
+    .attr('height', height);
+ 
+  chart.selectAll("rect")
+    .data(money)
+    .enter().append("rect")
+    .attr("x", left_width)
+    .attr("y", y)
+    .attr("width", x)
+    .attr("height", y.rangeBand());
+ 
+  chart.selectAll("text.score")
+    .data(money)
+    .enter().append("text")
+    .attr("x", function(d) { return x(d) + left_width; })
+    .attr("y", function(d){ return y(d) + y.rangeBand()/2; } )
+    .attr("dx", -5)
+    .attr("dy", ".36em")
+    .attr("text-anchor", "end")
+    .attr('class', 'score')
+    .text(String);
+ 
+  chart.selectAll("text.name")
+    .data(names)
+    .enter().append("text")
+    .attr("x", left_width / 2)
+    .attr("y", function(d){ return y(d) + y.rangeBand()/2; } )
+    .attr("dy", ".36em")
+    .attr("text-anchor", "middle")
+    .attr('class', 'name')
+    .text(String);
+ 
+  /* step 5 */
+  var gap = 10;
+  // redefine y for adjusting the gap
+  y = d3.scale.ordinal()
+    .domain(money)
+    .rangeBands([0, (bar_height + 2 * gap) * names.length]);
+ 
+ 
+  chart = d3.select($("#step-5")[0])
+    .append('svg')
+    .attr('class', 'chart')
+    .attr('width', left_width + width + 40)
+    .attr('height', (bar_height + gap * 2) * names.length + 30)
+    .append("g")
+    .attr("transform", "translate(10, 20)");
+ 
+  chart.selectAll("line")
+    .data(x.ticks(d3.max(money)))
+    .enter().append("line")
+    .attr("x1", function(d) { return x(d) + left_width; })
+    .attr("x2", function(d) { return x(d) + left_width; })
+    .attr("y1", 0)
+    .attr("y2", (bar_height + gap * 2) * names.length);
+ 
+  chart.selectAll(".rule")
+    .data(x.ticks(d3.max(money)))
+    .enter().append("text")
+    .attr("class", "rule")
+    .attr("x", function(d) { return x(d) + left_width; })
+    .attr("y", 0)
+    .attr("dy", -6)
+    .attr("text-anchor", "middle")
+    .attr("font-size", 10)
+    .text(String);
+ 
+  chart.selectAll("rect")
+    .data(money)
+    .enter().append("rect")
+    .attr("x", left_width)
+    .attr("y", function(d) { return y(d) + gap; })
+    .attr("width", x)
+    .attr("height", bar_height);
+
+
+ 
+  chart.selectAll("text.score")
+    .data(money)
+    .enter().append("text")
+    .attr("x", function(d) { return x(d) + left_width; })
+    .attr("y", function(d, i){ return y(d) + y.rangeBand()/2; } )
+    .attr("dx", -5)
+    .attr("dy", ".36em")
+    .attr("text-anchor", "end")
+    .attr('class', 'score')
+    .text(String);
+ 
+  chart.selectAll("text.name")
+    .data(names)
+    .enter().append("text")
+    .attr("x", left_width / 2)
+    .attr("y", function(d, i){ return y(d) + y.rangeBand()/2; } )
+    .attr("dy", ".36em")
+    .attr("text-anchor", "middle")
+    .attr('class', 'name')
+    .text(String);
+  
+
+ 
+}(jQuery));
+ 
+</script>
+
+  </body>
+
+  </html>

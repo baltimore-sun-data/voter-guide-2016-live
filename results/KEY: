@@ -1,0 +1,107 @@
+KEY:
+
+0    Circuit Court Judges
+H    U.S. House
+L    City Comptroller
+M    Mayor
+N    Baltimore City Council
+P    President
+S    U.S. Senate
+
+
+
+21745 GOP  U.S. Senate 
+21940 Dem  U.S. Senate 
+
+22818 Dem Pres
+22819 GOP Pres
+
+
+  21748 GOP U.S. House  |District 1  
+  21750 GOP  U.S. House  |District 2  
+  21753 GOP  U.S. House  |District 3  
+  21755  GOP  U.S. House  |District 4 
+  21759 GOP U.S. House  |District 5  
+  21761 GOP  U.S. House  |District 6  
+  21763 GOP  U.S. House  |District 7  
+  21765 GOP  U.S. House  |District 8 
+
+
+21836 DEM U.S. House  |District 1  
+21837  DEM U.S. House  |District 2  
+21838  DEM U.S. House  |District 3  
+21839  DEM U.S. House  |District 4  
+21840  DEM District 5  
+21841  DEM  District 6  
+21842  DEM District 7  
+21843  DEM  District 8  
+
+
+22221 DEM Mayor
+22222 GOP Mayor
+
+
+
+COUNCIL: 
+
+22237 Pres Dem
+22238 Pres GOP
+
+
+22225 Dem 1
+22226 GOP 1
+
+22227 DEM 2
+22228 GOP 2
+
+
+22229 DEM 3
+22230 GOP 3
+
+22231 DEM 4
+22232 GOP 4
+
+22233 DEM 5
+22234 GOP 5
+
+22235 DEM 6
+22586 GOP 6
+
+22585 DEM 7
+22587 GOP 7
+
+22588 DEM 8
+22589 GOP 8
+
+
+22590 DEM 9
+22648 GOP 9
+
+
+22591 DEM 10
+22649 GOP 10
+
+
+22592 DEM 11
+22650 GOP 11
+
+22596 DEM 12
+22651 GOP 12
+
+
+22593 DEM 13
+22652 GOP 13
+
+22594 DEM 14
+22653 GOP 14
+
+	elex results 2016-04-26 -o json --format-json
+
+
+
+
+WORKING TEST:
+
+http://data.baltimoresun.com/news/elections2016/adamtest/pres-results.json
+
+raceResults(25841, "#senate-dem");

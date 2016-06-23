@@ -1,0 +1,116 @@
+http://data.baltimoresun.com/voter-guide-2016/
+
+http://data.baltimoresun.com/voter-guide-test-deploy/
+	baltsun / data
+
+/voter-guide-2016/index.html?senate
+/council/city-council.html?id=District1&race=citycouncil
+/congress/congress.html?id=District1&race=congress
+/senate/senate.html?cand=vanhollen
+		       ?cand=chaffee
+/mayor/dixon.html
+
+
+http://www.baltimoresun.com/voter-guide
+Barker: bal-voter-guide-2016-barker-20160302
+Storylink: bal-the-baltimore-suns-voter-guide-2016-sl-20160302
+
+http://www.convertcsv.com/csv-to-json.htm
+
+501HogsRunInPigtown
+
+
+
+Main photo (all candidates): 
+350x512 (175 x256) 
+
+Mayoral and Senate candidates only:
+	Splash: 450x450 (225x225)
+	Small "no-bg": 280x246 (140x123)
+
+
+
+
+
+GREEN CANDIDATES:
+
+
+
+(Mayor ready to launch, in test/deploy)
+
+Add Senate candidate
+Congress and council need data added - remove test data
+Test throughly + group/approvals
+
+
+
+
+
+Gravy::
+
+1. senate /  council / congress: if variables are wrong in url, redirect
+		Thnk of / research a method and impliment.
+
+
+2. IE logo issue
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+0. DEV NOTES
+
+- Feed calling mayoral race heads. Could pull from topics using api (see patrick method) or with a topics page rss feed (from Trib or alt: create dynamic collection, add to section, output rss). Currently just calling p2p page rss feeds
+
+- keep testing on-page question comparisons for major races -- .question-candidates {display:none;}
+
+** to bring back headshots, uncomment and make candidate last name matches image (no #2) 
+	<!-- <img class="answer-headshot" width="65" src="" /> -->
+
+* Just leave the bio field blank for all congressional members.
+
+
+
+0. FOR GENERAL ELECTIONS:
+
+Add in on-page question comparisons for major races -- .question-candidates {display:none;}
+
+
+
+
+
+
+
+*******************
+
+
+NEW CANDIDATE PAGE PROCESS:
+Pull photo
+Complete spreadsheet / add json to text file
+Create a new candidate-name.html file
+Hardcode in title, name, few other feilds for SEO (see below)
+
+
+UPDATING PROCESS:
+Copy JSON from spreadsheet into javascript files
+
+
+MANUAL THINGS TO DO:
+Title
+URL feed (may stay static)
+Facebook / Twitter
+Object name for data and questions 
+Social message
+
+
+*******************

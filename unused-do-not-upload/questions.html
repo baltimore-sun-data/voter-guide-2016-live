@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en"> <!--<![endif]-->
+  <head>
+
+    	<!-- Basic Page Needs
+      ================================================== -->
+    	<meta charset="utf-8">
+    	<title> Ballot Questions - Election Center</title>
+    	<meta name="description" content="">
+    	<meta name="author" content="">
+
+    	<!-- Mobile Specific Metas
+      ================================================== -->
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+    	
+    	<!-- CSS
+      ================================================== -->
+
+      <link rel="stylesheet" type="text/css" href="http://data.baltimoresun.com/voter-guide/stylesheets/base.css" />
+      <link rel="stylesheet" type="text/css" href="http://data.baltimoresun.com/voter-guide/stylesheets/fonts.css" />
+      <link rel="stylesheet" type="text/css" href="http://data.baltimoresun.com/voter-guide/stylesheets/style.css" />
+      <link rel="stylesheet" type="text/css" href="http://data.baltimoresun.com/voter-guide/stylesheets/splash.css" />
+
+        <!-- Javascript
+      ================================================== -->
+
+      <!--[if lt IE 9]>
+      <script src="html5shiv.js"></script>
+      <![endif]-->
+
+      <!-- <script src="scripts/modernizr.js"> </script> -->
+
+      <script language="javascript" src="http://data.baltimoresun.com/voter-guide/scripts/jquery-1.10.2.min.js"> </script>
+      <script language="javascript" src="http://data.baltimoresun.com/voter-guide/scripts/jquery.easing.1.3.js"> </script>
+
+      <script language="javascript" src="http://data.baltimoresun.com/voter-guide/scripts/questionnaire-data.js"> </script>
+      <script language="javascript" src="http://data.baltimoresun.com/voter-guide/scripts/javascript.js"> </script>
+      <script language="javascript" src="http://data.baltimoresun.com/voter-guide/scripts/jquery.scrollTo-1.4.3.1-min.js"> </script>
+
+      <script>
+        $(document).ready(function(){
+          app.bill_reference_nav();
+        });
+      </script>
+
+    <!-- FONTS
+      ================================================== -->
+
+      <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+      <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
+      <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <![endif]-->
+
+   
+      <!-- Facebook Stuff -->
+
+      <meta property="og:title" content="" />
+      <meta property="og:url" content="http://data.baltimoresun.com/" />
+      <meta property="og:image" content="" />
+
+      <!-- /Facebook Stuff -->
+
+      <!-- TWITTER STUFF -->
+
+      <meta name="twitter:card" content="summary">
+      <meta name="twitter:site" content="@baltimoresun">
+      <meta name="twitter:creator" content="">
+      <meta name="twitter:title" content="">
+      <meta name="twitter:description" content="">
+      <meta name="twitter:image" content="">
+      <meta name="twitter:domain" content="baltimoresun.com">
+
+
+      <!-- Soundcite -->
+      <script type='text/javascript' src='http://connect.soundcloud.com/sdk.js'></script>
+      <script type='text/javascript' src='http://cdn.knightlab.com/libs/soundcite/latest/js/soundcite.min.js'></script>
+
+      <!-- Baltimore Sun Ad Scripts -->
+
+      <script type="text/JavaScript">
+        var cachebuster = Math.floor(Math.random()*10000000000);
+        var aax_src='1090';
+        var amzn_targs='';
+        var url = encodeURIComponent(document.location);
+        try { url = encodeURIComponent("" + window.top.location); } catch(e) {}
+        document.write("<scr"+"ipt src='//aax-us-east.amazon-Adsystem.com/e/dtb/bid?src=" + aax_src + "&u="+url+"&cb=" + Math.round(Math.random()*10000000) + "'></scr"+"ipt>");
+        document.close();
+      </script>
+
+      <!-- /Baltimore Sun Ad Scripts -->
+  
+
+  </head>
+  <body>
+
+    <div id="top-bar">
+      <div id="top-bar-content">
+          <div id="mobile-nav">
+            <span class="icon-menu"></span><span class="text">SECTIONS</span>
+          </div>
+          <div id="mobile-nav-drop">
+            <ul>
+              <li><a href="http://elections.baltimoresun.com/"><span class="icon-play"></span>  News </a> </li>
+              <li><a href="http://elections.baltimoresun.com/candidates/"><span class="icon-play"></span>  Candidate Surveys </a> </li>
+              <li><a href="http://data.baltimoresun.com/voter-guide"><span class="icon-play"></span>  Voter Guide </a> </li>
+              <li> <a href="http://elections.baltimoresun.com/results/"> Results </a> </li>
+            </ul>
+          </div>
+          <div id="star-and-logo">
+            <div id="top-bar-star"><a class="full" href="http://elections.baltimoresun.com/"></a><span class="icon-star"></span></div>
+            <div id="election-center-logo"><a class="full" href="http://elections.baltimoresun.com/"></a> ELECTION CENTER </div>
+          </div>
+          <div id="top-nav">
+            <ul>
+              <li> <a href="http://elections.baltimoresun.com/"> NEWS </a> </li>
+              <li> <a href="http://elections.baltimoresun.com/candidates/"> CANDIDATE SURVEYS </a> </li>
+              <li> <a href="http://data.baltimoresun.com/voter-guide"> VOTER GUIDE </a> </li>
+              <li> <a href="http://elections.baltimoresun.com/results/"> RESULTS </a> </li>
+            </ul>
+          </div>
+
+          <a href="http://www.baltimoresun.com"><img border="0" id="top-sun-logo" src="images/header-sun-logo.png" width="190" /></a>
+
+      </div>
+    </div>
+
+
+      
+     <div id="leaderboard-ad">
+      <script type="text/javascript">
+  oz_api = "valuation";
+  oz_site = "7476/21966";
+  oz_zone = "76186";
+  oz_ad_slot_size = "728x90";
+</script>
+<script type="text/javascript" src="http://tap-cdn.rubiconproject.com/partner/scripts/rubicon/dorothy.js?pc=7476/21966">
+</script>
+<script type="text/javascript" language="JavaScript">
+try {
+var rp = new RubiconInsight();
+rubicon_targeting = rp.getAsDFPKeyValues(rp_valuation.estimate);
+} catch(e) {
+  rubicon_targeting = '';
+}
+</script>
+<script type='text/javascript'>function readCookie(name) {   var nameEQ = name + "=";   var ca = document.cookie.split(';');   for(var i=0;i < ca.length;i++) {   var c = ca[i];   while (c.charAt(0)==' ') c = c.substring(1,c.length);   if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);   }   return null;   }   var x = readCookie('c_mId');   if (x)  {   try {if (typeof adTargetConsumerInfo == 'undefined') {document.write('<scr'+'ipt type="text/javascript" src="include-member-ad.javascript"></scr'+'ipt>');   }   } catch(err) {}}   else {var adTargetConsumerInfo = ';rg=ur';var adTargetYieldExInfo = '';}</script><script type='text/javascript'>   var ordString=';ord=' + cachebuster;   var scriptSrc='http://ad.doubleclick.net/N4011/adj/trb.baltimoresun/biz;;ptype=s;slug=bs-bz-economic-plans-20140510;pos=T;dcopt=ist;sz=728x90;tile=1;at=Politics;at=Business;at=EconomyBusinessandFinance;at=Elections;at=PublicTransportation;iab=law;iab=biz;';   var noscriptHref='http://ad.doubleclick.net/N4011/jump/trb.baltimoresun/biz;;ptype=s;slug=bs-bz-economic-plans-20140510;pos=T;sz=728x90;tile=1;at=Politics;at=Business;at=EconomyBusinessandFinance;at=Elections;at=PublicTransportation;iab=law;iab=biz?" target="_blank" rel="nofollow"';   var noscriptSrc='http://ad.doubleclick.net/N4011/ad/trb.baltimoresun/biz;;ptype=s;slug=bs-bz-economic-plans-20140510;pos=T;dcopt=ist;sz=728x90;tile=1;at=Politics;at=Business;at=EconomyBusinessandFinance;at=Elections;at=PublicTransportation;iab=law;iab=biz?" width="728" height="90" border="0" alt=""';   var noscriptHrefEndOfStr=' target="_blank" rel="nofollow"';   var noscriptSrcEndOfString=' width="728" height="90" border="0" alt=""';   indexOfHrefQuestion='243';   indexOfLastImgSrcQuestion='251';   var yieldExParam=';u=';   var ptypeStr='ptype|s!';   var posStr='pos|T!';   var revenueScienceStr='';   var sizeStr='sz|728x90!';   try {       if (adTargetConsumerInfo != undefined && adTargetYieldExInfo != undefined) {           scriptSrc = scriptSrc.substring(0, scriptSrc.length -1) + adTargetConsumerInfo + yieldExParam + ptypeStr + posStr + sizeStr + revenueScienceStr + adTargetYieldExInfo + amzn_targs + rubicon_targeting + window.Krux.dfppKeyValues + ordString + '?';           noscriptHref = noscriptHref.substring(0, indexOfHrefQuestion) + adTargetConsumerInfo + yieldExParam + ptypeStr + posStr + sizeStr + revenueScienceStr + adTargetYieldExInfo + amzn_targs + rubicon_targeting + window.Krux.dfppKeyValues + ordString + '?' + noscriptHrefEndOfStr;           noscriptSrc = noscriptSrc.substring(0, indexOfLastImgSrcQuestion) + adTargetConsumerInfo + yieldExParam + ptypeStr + posStr + sizeStr + revenueScienceStr + adTargetYieldExInfo + amzn_targs + rubicon_targeting + window.Krux.dfppKeyValues + ordString + '?' + noscriptSrcEndOfString;       }   } catch(err) {}   document.write('<scr'+'ipt type="text/javascript" src="'+scriptSrc+'"></scr'+'ipt>');   document.write('<noscript><a href="'+noscriptHref+'><img scr="'+noscriptSrc+'></a></noscript>');</script>
+    </div>
+     
+
+    <div id="page-header">
+
+      <div id="page-header-text"><span class="icon-star mobile-hide"></span> &nbsp;<span class="icon-star"></span>&nbsp;&nbsp; BALLOT QUESTIONS &nbsp;&nbsp;<span class="icon-star"></span> &nbsp;<span class="icon-star mobile-hide"></span> </div>
+
+    </div>
+
+<div class="container">
+
+<!--      <section class="splash-section" id="bills">
+        <header class="section-header democrat">
+          Ballot questions
+          <div class="header-underline"></div>
+        </header>
+--->
+        <div class="group">
+          <div class="span-70 left">
+    
+
+          </div> 
+
+          <!--
+          <div id="jump-to" class="span-30 right">
+            <div id="jump-header"> Jump to: </div>
+            <div class="group">
+              <div class="span-50 left">
+                <ul>
+                  <li data-jump="hb1213"> HB1213/SB994 </li>
+                  <li data-jump="hb1213"> HB1213/SB994 </li>
+                  <li data-jump="hb1213"> HB1213/SB994 </li>
+                  <li data-jump="hb1213"> HB1213/SB994 </li>
+                  <li data-jump="hb1213"> HB1213/SB994 </li>
+                  <li data-jump="hb1213"> HB1213/SB994 </li>
+                  <li data-jump="hb1213"> HB1213/SB994 </li>
+                  <li data-jump="hb1213"> HB1213/SB994 </li>
+                  <li data-jump="hb1213"> HB1213/SB994 </li>
+                  <li data-jump="hb1213"> HB1213/SB994 </li>
+                  <li data-jump="hb1213"> HB1213/SB994 </li>
+                  <li data-jump="hb1213"> HB1213/SB994 </li>                
+                </ul>
+              </div>
+              <div class="span-50 right">
+                <ul>
+                  <li data-jump="hb1213"> HB1213/SB994 </li>
+                  <li data-jump="hb1213"> HB1213/SB994 </li>
+                  <li data-jump="hb1213"> HB1213/SB994 </li>
+                  <li data-jump="hb1213"> HB1213/SB994 </li>
+                  <li data-jump="hb1213"> HB1213/SB994 </li>
+                  <li data-jump="hb1213"> HB1213/SB994 </li>
+                  <li data-jump="hb1213"> HB1213/SB994 </li>
+                  <li data-jump="hb1213"> HB1213/SB994 </li>
+                  <li data-jump="hb1213"> HB1213/SB994 </li>
+                  <li data-jump="hb1213"> HB1213/SB994 </li>
+                  <li data-jump="hb1213"> HB1213/SB994 </li>
+                  <li data-jump="hb1213"> HB1213/SB994 </li>                
+                </ul>
+              </div>
+            </div>
+          </div> -->
+
+
+        </div>
+ 
+         <div id="bill-nav">
+            <div> Jump to: </div>
+            <ul>
+              <li>Statewide</li>
+              <li>City</li>
+              <li>County</li>
+              <li>Harford</li>
+              <li>Howard</li>
+            </ul>
+          </div>
+
+    <div class="page-header">
+      <div><span class="icon-star"></span>&nbsp;<span class="icon-star"></span> &nbsp; </div>
+    </div>
+
+       
+        <header class="section-header democrat">
+		Statewide
+          <div class="header-underline"></div>           
+<P>Statewide, Maryland voters are asked to consider two constitutional amendments. The first would put state transportation <a href="http://www.baltimoresun.com/news/maryland/politics/campaign-2014/bs-md-transportation-lockbox-20140920-story.html" target="_blank">funds in a “lockbox,”</a> making it harder for legislators to divert the money to other purposes. The second would give Baltimore and Maryland’s 23 counties the legal authority to hold a <a href="http://www.baltimoresun.com/news/maryland/politics/campaign-2014/bs-md-special-elections-20141023-story.html" target="_blank">special election for mayor or county executive</a>, if local lawmakers choose to enact such legislation.</p>
+        </header>
+
+        <div id="year-Statewide" class="bill blue">
+        <div class="bill-title">Question 1 - Non-Technical Summary</div>
+          <div class="bill-desc">Constitutional Amendment (Ch. 261 of the 2014 Legislative Session)</div>
+          <div class="bill-desc">Transportation Trust Fund – Use of Funds</div>
+          <div class="bill-desc">Amending Article III by adding Section 53 to the Maryland Constitution</div>
+<p class="emphasis blue">For or against:</p><p>	Limits the use of Transportation Trust Funds to the payment of principal and interest on transportation bonds and for constructing and maintaining an adequate highway system or any other transportation-related purpose. Also prohibits the transfer of Transportation Trust Funds into the General Fund or a special fund of the State, except for: (1) an allocation or use of highway user revenues for local governments or (2) a transfer of funds to the Maryland Transportation Authority or the Maryland Transportation Authority Fund. Transportation Trust Funds may be used for non-transportation related purposes or transferred to the general fund or a special fund only if the Governor declares a fiscal emergency and the General Assembly approves legislation, by a three-fifths vote of both houses, concurring with the use or transfer of the funds.</p>
+
+          <hr><div class="bill-title">Question 2 - Non-Technical Summary</div>
+          <div class="bill-desc">Constitutional Amendment (Ch. 422 of the 2013 Legislative Session) </div>
+          <div class="bill-desc">Special Election to fill Vacancy in Office of Chief Executive Officer or County Executive</div>
+          <div class="bill-desc">Amending Article III by adding Section 53 to the Maryland Constitution</div>
+<p class="emphasis blue">For or against:</p><p>Authorizes charter counties to provide for special elections to fill a vacancy in the office of chief executive officer or county executive, and exempts a special election to fill a vacancy in the office of chief executive officer or county executive of a charter county from the constitutional requirement that elections for State and county officers be held on a specified four-year cycle. Under existing law, charter counties may only authorize special elections to fill vacancies on the county council.</p>
+        </div>
+    
+    <header class="section-header democrat">
+		Baltimore City
+          <div class="header-underline"></div>            
+<P>In Baltimore, voters will be asked to approve $130 million in borrowing for construction of schools, recreation centers and museums.  Voters also will be asked to authorize the City Council to hire a lawyer independent from the City Solicitor’s office.  </p>
+        </header>
+        
+        <div id="year-City" class="bill blue">
+          <div class="bill-title">Question A</div>
+          <div class="bill-desc">Bond Issue - School Loan</div>
+			<p class="emphasis blue">For or against:</p><p>No. 14-251 to authorize the Mayor and City Council of Baltimore to borrow up to $34,000,000, to be used for the acquisition of land or property to construct and erect new school buildings, athletic and auxiliary facilities; and for additions and improvements to or modernization or reconstruction of existing school buildings or facilities; and to equip all buildings to be constructed, erected, improved, modernized, or reconstructed by the Ordinance; and for doing any and all things necessary, proper or expedient in connection therewith.</p>
+
+          <hr><div class="bill-title">Question B</div>
+          <div class="bill-desc">Bond Issue - Recreation and Parks and Public Facilities Loan</div>
+			<p class="emphasis blue">For or against:</p><p>Ordinance No. 14-254 to authorize the Mayor and City Council of Baltimore to borrow up to $47,000,000 to be used for the acquisition and development of property buildings owned and controlled by the Mayor and City Council of Baltimore, the Enoch Pratt Library and public park or recreation land, property, buildings, structures or facilities, for the construction, erection, renovation, alteration, reconstruction, installation, improvement and repair of buildings, structures, or facilities to be or now being used by or in connection with the operations, function and activities of the Mayor and City Council of Baltimore, the Enoch Pratt Free Library, public parks and recreational programs; for the acquisition and installation of trees, for tree planting programs and for the equipping of any and all existing and new buildings, structures, and facilities authorized to be constructed, renovated, altered or improved by this Ordinance; and for doing any and all things necessary, proper or expedient in connection therewith.</p>
+
+          <hr><div class="bill-title">Question C</div>
+          <div class="bill-desc">Bond Issue - Community and Economic Development Loan</div>
+			<p class="emphasis blue">For or against:</p><p>Ordinance No. 14-255 to authorize the Mayor and City Council of Baltimore to borrow up to $47,000,000 to be used for, or in connection with, planning, developing, executing and making operative the community, commercial, and industrial economic development programs of the Mayor and City Council of Baltimore and authorizing loans and grants therefore; authorizing loans and grants to various projects and programs related to improving cultural life and promotion of tourism in Baltimore City and for doing any and all things necessary, proper or expedient in connection therewith.</p>
+
+          <hr><div class="bill-title">Question D</div>
+          <div class="bill-desc">Bond Issue - Baltimore Museum of Art Loan</div>
+			<p class="emphasis blue">For or against:</p><p>Ordinance No. 14-252 to authorize the Mayor and City Council of Baltimore to borrow up to $400,000 to be used for the acquisition of land or property; and for the construction, erection, renovation, alteration, reconstruction, installation, improvement and repair of buildings, structures, or facilities to be or now being used by or in connection with the Baltimore Museum of Art; and for the equipping of any and all existing and new buildings, Structures, and facilities authorized to be constructed, renovated, altered or improved by this Ordinance; and for doing all things necessary, proper or expedient in connection therewith.</p>
+
+          <hr><div class="bill-title">Question E</div>
+          <div class="bill-desc">Bond Issue - Baltimore Museum of Art Loan</div>
+			<p class="emphasis blue">For or against:</p><p>Ordinance No. 14-250 to authorize the Mayor and City Council of Baltimore to borrow up to $400,000 to be used for the acquisition of land or property; and for the construction, erection, renovation, alteration, reconstruction, installation, improvement and repair of buildings, structures, or facilities to be or now being used by or in connection with the operations, functions and activities of the Walters Art Museum; and for the equipping of any and all existing and new buildings, structures, and facilities authorized to be constructed, renovated, altered or improved by this Ordinance; and for doing all things necessary, proper or expedient in connection therewith.</p>
+
+          <hr><div class="bill-title">Question F</div>
+          <div class="bill-desc">Bond Issue - Port Discovery Children's Museum Loan</div>
+			<p class="emphasis blue">For or against:</p><p>Ordinance No. 14-253 to authorize the Mayor and City Council of Baltimore to borrow up to $400,000 to be used for the acquisition of land or property; and for the construction, erection, renovation, alteration, reconstruction, installation, improvement and repair of buildings, structures, or facilities to be or now being used by or in connection with the Port Discovery Children’s Museum; and for the equipping of any and all existing and new buildings, structures, and facilities authorized to be constructed, renovated, altered or improved by this Ordinance; and for doing all things necessary, proper or expedient in connection therewith.</p>
+
+          <hr><div class="bill-title">Question G</div>
+          <div class="bill-desc">Bond Issue - National Aquarium at Baltimore</div>
+			<p class="emphasis blue">For or against:</p><p>Ordinance No. 14-249 to authorize the Mayor and City Council of Baltimore to borrow up to $800,000 to be used for the acquisition of land or property; and for the construction, erection, renovation, alteration, reconstruction, installation, improvement and repair of buildings, structures, or facilities to be used by or in connection with the National Aquarium in Baltimore; and for the equipping of any and all existing and new buildings, structures, and facilities authorized to be constructed, renovated, altered or improved by this Ordinance; and for doing all things necessary, proper or expedient in connection therewith.</p>
+
+          <hr><div class="bill-title">Question H</div>
+          <div class="bill-desc">Charter Amendment - City Council - Independent Counsel</div>
+			<p class="emphasis blue">For or against:</p><p>Resolution No. 13-13 for the purpose of authorizing the City Council to retain the services of independent legal counsel; providing for the qualifications and term of that counsel; specifying the duties of that counsel; and providing for the counsel’s compensation and expenses.</p>
+
+          <hr><div class="bill-title">Question I</div>
+          <div class="bill-desc">Charter Amendment - Multi-Year Collective Bargaining</div>
+			<p class="emphasis blue">For or against:</p><p>Resolution 14-14 for the purpose of authorizing the Board of Estimates to approve multi-year collective bargaining agreements with certain unions, subject to certain conditions; providing for the funding of those agreements and conforming and clarifying related language.</p>
+
+          <hr><div class="bill-title">Question J</div>
+          <div class="bill-desc">Charter Amendment - Transfer of Powers and Duties</div>
+			<p class="emphasis blue">For or against:</p><p>Resolution 14-0377 for the purpose of transferring from the Department of General Services to the Department of Transportation certain Charter powers and duties relating to streets and rights-of-way, including the approval of new streets, the naming or renaming of streets, the opening and closing of streets, the numbering of buildings, the preparation of street plats and plans, and the maintenance of plats and records of all parcels of real property and underground structures, and the maintenance a system of uniform property identification.</p>
+	      </div>
+
+    <header class="section-header democrat">
+		Baltimore County
+          <div class="header-underline"></div>            
+		<P>Baltimore County voters will be asked to approve nearly $268 million in borrowing. Among funds requested are: $157 million for public schools operations and facilities; more than $46 million for public works; $28.5 million for county buildings; and $10 million for community improvement projects. Voters are also asked to decide on a law that changes zoning regulations to allow adaptive reuse of historic buildings. </p>
+        </header>
+        
+	   <div id="year-County" class="bill blue">
+          <div class="bill-title">Question A</div>
+          <div class="bill-desc">County Ordinance - Time for Submission of County Budget</div>
+			<p class="emphasis blue">For or against:</p><p>AN ORDINANCE to authorize and empower Baltimore County, Maryland to borrow $157,899,000 for public school buildings, buildings for school purposes, buildings to support operations, and public school operations and projects to be undertaken pursuant to Sections 705(a) and 718 of the Baltimore County Charter. (Bill 31-14)</p>
+<hr>
+		<hr><div class="bill-title">Question B</div>
+          <div class="bill-desc">County Ordinance - Parks, Preservation and Greenways Borrowing</div>
+			<p class="emphasis blue">For or against:</p><p>AN ORDINANCE to authorize and empower Baltimore County, Maryland to borrow $4,000,000 for parks, preservation and greenways projects to be undertaken pursuant to Sections 705(a) and 718 of the Baltimore County Charter. (Bill 30-14)</p>
+
+
+          <hr><div class="bill-title">Question C</div>
+          <div class="bill-desc">County Ordinance - Public Works Borrowing</div>
+			<p class="emphasis blue">For or against:</p><p>AN ORDINANCE to authorize and empower Baltimore County, Maryland to borrow $46,370,000 for public works purposes, for the class of projects which includes, among other things, streets and highways, bridges and storm drainage systems, to be undertaken pursuant to Sections 705(a) and 718 of the Baltimore County Charter. (Bill 28-14)</p>
+
+          <hr><div class="bill-title">Question D</div>
+          <div class="bill-desc">County Ordinance - Community Improvement Project Borrowing</div>
+			<p class="emphasis blue">For or against:</p><p>AN ORDINANCE to authorize and empower Baltimore County, Maryland to borrow $10,000,000 for community improvement projects to be undertaken pursuant to Sections 705(a) and 718 of the Baltimore County Charter. (Bill 33-14)</p>
+
+          <hr><div class="bill-title">Question E</div>
+          <div class="bill-desc">County Ordinance - Operational Buildings Borrowing</div>
+			<p class="emphasis blue">For or against:</p><p>AN ORDINANCE to authorize and empower Baltimore County, Maryland to borrow $28,500,000 for public operational buildings including, but not limited to, general, health, police, fire, recreation, libraries, senior center and detention buildings or facilities and necessary or desirable equipment, to be undertaken pursuant to Sections 705(a) and 718 of the Baltimore County Charter. (Bill 29-14)</p>
+
+          <hr><div class="bill-title">Question F</div>
+          <div class="bill-desc">County Ordinance - Refuse Disposal Borrowing</div>
+			<p class="emphasis blue">For or against:</p><p>AN ORDINANCE to authorize and empower Baltimore County, Maryland to borrow $11,930,000 for refuse disposal projects to be undertaken pursuant to Sections 705(a) and 718 of the Baltimore County Charter. (Bill 26-14)</p>
+
+          <hr><div class="bill-title">Question G</div>
+          <div class="bill-desc">County Ordinance - Community College Borrowing</div>
+			<p class="emphasis blue">For or against:</p><p>AN ORDINANCE to authorize and empower Baltimore County, Maryland to borrow $15,000,000 for community college projects to be undertaken pursuant to Sections 705(a) and 718 of the Baltimore County Charter. (Bill 27-14)</p>
+
+          <hr><div class="bill-title">Question H</div>
+          <div class="bill-desc">County Ordinance - Agricultural and Rural Land Preservation Borrowing</div>
+			<p class="emphasis blue">For or against:</p><p>AN ORDINANCE to authorize and empower Baltimore County, Maryland to borrow $2,000,000 for agricultural and rural land preservation projects to be undertaken pursuant to Sections 705(a) and 718 of the Baltimore County Charter. (Bill 32-14)</p>
+
+          <hr><div class="bill-title">Question I</div>
+          <div class="bill-desc">County Ordinance - Waterway Improvement Program Borrowing</div>
+			<p class="emphasis blue">For or against:</p><p>AN ORDINANCE to authorize and empower Baltimore County, Maryland to borrow $2,000,000 for waterway improvement projects to be undertaken pursuant to Sections 705(a) and 718 of the Baltimore County Charter. (Bill 34-14)</p>
+
+          <hr><div class="bill-title">Question J</div>
+          <div class="bill-desc">Local Referendum by Petition - Bill 76-12: Zoning Regulations - Manufacturing, Heavy (M.H.) Zone Regulations - Adaptive Reuse of Historic Buildings</div>
+			<p class="emphasis blue">For or against:</p><p>Bill 76-12 provides that a tract of land located in a Manufacturing, Heavy (M.H.) Zone that is at least 40 acres in size and includes an existing building identified as an historic property may be developed and used in accordance with the use, height, and area regulations for the B.M. Zone or the special regulations for C.T. Districts as long as the development proposal includes the retention of at least a portion of the existing historic building.</p>
+	      </div>
+    <header class="section-header democrat">
+		Harford County
+          <div class="header-underline"></div>            
+		<P>In Harford, voters are asked to vote on a charter amendment to expand duties of the county auditor to permit operational and performance audits, in addition to financial audits. It also clarifies that the auditor can inspect records of any agency or organization that receives county funds. Voters are also asked to vote on a charter amendment that, if approved, would remove classified protections for deputy department directors, making them at-will employees who serve at the pleasure of the county executive, subject to their appointments being confirmed by the county council.</p>
+        </header>
+
+
+	   <div id="year-Harford" class="bill blue">
+          <div class="bill-title">Question A</div>
+          <div class="bill-desc">Charter Amendment - Auditor Duties</div>
+			<p class="emphasis blue">For or against:</p><p>To Amend the Harford County Charter to identify offices subject to audit as well as allowing for operational and performance audits to be conducted by the County Auditor upon a majority vote of the County Council.</p>
+
+          <hr><div class="bill-title">Question B</div>
+          <div class="bill-desc">Charter Amendment - Deputy Directors in the Executive Branch</div>
+			<p class="emphasis blue">For or against:</p><p>To Amend the Harford County Charter to include all Deputy Directors of the Executive Branch in the exempt services, making them non-classified and at-will employees. These positions shall be appointed by the County Executive and subject to confirmation by the County Council.
+</p>
+	      </div>
+    <header class="section-header democrat">
+		Howard County
+          <div class="header-underline"></div>            
+		<P>In Howard, voters are asked to consider a charter amendment that would give bills that come before the County Council a longer lifespan. The change would allow for two 30-day extensions beyond a bill's normal 65-day life, rather than one, the current limit.  </p>
+        </header>
+
+
+	   <div id="year-Howard" class="bill blue">
+          <div class="bill-title">Howard County - Question A</div>
+          <div class="bill-desc">Charter Amendment - Deputy Directors in the Executive Branch</div>
+			<p class="emphasis blue">For or against:</p><p>Amending the Howard County Charter to allow the County Council to approve, by vote of two-thirds of its members, a maximum of two 30-day extensions of the 65-day deadline for considering bills that are before the Council. Currently the Council is limited to one 30-day extension by a two-thirds vote.</p>
+	      </div>
+
+
+
+      </section> <!-- /bills -->
+
+
+
+
+    </div> <!-- /container -->
+
+
+<!-- START OMNITURE // hive:metrics-tribune -->
+<!-- SiteCatalyst code version: H.1.
+Copyright 1997-2005 Omniture, Inc. More info available at
+http://www.omniture.com -->
+
+
+
+<script type="text/javascript">adblock=true;</script>
+<script type="text/javascript" src="http://www.baltimoresun.com/hive/javascripts/metrics/adframe.js"></script>
+<script type="text/javascript" src="http://www.baltimoresun.com/hive/javascripts/metrics/s_code_trb.js"></script>
+
+
+<script language="JavaScript">
+
+
+          s.pageName="Voter Guide 2014 - Baltimore Sun / news / maryland / politics - story."; 
+        
+        s.prop38="story";
+        s.eVar21="story";
+
+  s.server="www.baltimoresun.com"; 
+    s.channel="Baltimore Sun:news";
+
+s.prop3="";
+
+( function(){
+  if( window.registration && window.registration.user && window.registration.user.isLoggedIn()){
+    s.prop28 = registration.getMetricsId();
+  } else if ( window.carnival ) {
+      var carnival_username_c_unm = readCookie('c_unm');
+      var carnival_masterid_c_mid = carnival.metrics.getMetricsId();
+      if( carnival_username_c_unm!=null && carnival_masterid_c_mid ){
+        s.prop28 = carnival_masterid_c_mid;
+      }
+  }
+
+  if( !s.prop28 ){
+    s.prop28 = ""; 
+  }
+})();
+
+s.prop32="";
+ 
+s.prop36="Page 1";
+
+
+/* Taxonomy Variables */
+s.prop46="";
+
+/* E-commerce Variables */
+s.events=""; 
+
+
+/* P2P blog variables */
+
+  s.prop52=s.pageName;
+
+
+s.eVar20="Baltimore Sun";
+
+  s.hier1="Baltimore Sun:news:maryland:politics"; 
+    s.hier2="news:maryland:politics";
+    s.hier4="news:maryland:politics";
+  
+  
+        
+    s.eVar42="";
+  s.prop44="bal-voter-guide-2014-20140515";
+
+if(adblock)
+{
+  s.prop54="ad blocking";
+}
+
+
+s.prop64="05/15/2014 09:22";
+
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code) 
+-->  
+</script>
+<script language="JavaScript"><!--
+if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+//--></script><!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version: H.1. -->
+
+
+<!-- START REVENUE SCIENCE PIXELLING CODE -->
+<script src="http://js.revsci.net/gateway/gw.js?csid=B08725"></script>
+<script>
+DM_addEncToLoc("Site", (s.server));
+DM_addEncToLoc("channel", (s.channel));
+DM_addEncToLoc("keyword", (s.prop3));
+DM_cat(s.hier1);
+DM_tag();
+</script>
+<!-- END REVENUE SCIENCE PIXELLING CODE -->
+
+<script type="text/javascript">
+    (function() { 
+     var old = s.ot; 
+     s.ot = function(el) { 
+         return el.tagUrn ? '' : old(el); 
+     }; 
+  })(); 
+</script>
+
+
+<!-- Time: Thu May 15 06:28:17 PDT 2014-->
+
+
+<!-- START Nielsen Online SiteCensus V6.0 -->
+<!-- COPYRIGHT 2010 Nielsen Online -->
+<script type="text/javascript">
+  (function () {
+    var d = new Image(1, 1);
+    d.onerror = d.onload = function () {
+      d.onerror = d.onload = null;
+    };
+    d.src = ["//secure-us.imrworldwide.com/cgi-bin/m?ci=us-400338h&cg=0&cc=1&si=", escape(window.location.href), "&rp=", escape(document.referrer), "&ts=compact&rnd=", (new Date()).getTime()].join('');
+  })();
+</script>
+<noscript>
+  <div>
+    <img src="//secure-us.imrworldwide.com/cgi-bin/m?ci=us-400338h&amp;cg=0&amp;cc=1&amp;ts=noscript"
+    width="1" height="1" alt="" />
+  </div>
+</noscript>
+<!-- END Nielsen Online SiteCensus V6.0 -->
+
+      
+
+  </body>
+</html>

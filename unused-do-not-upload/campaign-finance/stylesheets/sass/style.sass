@@ -1,0 +1,140 @@
+@import "mixins"
+
+/********* FONTS **********/
+
+$georgia: Georgia, Times, serif
+$adelle: Adelle, serif
+$arial: Arial, sans-serif
+$font-awesome: font-awesome
+
+/********* COLORS **********/
+
+$white: #fafafa
+$black: #333
+$gray: #dadada
+$blue: #2c2f78
+$red: #d52027
+
+/********* VARIABES **********/
+
+$graph-img-width: 127px
+
+/********* SITE STYLES ***********/
+
+body
+	background-color: white
+
+#main-container
+	width: 950px
+	//border: 1px solid black
+	margin: 0 auto	
+
+header
+	margin: 50px 0 0 0
+
+#masthead
+	width: 100%
+	text-align: center
+	font-family: $adelle
+	font-size: 19px
+	color: $black
+	border-bottom: 2px solid $gray
+	margin: 0 auto 
+	span 
+		text-transform: uppercase
+		font-size: 18px
+		font-family: $font-awesome
+		letter-spacing: 0.09em
+		color: $black
+		width: 580px
+		background-color: $white
+		text-align: center
+		i.fa-star
+			margin-left: 8px
+
+#chatter
+	margin: 15px 0 0 0 
+	font-family: $georgia
+	font-size: 19px 
+	line-height: 25px
+	color: $black
+
+#graph-x-axis
+	width: $graph-img-width * 7.5
+	//border: 1px solid blue
+	margin-left: 50px
+
+.graph-details
+	width: $graph-img-width
+	//border: 1px solid blue
+	float: left
+	text-align: center
+	font-size: 14px
+	font-family: sans-serif
+	font-weight: bold
+	cursor: pointer
+	opacity: .5
+	&:hover
+		opacity: 10		
+
+.selected
+	opacity: 10
+
+.graph-name
+	background-color: $gray	
+	height: 25px
+	border-right: 1px solid black
+	&:last-child
+		border-right: none
+
+.graph-img 
+	margin: 15px 0 0 0 
+	padding: 0 0 15px 0 
+	border-bottom: 1px solid $gray
+	-webkit-transition: opacity 0.5s
+	-moz-transition: opacity 0.5s
+	transition: opacity 0.5s
+	img
+		&:hover
+			opacity: 1
+
+
+#donut-container
+	float: left
+	width: 590px
+	margin: 55px 0 0 0 
+
+#legend-container
+	float: left 
+	width: 300px
+	padding: 0 0 10px 0
+	border: 3px solid black
+	margin: 195px 0 0 20px 
+
+.legend-details
+	margin: 25px
+	clear: both
+
+.square
+	float: left
+	width: 25px 
+	height: 25px
+	border: 1px solid black
+
+.label	
+	float: left
+	font-family: $arial
+	font-size: 14px
+	color: $black
+	margin: 5px 10px 10px 10px
+
+#source
+	font-family: $arial
+	font-size: 13px
+	text-align: left
+	line-height: 14px
+	color: $black
+	padding: 30px 0 30px 0 
+	clear: both
+	border-top: 1px solid $gray
+

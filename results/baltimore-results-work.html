@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en"> <!--<![endif]-->
+  <head>
+
+    	<!-- Basic Page Needs
+      ================================================== -->
+      <meta charset="utf-8">
+      <title>Baltimore City Primary Election Results: Baltimore Sun Voter Guide</title>
+      <meta name="description" content="">
+      <meta name="author" content="">
+
+    	<!-- Mobile Specific Metas
+      ================================================== -->
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+
+  <!-- Page Refresh -->
+      <meta http-equiv="refresh" content="180" >
+
+
+      <!-- Javascript
+      ================================================== -->
+
+
+      <!--[if lt IE 9]>
+      <script src="html5shiv.js"></script>
+      <![endif]-->
+
+      <!-- <script src="scripts/modernizr.js"> </script> -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+      <script language="javascript" src="../scripts/jquery.easing.1.3.js"> </script>
+
+
+      <!-- CSS
+      ================================================== -->
+
+      <link rel="stylesheet" type="text/css" href="../stylesheets/base.css" />
+      <link rel="stylesheet" type="text/css" href="../stylesheets/fonts.css" />
+      <link rel="stylesheet" type="text/css" href="../stylesheets/style.css" />
+
+      <!--BOOTSTRAP and MORE JS
+      ================================================== -->
+      <link rel="stylesheet" href="../stylesheets/bootstrap.min.css">
+      <script src="../scripts/bootstrap.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="../stylesheets/buttons.css" />
+      <link rel="stylesheet" type="text/css" href="../stylesheets/results.css" />
+
+      <script src="//www.google.com/jsapi?key=AIzaSyA5m1Nc8ws2BbmPRwKu5gFradvD_hgq6G0" type="text/javascript"></script>
+      <script src="../scripts/google-rss.js"></script>
+      <script>
+
+        //News RSS feed
+        var feed_url = "http://www.baltimoresun.com/news/maryland/politics/rss2.0.xml";
+        //Load the url
+        google.setOnLoadCallback(function(){
+          on_load(feed_url);
+        });
+
+      </script>
+      <script language="javascript" src="../scripts/results-w-winner.js"> </script>
+      <script language="javascript" src="../scripts/javascript.js"> </script>
+      <script language="javascript" src="../scripts/jquery.scrollTo-1.4.3.1-min.js"> </script>
+
+
+
+    <!-- FONTS
+      ================================================== -->
+
+      <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900' rel='stylesheet' type='text/css'>
+
+      <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <![endif]-->
+
+   
+       <!-- Facebook Stuff -->
+
+      <meta property="og:title" content="Maryland Primary Election Results: Baltimore Sun Voter Guide" />
+      <meta property="og:url" content="http://data.baltimoresun.com/voter-guide-2016/results/baltimore-results.html" />
+      <meta property="og:image" content="http://data.baltimoresun.com/voter-guide-2016/images/voter-guide-square.png" />
+
+      <!-- /Facebook Stuff -->
+
+      <!-- TWITTER STUFF -->
+
+      <meta name="twitter:card" content="summary">
+      <meta name="twitter:site" content="@baltimoresun">
+      <meta name="twitter:creator" content="">
+      <meta name="twitter:title" content="Maryland Primary Election Results: Baltimore Sun Voter Guide">
+      <meta name="twitter:description" content="See primary election results for Maryland in the Baltimore Sun's Voter Guide:">
+      <meta name="twitter:image" content="http://data.baltimoresun.com/voter-guide-2016/images/voter-guide-square.png">
+      <meta name="twitter:domain" content="baltimoresun.com">
+
+
+
+
+
+      <!-- Baltimore Sun Ad Scripts -->
+
+      <!-- Start: GPT Async -->
+      <script type='text/javascript'>
+        var gptadslots=[];
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+        (function(){ var gads = document.createElement('script');
+          gads.async = true; gads.type = 'text/javascript';
+          var useSSL = 'https:' == document.location.protocol;
+          gads.src = (useSSL ? 'https:' : 'http:') + '//www.googletagservices.com/tag/js/gpt.js';
+          var node = document.getElementsByTagName('script')[0];
+          node.parentNode.insertBefore(gads, node);
+        })();
+      </script>
+
+      <!-- /Baltimore Sun Ad Scripts -->
+
+
+
+      <!-- Baltimore Sun Omniture -->
+
+          <script>  
+          ((((window.trb || (window.trb = {})).data || (trb.data = {})).metrics || (trb.data.metrics = {})).thirdparty = {  
+          pageName: 'bs:data:news:maryland:politics:voter-guide-2016-results-city:dataproject.', 
+          channel: 'news:maryland:politics',  
+          server: 'data.baltimoresun.com',  
+          hier1: 'baltimoresun:news:maryland:politics', 
+          hier2: 'news:maryland:politics',  
+          prop1: 'D=pageName',  
+          prop2: 'news',  
+          prop38: 'dataproject',  
+          prop57: 'D=c38',  
+          eVar20: 'baltimoresun', 
+          eVar21: 'D=c38',  
+          eVar34: 'D=ch', 
+          eVar35: 'D=pageName', 
+          events:'' 
+            
+          });   
+          </script> 
+
+      <!-- /Baltimore Sun Omniture -->
+
+
+      <!-- Page loading scripts -->
+
+        <script type="text/javascript"> 
+
+        //Write the twitter and facebook message for buttons
+        var socialMessage = "See primary election results for Maryland in the Baltimore Sun's Voter Guide:";
+            //This populates the page with the correct json data and social message
+
+            $(document).ready(function(){
+            share(socialMessage);
+            //populateData(CouncilDistrict1);
+           });
+
+
+
+      //smooth scroll;
+        $(function() {
+          $('a[href*="#"]:not([href="#"])').click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+              var target = $(this.hash);
+              target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+              if (target.length) {
+                $('html, body').animate({
+                  scrollTop: target.offset().top
+                }, 1000);
+                return false;
+              }
+            }
+          });
+        });
+
+
+
+
+/* Define and populate races */
+
+mayorFeed = "results-city-final.json";
+councilFeed  = "results-city-final.json";
+
+
+$(document).ready(function(){
+
+      raceResults(mayorFeed, 22221, "#mayor-dem");
+      raceResults(mayorFeed, 22222, "#mayor-rep");
+     raceResults(councilFeed, 22237, "#councilpres-dem");
+      raceResults(councilFeed, 22238, "#councilpres-rep");
+     raceResults(councilFeed, 22225, "#council1-dem");
+      raceResults(councilFeed, 22226, "#council1-rep");
+       raceResults(councilFeed, 22227, "#council2-dem");
+      raceResults(councilFeed, 22229, "#council3-dem");
+      raceResults(councilFeed, 22231, "#council4-dem");;
+      raceResults(councilFeed, 22233, "#council5-dem");
+      raceResults(councilFeed, 22235, "#council6-dem");
+      raceResults(councilFeed, 22585, "#council7-dem");;
+      raceResults(councilFeed, 22588, "#council8-dem");
+      raceResults(councilFeed, 22589, "#council8-rep");
+      raceResults(councilFeed, 22590, "#council9-dem");
+            raceResults(councilFeed, 22648, "#council9-rep");
+      raceResults(councilFeed, 22591, "#council10-dem");
+      raceResults(councilFeed, 22649, "#council10-rep");
+      raceResults(councilFeed, 22592, "#council11-dem");
+      raceResults(councilFeed, 22596, "#council12-dem");
+      raceResults(councilFeed, 22593, "#council13-dem");
+      raceResults(councilFeed, 22594, "#council14-dem");
+ });
+      
+          </script>
+
+
+ <!-- /Page loading scripts -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </head>
+  <body>
+
+     <!--omniture call-->
+  <script src="http://www.baltimoresun.com/thirdpartyservice?disablenav=true&disablessor=true" async></script>  
+  <div data-trb-thirdpartynav></div>  
+
+    <div id="top-bar"> <!--tophat-->
+      <div id="top-bar-content">
+          <div id="mobile-nav">
+            <span class="icon-menu"></span><span class="text">SECTIONS</span>
+          </div>
+                 <div id="mobile-nav-drop">
+            <ul class="nav-links">
+
+           </ul>
+          </div>
+          <div id="star-and-logo">
+            <div class="election-center-logo blue"><a class="full" href="http://data.baltimoresun.com/voter-guide-2016/"></a>VOTER</div>
+            <div id="top-bar-star"><a class="full" href="http://data.baltimoresun.com/voter-guide-2016/"></a><span class="icon-star"></span></div>
+            <div class="election-center-logo red"><a class="full" href="http://data.baltimoresun.com/voter-guide-2016/"></a>GUIDE</div>
+          </div>
+          <div id="top-nav">
+            <ul class="nav-links">
+              
+           </ul>
+          </div>
+          <a href="http://www.baltimoresun.com"><img border="0" id="top-sun-logo" src="../images/header-sun-logo.png" width="190" /></a>
+
+      </div>
+    </div>
+
+      
+     <div id="leaderboard-ad">    <!-- leaderboard ad-->
+        <script type="text/javascript">
+              googletag.cmd.push(function() {
+
+                //Adslot 1 declaration
+                gptadslots[1]= googletag.defineSlot('/4011/trb.baltimoresun/news', [[728,90]],'div-gpt-ad-785317941620082696-1').setTargeting('pos',['1']).addService(googletag.pubads());
+
+                googletag.pubads().setTargeting('ptype',['s']);
+                googletag.pubads().enableAsyncRendering();
+                googletag.enableServices();
+              });
+            </script>
+            <!-- End: GPT -->
+
+            <!-- Beginning Async AdSlot 1 for Ad unit trb.baltimoresun/news  ### size: [[728,90]] -->
+            <!-- Adslot's refresh function: googletag.pubads().refresh([gptadslots[1]]) -->
+            <div id='div-gpt-ad-785317941620082696-1'>
+              <script type='text/javascript'>
+                googletag.cmd.push(function() { googletag.display('div-gpt-ad-785317941620082696-1'); });
+              </script>
+            </div>
+            <!-- End AdSlot 1 -->
+      </div>
+
+
+
+    <div id="page-header">  <!-- stars logo-->
+
+      <div id="page-header-text"><span class="icon-star mobile-hide"></span> &nbsp;<span class="icon-star"></span>&nbsp;&nbsp;PRIMARY RESULTS &nbsp;&nbsp;<span class="icon-star"></span> &nbsp;<span class="icon-star mobile-hide"></span> </div>
+
+    </div>
+
+
+    <div id="social-icons">
+      <span class="icon-facebook top"></span><span class="icon-twitter top"></span>
+  </div>
+
+
+    <div class="container">
+
+        <section class="group" id="race-page-top">
+
+              <!-- race title --><h1 class="section-header-race blue">BALTIMORE PRIMARY ELECTION RESULTS<!--TEST DATA--></h1>
+              
+              <div class="btn-group">
+                          <a href="maryland-results.html" target="_new" class="btn btn-primary btn-lg selected" type="button">
+                            FEDERAL ELECTION RESULTS
+                          </a>
+              </div> <br><br>    
+            
+
+              <!-- choose candidate --><section class="group" id="race-candidate-div">JUMP TO: <span id="race-candidate-nav"><a href="#mayor">Baltimore Mayor</a> | <a href="#council">Baltimore City Council</a> | <a href="maryland-results.html">Federal Results</a></span></section>
+
+      </section>
+
+                    <span class="updated"></span>
+
+
+      <section id="mayor" class="group"><!-- mayor section -->
+
+            <div id="updated"></div>
+
+              <h2 class="section-header-results grey">BALTIMORE MAYOR</h2>
+
+              <h3  class="blue">Democratic Primary</h3>
+
+
+ 
+          <!-- single dynamic race result-->     
+
+                    <table>
+                      <tr>
+                        <td class="candidate">CANDIDATE</td>
+                        <td class="party-col">PARTY</td>
+                        <td class="votes">VOTES</td>
+                        <td class="percent">PERCENT</td>            
+                      </tr>
+                    </table>
+                    
+                    <span id="mayor-dem" class="dem"></span>
+            <!-- end -->
+
+
+              <h3  class="red">Republican Primary</h3>
+
+
+
+ 
+          <!-- single dynamic race result-->     
+
+                    <table>
+                      <tr>
+                        <td class="candidate">CANDIDATE</td>
+                        <td class="party-col">PARTY</td>
+                        <td class="votes">VOTES</td>
+                        <td class="percent">PERCENT</td>            
+                      </tr>
+                    </table>
+                    
+                    <span id="mayor-rep" class="rep"></span>
+            <!-- end -->
+
+
+      </section> <!-- /mayor section -->
+
+
+
+
+
+
+
+      <section id="council" class="group"><!-- council section -->
+
+              <h2 class="section-header-results grey">BALTIMORE CITY COUNCIL RACES</h2>
+
+           <div class="btn-group" id="testing">
+                <button class="btn btn-primary btn-lg dropdown-toggle" id="chooseDistrict" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     Choose district <span class="caret"></span>
+                </button>
+                
+                <ul class="dropdown-menu">
+                  <li><a href="#council-president" >President</a></li>
+                  <li><a href="#council-district1" >District 1</a></li>
+                  <li><a href="#council-district2" >District 2</a></li>
+                  <li><a href="#council-district3" >District 3</a></li>
+                  <li><a href="#council-district4" >District 4</a></li>
+                  <li><a href="#council-district5" >District 5</a></li>
+                  <li><a href="#council-district6" >District 6</a></li>
+                  <li><a href="#council-district7" >District 7</a></li>
+                  <li><a href="#council-district8" >District 8</a></li>
+                  <li><a href="#council-district9" >District 9</a></li>
+                  <li><a href="#council-district10" >District 10</a></li>
+                  <li><a href="#council-district11" >District 11</a></li>
+                  <li><a href="#council-district12" >District 12</a></li>
+                  <li><a href="#council-district13" >District 13</a></li>
+                  <li><a href="#council-district14" >District 14</a></li>
+                </ul>
+
+              </div>
+
+
+              <div id="council-president">
+
+                    <h3  class="grey district">CITY COUNCIL PRESIDENT</h3>
+
+
+                    <h3  class="blue">Democratic Primary</h3>
+
+          <!-- single dynamic race result-->     
+
+                    <table>
+                      <tr>
+                        <td class="candidate">CANDIDATE</td>
+                        <td class="party-col">PARTY</td>
+                        <td class="votes">VOTES</td>
+                        <td class="percent">PERCENT</td>            
+                      </tr>
+                    </table>
+                    
+                    <span id="councilpres-dem" class="dem"></span>
+
+            <!-- end -->
+
+
+                    <h3  class="red">Republican Primary</h3>
+
+    
+          <!-- single dynamic race result-->     
+
+                    <table>
+                      <tr>
+                        <td class="candidate">CANDIDATE</td>
+                        <td class="party-col">PARTY</td>
+                        <td class="votes">VOTES</td>
+                        <td class="percent">PERCENT</td>            
+                      </tr>
+                    </table>
+                    
+                    <span id="councilpres-rep" class="rep"></span>
+
+            <!-- end -->
+
+
+          </div>
+
+
+              <div id="council-district1">
+
+                    <h3  class="grey district">CITY COUNCIL DISTRICT 1</h3>
+
+
+                    <h3  class="blue">Democratic Primary</h3>
+
+          <!-- single dynamic race result-->     
+
+                    <table>
+                      <tr>
+                        <td class="candidate">CANDIDATE</td>
+                        <td class="party-col">PARTY</td>
+                        <td class="votes">VOTES</td>
+                        <td class="percent">PERCENT</td>            
+                      </tr>
+                    </table>
+                    
+                    <span id="council1-dem" class="dem"></span>
+
+            <!-- end -->
+
+
+                    <h3  class="red">Republican Primary</h3>
+
+    
+
+          <!-- single dynamic race result-->     
+
+                    <table>
+                      <tr>
+                        <td class="candidate">CANDIDATE</td>
+                        <td class="party-col">PARTY</td>
+                        <td class="votes">VOTES</td>
+                        <td class="percent">PERCENT</td>            
+                      </tr>
+                    </table>
+                    
+                    <span id="council1-rep" class="rep"></span>
+
+            <!-- end -->
+
+
+          </div>
+
+
+
+              <div id="council-district2">
+
+                    <h3  class="grey district">CITY COUNCIL DISTRICT 2</h3>
+
+
+                    <h3  class="blue">Democratic Primary</h3>
+
+    
+          <!-- single dynamic race result-->     
+
+                    <table>
+                      <tr>
+                        <td class="candidate">CANDIDATE</td>
+                        <td class="party-col">PARTY</td>
+                        <td class="votes">VOTES</td>
+                        <td class="percent">PERCENT</td>            
+                      </tr>
+                    </table>
+                    
+                    <span id="council2-dem" class="dem"></span>
+
+            <!-- end -->
+<!--
+
+                    <h3  class="red">Republican Primary</h3>
+
+    
+
+                    <table>
+                      <tr>
+                        <td class="candidate">CANDIDATE</td>
+                        <td class="party-col">PARTY</td>
+                        <td class="votes">VOTES</td>
+                        <td class="percent">PERCENT</td>            
+                      </tr>
+                    </table>
+                    
+                    <span id="council2-rep" class="rep"></span>
+
+-->
+
+          </div>
+
+
+              <div id="council-district3">
+
+                    <h3  class="grey district">CITY COUNCIL DISTRICT 3</h3>
+
+
+                    <h3  class="blue">Democratic Primary</h3>
+
+    
+          <!-- single dynamic race result-->     
+
+                    <table>
+                      <tr>
+                        <td class="candidate">CANDIDATE</td>
+                        <td class="party-col">PARTY</td>
+                        <td class="votes">VOTES</td>
+                        <td class="percent">PERCENT</td>            
+                      </tr>
+                    </table>
+                    
+                    <span id="council3-dem" class="dem"></span>
+
+            <!-- end -->
+
+
+<!--
+                    <h3  class="red">Republican Primary</h3>
+  
+
+                    <table>
+                      <tr>
+                        <td class="candidate">CANDIDATE</td>
+                        <td class="party-col">PARTY</td>
+                        <td class="votes">VOTES</td>
+                        <td class="percent">PERCENT</td>            
+                      </tr>
+                    </table>
+                    
+                    <span id="council3-rep"></span>
+
+            -->
+
+
+          </div>
+
+
+              <div id="council-district4">
+
+                    <h3  class="grey district">CITY COUNCIL DISTRICT 4</h3>
+
+
+                    <h3  class="blue">Democratic Primary</h3>
+
+    
+          <!-- single dynamic race result-->     
+
+                    <table>
+                      <tr>
+                        <td class="candidate">CANDIDATE</td>
+                        <td class="party-col">PARTY</td>
+                        <td class="votes">VOTES</td>
+                        <td class="percent">PERCENT</td>            
+                      </tr>
+                    </table>
+                    
+                    <span id="council4-dem" class="dem"></span>
+
+            <!-- end -->
+<!--
+
+                    <h3  class="red">Republican Primary</h3>
+
+    
+   
+                    <table>
+                      <tr>
+                        <td class="candidate">CANDIDATE</td>
+                        <td class="party-col">PARTY</td>
+                        <td class="votes">VOTES</td>
+                        <td class="percent">PERCENT</td>            
+                      </tr>
+                    </table>
+                    
+                    <span id="council4-rep" class="rep"></span>
+-->
+            <!-- end -->
+
+
+          </div>
+
+
+              <div id="council-district5">
+
+                    <h3  class="grey district">CITY COUNCIL DISTRICT 5</h3>
+
+
+                    <h3  class="blue">Democratic Primary</h3>
+
+          <!-- single dynamic race result-->     
+
+                    <table>
+                      <tr>
+                        <td class="candidate">CANDIDATE</td>
+                        <td class="party-col">PARTY</td>
+                        <td class="votes">VOTES</td>
+                        <td class="percent">PERCENT</td>            
+                      </tr>
+                    </table>
+                    
+                    <span id="council5-dem" class="dem"></span>
+
+            <!-- end -->
+
+<!--
+                    <h3  class="red">Republican Primary</h3>
+
+    
+   
+
+                    <table>
+                      <tr>
+                        <td class="candidate">CANDIDATE</td>
+                        <td class="party-col">PARTY</td>
+                        <td class="votes">VOTES</td>
+                        <td class="percent">PERCENT</td>            
+                      </tr>
+                    </table>
+                    
+                    <span id="council5-rep"></span>
+
+-->
+
+          </div>
+
+
+              <div id="council-district6">
+
+                    <h3  class="grey district">CITY COUNCIL DISTRICT 6</h3>
+
+
+                    <h3  class="blue">Democratic Primary</h3>
+
+          <!-- single dynamic race result-->     
+
+                    <table>
+                      <tr>
+                        <td class="candidate">CANDIDATE</td>
+                        <td class="party-col">PARTY</td>
+                        <td class="votes">VOTES</td>
+                        <td class="percent">PERCENT</td>            
+                      </tr>
+                    </table>
+                    
+                    <span id="council6-dem" class="dem"></span>
+
+            <!-- end -->
+
+
+<!--
+                    <h3  class="red">Republican Primary</h3>
+
+
+                    <table>
+                      <tr>
+                        <td class="candidate">CANDIDATE</td>
+                        <td class="party-col">PARTY</td>
+                        <td class="votes">VOTES</td>
+                        <td class="percent">PERCENT</td>            
+                      </tr>
+                    </table>
+                    
+                    <span id="council6-rep"></span>
+
+           -->
+
+
+          </div>
+
+
+              <div id="council-district7">
+
+                    <h3  class="grey district">CITY COUNCIL DISTRICT 7</h3>
+
+
+                    <h3  class="blue">Democratic Primary</h3>
+
+          <!-- single dynamic race result-->     
+
+                    <table>
+                      <tr>
+                        <td class="candidate">CANDIDATE</td>
+                        <td class="party-col">PARTY</td>
+                        <td class="votes">VOTES</td>
+                        <td class="percent">PERCENT</td>            
+                      </tr>
+                    </table>
+                    
+                    <span id="council7-dem" class="dem"></span>
+
+            <!-- end -->
+
+<!--
+                    <h3  class="red">Republican Primary</h3>
+
+    
+                    <table>
+                      <tr>
+                        <td class="candidate">CANDIDATE</td>
+                        <td class="party-col">PARTY</td>
+                        <td class="votes">VOTES</td>
+                        <td class="percent">PERCENT</td>            
+                      </tr>
+                    </table>
+                    
+                    <span id="council7-rep" class="rep"></span>
+-->
+            <!-- end -->
+
+
+          </div>
+
+
+              <div id="council-district8">
+
+                    <h3  class="grey district">CITY COUNCIL DISTRICT 8</h3>
+
+
+                    <h3  class="blue">Democratic Primary</h3>
+
+          <!-- single dynamic race result-->     
+
+                    <table>
+                      <tr>
+                        <td class="candidate">CANDIDATE</td>
+                        <td class="party-col">PARTY</td>
+                        <td class="votes">VOTES</td>
+                        <td class="percent">PERCENT</td>            
+                      </tr>
+                    </table>
+                    
+                    <span id="council8-dem" class="dem"></span>
+
+            <!-- end -->
+
+
+                    <h3  class="red">Republican Primary</h3>
+
+    
+          <!-- single dynamic race result-->     
+
+                    <table>
+                      <tr>
+                        <td class="candidate">CANDIDATE</td>
+                        <td class="party-col">PARTY</td>
+                        <td class="votes">VOTES</td>
+                        <td class="percent">PERCENT</td>            
+                      </tr>
+                    </table>
+                    
+                    <span id="council8-rep" class="rep"></span>
+
+            <!-- end -->
+
+
+          </div>
+
+
+              <div id="council-district9">
+
+                    <h3  class="grey district">CITY COUNCIL DISTRICT 9</h3>
+
+
+                    <h3  class="blue">Democratic Primary</h3>
+
+    
+          <!-- single dynamic race result-->     
+
+                    <table>
+                      <tr>
+                        <td class="candidate">CANDIDATE</td>
+                        <td class="party-col">PARTY</td>
+                        <td class="votes">VOTES</td>
+                        <td class="percent">PERCENT</td>            
+                      </tr>
+                    </table>
+                    
+                    <span id="council9-dem" class="dem"></span>
+
+            <!-- end -->
+
+
+                    <h3  class="red">Republican Primary</h3>
+
+    
+
+          <!-- single dynamic race result-->     
+
+                    <table>
+                      <tr>
+                        <td class="candidate">CANDIDATE</td>
+                        <td class="party-col">PARTY</td>
+                        <td class="votes">VOTES</td>
+                        <td class="percent">PERCENT</td>            
+                      </tr>
+                    </table>
+                    
+                    <span id="council9-rep" class="rep"></span>
+
+            <!-- end -->
+
+
+          </div>
+
+
+              <div id="council-district10">
+
+                    <h3  class="grey district">CITY COUNCIL DISTRICT 10</h3>
+
+
+                    <h3  class="blue">Democratic Primary</h3>
+
+          <!-- single dynamic race result-->     
+
+                    <table>
+                      <tr>
+                        <td class="candidate">CANDIDATE</td>
+                        <td class="party-col">PARTY</td>
+                        <td class="votes">VOTES</td>
+                        <td class="percent">PERCENT</td>            
+                      </tr>
+                    </table>
+                    
+                    <span id="council10-dem" class="dem"></span>
+
+            <!-- end -->
+
+
+                    <h3  class="red">Republican Primary</h3>
+
+    
+          <!-- single dynamic race result-->     
+
+                    <table>
+                      <tr>
+                        <td class="candidate">CANDIDATE</td>
+                        <td class="party-col">PARTY</td>
+                        <td class="votes">VOTES</td>
+                        <td class="percent">PERCENT</td>            
+                      </tr>
+                    </table>
+                    
+                    <span id="council10-rep" class="rep"></span>
+
+            <!-- end -->
+
+
+          </div>
+
+
+              <div id="council-district11">
+
+                    <h3  class="grey district">CITY COUNCIL DISTRICT 11</h3>
+
+
+                    <h3  class="blue">Democratic Primary</h3>
+
+          <!-- single dynamic race result-->     
+
+                    <table>
+                      <tr>
+                        <td class="candidate">CANDIDATE</td>
+                        <td class="party-col">PARTY</td>
+                        <td class="votes">VOTES</td>
+                        <td class="percent">PERCENT</td>            
+                      </tr>
+                    </table>
+                    
+                    <span id="council11-dem" class="dem"></span>
+
+            <!-- end -->
+
+<!--
+                    <h3  class="red">Republican Primary</h3>
+
+
+                    <table>
+                      <tr>
+                        <td class="candidate">CANDIDATE</td>
+                        <td class="party-col">PARTY</td>
+                        <td class="votes">VOTES</td>
+                        <td class="percent">PERCENT</td>            
+                      </tr>
+                    </table>
+                    
+                    <span id="council11-rep"></span>
+
+            -->
+
+
+          </div>
+
+
+              <div id="council-district12">
+
+                    <h3  class="grey district">CITY COUNCIL DISTRICT 12</h3>
+
+
+                    <h3  class="blue">Democratic Primary</h3>
+
+          <!-- single dynamic race result-->     
+
+                    <table>
+                      <tr>
+                        <td class="candidate">CANDIDATE</td>
+                        <td class="party-col">PARTY</td>
+                        <td class="votes">VOTES</td>
+                        <td class="percent">PERCENT</td>            
+                      </tr>
+                    </table>
+                    
+                    <span id="council12-dem" class="dem"></span>
+
+            <!-- end -->
+
+<!-- 
+                    <h3  class="red">Republican Primary</h3>
+
+    
+
+
+                    <table>
+                      <tr>
+                        <td class="candidate">CANDIDATE</td>
+                        <td class="party-col">PARTY</td>
+                        <td class="votes">VOTES</td>
+                        <td class="percent">PERCENT</td>            
+                      </tr>
+                    </table>
+                    
+                    <span id="council12-rep"></span>
+
+          -->
+
+
+          </div>
+
+
+              <div id="council-district13">
+
+                    <h3  class="grey district">CITY COUNCIL DISTRICT 13</h3>
+
+
+                    <h3  class="blue">Democratic Primary</h3>
+
+          <!-- single dynamic race result-->     
+
+                    <table>
+                      <tr>
+                        <td class="candidate">CANDIDATE</td>
+                        <td class="party-col">PARTY</td>
+                        <td class="votes">VOTES</td>
+                        <td class="percent">PERCENT</td>            
+                      </tr>
+                    </table>
+                    
+                    <span id="council13-dem" class="dem"></span>
+
+            <!-- end -->
+
+<!--
+                    <h3  class="red">Republican Primary</h3>
+
+    
+
+
+                    <table>
+                      <tr>
+                        <td class="candidate">CANDIDATE</td>
+                        <td class="party-col">PARTY</td>
+                        <td class="votes">VOTES</td>
+                        <td class="percent">PERCENT</td>            
+                      </tr>
+                    </table>
+                    
+                    <span id="council13-rep" class="rep"></span>
+-->
+            <!-- end -->
+
+
+          </div>
+
+
+              <div id="council-district14">
+
+                    <h3  class="grey district">CITY COUNCIL DISTRICT 14</h3>
+
+
+                    <h3  class="blue">Democratic Primary</h3>
+
+          <!-- single dynamic race result-->     
+
+                    <table>
+                      <tr>
+                        <td class="candidate">CANDIDATE</td>
+                        <td class="party-col">PARTY</td>
+                        <td class="votes">VOTES</td>
+                        <td class="percent">PERCENT</td>            
+                      </tr>
+                    </table>
+                    
+                    <span id="council14-dem" class="dem"></span>
+
+            <!-- end -->
+
+
+<!--
+                    <h3  class="red">Republican Primary</h3>
+
+
+
+                    <table>
+                      <tr>
+                        <td class="candidate">CANDIDATE</td>
+                        <td class="party-col">PARTY</td>
+                        <td class="votes">VOTES</td>
+                        <td class="percent">PERCENT</td>            
+                      </tr>
+                    </table>
+                    
+                    <span id="council14-rep" class="rep"></span>
+-->
+            <!-- end -->
+
+
+          </div>
+
+
+      </section> <!-- /council section -->
+
+
+
+
+        <hr>
+
+
+      <p><strong>SOURCE: ASSOCIATED PRESS</strong>
+
+      
+    </div> <!-- /container -->
+
+     <div id="footer"></div>
+
+
+
+
+     <script>
+
+        //include the tophat links and footer
+        $(  "#footer" ).load(  "../footer.html" );
+        $(  ".nav-links" ).load(  "../nav-links.html" );
+      </script>
+
+
+
+
+ 
+
+  </body>
+</html>
