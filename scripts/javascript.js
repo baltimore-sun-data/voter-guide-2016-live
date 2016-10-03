@@ -305,81 +305,10 @@ function racePageMarkup() {
 	// Loop through and populate democratic candidates
 		// This could be improved by creating a new loop to popiulate the questions and answers
 
-	 if(data[key]["party"] == "Democrat") {
-
 		racePageMarkup();
 
 	// place the html above in this div
     	$("#democrats").append(code);
-
-	// This checks to see if there are any dem candidates for the race. If there are, it adds a header that says DEMOCRATS
-	if( $('#democrats').is(':empty') ) {
-		 $("#democrat-header").text("");
-	} else {
-		 $("#democrat-header").text("DEMOCRATS");
-
-	}
-
-  }
-
-
-// Loop through and populate republican candidates
-
-  	if(data[key]["party"] == "Republican") {
-
-  		racePageMarkup();
-
-
-    $("#republicans").append(code);
-  }
-
-	// This checks to see if there are any republican candidates for the race. If there are, it adds a header that says REPUBLICANS
-	if( $('#republicans').is(':empty') ) {
-		 $("#republican-header").text("");
-	} else {
-		 $("#republican-header").text("REPUBLICANS");
-
-	}
-
-
-
-
-  	if(data[key]["party"] == "Green") {
-
-  		racePageMarkup();
-
-
-    $("#greens").append(code);
-  }
-
-	// This checks to see if there are any republican candidates for the race. If there are, it adds a header that says REPUBLICANS
-	if( $('#greens').is(':empty') ) {
-		 $("#green-header").text("");
-	} else {
-		 $("#green-header").text("GREENS");
-
-	}
-
-
-
-  	if(data[key]["party"] == "Libertarian") {
-
-  		racePageMarkup();
-
-    $("#libertarian").append(code);
-  }
-
-
-
-
-  	if(data[key]["party"] == "Unaffiliated") {
-
-  		racePageMarkup();
-
-    $("#unaffiliated").append(code);
-  }
-
-	
 
 
 
