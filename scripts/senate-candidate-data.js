@@ -47,3 +47,32 @@ var vanhollenData =       {
   };
 
 
+ var indData =    {
+    "candidateName":"Ind Ind",
+    "candidateLastName":"Ind",
+    "photo":"no-photo",
+    "party":"Unaffiliated",
+    "age":54,
+    "job":"Part-time legislator and small business owner",
+    "livesIn":"Perry Hall",
+    "graduatedFrom":"Towson University (BS)",
+    "website":"kathyformaryland.com",
+    "twitter":"@KathyforMD",
+    "facebook":"facebook.com/kathy.szeliga",
+    "bio":"<p>Szeliga is the minority whip in the House of Delegates, where she has served since 2011. The 54-year-old woman co-owns a construction company in Perry Hall.</p>"
+  };
+
+ var libData =    {
+    "candidateName":"Lib lib",
+    "candidateLastName":"Lib",
+    "photo":"no-photo",
+    "party":"Libertarian",
+    "age":54,
+    "job":"Part-time legislator and small business owner",
+    "livesIn":"Perry Hall",
+    "graduatedFrom":"Towson University (BS)",
+    "website":"kathyformaryland.com",
+    "twitter":"@KathyforMD",
+    "facebook":"facebook.com/kathy.szeliga",
+    "bio":"<p>Szeliga is the minority whip in the House of Delegates, where she has served since 2011. The 54-year-old woman co-owns a construction company in Perry Hall.</p>"
+  };

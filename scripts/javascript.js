@@ -98,6 +98,14 @@ function populateData(data, race) {
 		partyClass = "ltgreenbg";	
 	};
 
+	if (data[key]["party"] == "Libertarian") {
+		partyClass = "libertarian";	
+	};
+
+	if (data[key]["party"] == "Unaffiliated") {
+		partyClass = "unaffiliated";	
+	};
+
 	//This displays a different questionaire depending on what race is being called 	         
 	if  (race == "citycouncil") {
 
@@ -353,6 +361,29 @@ function racePageMarkup() {
 	}
 
 
+
+  	if(data[key]["party"] == "Libertarian") {
+
+  		racePageMarkup();
+
+    $("#libertarian").append(code);
+  }
+
+
+
+
+  	if(data[key]["party"] == "Unaffiliated") {
+
+  		racePageMarkup();
+
+    $("#unaffiliated").append(code);
+  }
+
+	
+
+
+
+
 }
 
 
@@ -560,6 +591,15 @@ load_candidate_data: function(candidateData) {
 					$("#cand-name").addClass("greencolor");
 					$("#all-candidates-toggle-button").addClass("green");
 			}
+
+		if (candidateData["party"] == "Libertarian") {
+				$("#questionnaire").addClass("lib");
+					$("#social").addClass("yellow");
+					$("#party").addClass("yellow");
+					$("#cand-name").addClass("yellow");
+					$("#all-candidates-toggle-button").addClass("yellow");
+			}
+
 
 
 		if (candidateData["party"] == "Republican") {

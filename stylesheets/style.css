@@ -5,7 +5,10 @@
 .red, .republican-color  {color:#ed4227;}
 .blue, .democrat-color {color:#2e98cc;}
 .grey {color:#667682;}
+.yellow {color:#d5bc46;}
 .greencolor, .green-color  {color:#00a967;}
+.libertarian-color {color:#d5bc46;}
+.libertarianbg {background-color: #d5bc46;}
 
 .redbg, .republicanbg {background:#ed4227;}
 .bluebg, .democratbg {background:#2e98cc;}
@@ -13,7 +16,7 @@
 .greenbg {background:#00a967;}
 .ltgreybg {background:#cdcdcd;}
 .ltgreenbg {background-color:#bee2d4;}
-
+.unaffiliatedbg {background-color:#cdcdcd;}
 
 /* this hides the question comparisons on the candidate pages */
 .question-candidates {display:none;}
@@ -652,6 +655,8 @@ nav {
 
 .question-text.ltgreenbg {background-color:#bee2d4;}
 
+.question-num.libertarian {background-color: #d5bc46;}
+
 
 
 .section-header-race {
@@ -827,6 +832,7 @@ img.cand-pic {
   font-family: "Brandon", Helvetica, sans-serif;
   line-height: 100%; 
   text-transform: uppercase;
+
 }
 
 .cand-name {
@@ -838,6 +844,7 @@ img.cand-pic {
   font-family: "Brandon", Helvetica, sans-serif;
   line-height: 100%; 
   text-transform: uppercase;
+
 }
 
 #cand-mate {
@@ -1163,6 +1170,10 @@ img.cand-pic {
   margin-bottom: 30px; 
 }
 
+.question-num {
+    background-color: #cdcdcd; 
+  }
+
   #questionnaire.dem .question-num {
     background-color: #2e98cc; 
   }
@@ -1273,7 +1284,7 @@ img.cand-pic {
   font-family: "Source Sans Pro", arial, sans-serif;
   font-size: 1.35em;
   line-height: 150%;
-  background-color: #ffe480;
+  background-color: #f2f2f2;
   padding: 10px; 
 }
 
