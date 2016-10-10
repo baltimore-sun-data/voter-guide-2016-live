@@ -1,13 +1,9 @@
 /* PULL RESULTS FROM JSON FEED AND DISPLAY ON RESULTS PAGES */
 
-
-
 function raceResults(races) {
 
     /* set no cache */
     $.ajaxSetup({ cache: false });
-
-
 
     $.getJSON('http://data.baltimoresun.com/news/elections2016/json/generalResults.json', function(data){ 
         var raceID;
@@ -18,7 +14,6 @@ function raceResults(races) {
         var precinctsReporting;
         var precinctsTotal;
         var precinctsPercent;
-        var forexp = [];
         /* loop through array */
         for(var i = 0; i < races.length; i++){
             raceID = races[i][0];
@@ -27,7 +22,6 @@ function raceResults(races) {
             html2 = [];
             html3 = [];
             $.each(data, function(index, key){    
-                // forexp.push([key.officename, key.last, key.raceid]) ;
                 if (key.fipscode == null & key.raceid == raceID) {
 
                     /* identify percentage, multiply x 100 and round */
@@ -59,8 +53,7 @@ function raceResults(races) {
 
                         precinctsReporting = key.precinctsreporting;
                         precinctsTotal = key.precinctstotal;
-                        precinctsPercent = key.precinctsreportingpct;
-    
+                        precinctsPercent = key.precinctsreportingpct;    
     
                         html3.push(" <div class=\"pre\"> " + precinctsReporting + " precincts reporting out of " + precinctsTotal +  ".</div>");                
                     }
@@ -68,7 +61,6 @@ function raceResults(races) {
                 }
 
             });
-            // console.log(forexp);
         };
 
     });
