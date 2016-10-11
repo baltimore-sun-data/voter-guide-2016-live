@@ -1,54 +1,125 @@
-| ra_number  |of_number  |se_number  |race_id|office_id|ra_num_winners|rt_number  |rt_party_name|of_description  |ot_number  |ot_name |se_name |of_scope|race_order |el_date |ra_uncontested|ra_tabulate|st_postal|ra_national_b|ra_runoff_cands|
-|  21745|  21390|  0|R  |S| 1|  2|GOP  ||  2|U.S. Senate ||S   |299|20160426| 0|  1|MD   |1|  0|
-|  21748|  21000|  1|R  |H| 1|  2|GOP  |Eastern Shore   |  3|U.S. House  |District 1  |L   |340|20160426| 0|  1|MD   |1|  0|
-|  21750|  21001|  2|R  |H| 1|  2|GOP  |Baltimore subs  |  3|U.S. House  |District 2  |L   |360|20160426| 0|  1|MD   |1|  0|
-|  21753|  21002|  3|R  |H| 1|  2|GOP  |Baltimore subs  |  3|U.S. House  |District 3  |L   |380|20160426| 0|  1|MD   |1|  0|
-|  21755|  21003|  4|R  |H| 1|  2|GOP  |DC subs |  3|U.S. House  |District 4  |L   |400|20160426| 0|  1|MD   |1|  0|
-|  21759|  21004|  5|R  |H| 1|  2|GOP  |South   |  3|U.S. House  |District 5  |L   |420|20160426| 0|  1|MD   |1|  0|
-|  21761|  21005|  6|R  |H| 1|  2|GOP  |West|  3|U.S. House  |District 6  |L   |440|20160426| 0|  1|MD   |1|  0|
-|  21763|  21006|  7|R  |H| 1|  2|GOP  |N Centrl, Baltimore City|  3|U.S. House  |District 7  |L   |500|20160426| 0|  1|MD   |1|  0|
-|  21765|  21007|  8|R  |H| 1|  2|GOP  |DC subs/North Central   |  3|U.S. House  |District 8  |L   |530|20160426| 0|  1|MD   |1|  0|
-|  21836|  21000|  1|D  |H| 1|  1|Dem  |Eastern Shore   |  3|U.S. House  |District 1  |L   |330|20160426| 0|  1|MD   |1|  0|
-|  21837|  21001|  2|D  |H| 1|  1|Dem  |Baltimore subs  |  3|U.S. House  |District 2  |L   |350|20160426| 1|  0|MD   |1|  0|
-|  21838|  21002|  3|D  |H| 1|  1|Dem  |Baltimore subs  |  3|U.S. House  |District 3  |L   |370|20160426| 0|  1|MD   |1|  0|
-|  21839|  21003|  4|D  |H| 1|  1|Dem  |DC subs |  3|U.S. House  |District 4  |L   |390|20160426| 0|  1|MD   |1|  0|
-|  21840|  21004|  5|D  |H| 1|  1|Dem  |South   |  3|U.S. House  |District 5  |L   |410|20160426| 0|  1|MD   |1|  0|
-|  21841|  21005|  6|D  |H| 1|  1|Dem  |West|  3|U.S. House  |District 6  |L   |430|20160426| 0|  1|MD   |1|  0|
-|  21842|  21006|  7|D  |H| 1|  1|Dem  |N Centrl, Baltimore City|  3|U.S. House  |District 7  |L   |490|20160426| 0|  1|MD   |1|  0|
-|  21843|  21007|  8|D  |H| 1|  1|Dem  |DC subs/North Central   |  3|U.S. House  |District 8  |L   |520|20160426| 0|  1|MD   |1|  0|
-|  21940|  21390|  0|D  |S| 1|  1|Dem  ||  2|U.S. Senate ||S   |298|20160426| 0|  1|MD   |1|  0|
-|  22221|  21445|  0|D  |M| 1|  1|Dem  || 18|Mayor   |Baltimore City  |L   |740|20160426| 0|  1|MD   |0|  0|
-|  22222|  21445|  0|R  |M| 1|  2|GOP  || 18|Mayor   |Baltimore City  |L   |750|20160426| 0|  1|MD   |0|  0|
-|  22225|  21467|  1|D  |N| 1|  1|Dem  || 14|Baltimore City Council  |District 1  |L   |   4430|20160426| 0|  1|MD   |0|  0|
-|  22226|  21467|  1|R  |N| 3|  2|GOP  || 14|Baltimore City Council  |District 1  |L   |   4440|20160426| 0|  1|MD   |0|  0|
-|  22227|  21468|  2|D  |N| 1|  1|Dem  || 14|Baltimore City Council  |District 2  |L   |   4460|20160426| 0|  1|MD   |0|  0|
-|  22228|  21468|  2|R  |N| 3|  2|GOP  || 14|Baltimore City Council  |District 2  |L   |   4470|20160426| 0|  1|MD   |0|  0|
-|  22229|  21469|  3|D  |N| 1|  1|Dem  || 14|Baltimore City Council  |District 3  |L   |   4490|20160426| 0|  1|MD   |0|  0|
-|  22230|  21469|  3|R  |N| 1|  2|GOP  || 14|Baltimore City Council  |District 3  |L   |   4500|20160426| 0|  1|MD   |0|  0|
-|  22231|  21128|  4|D  |N| 1|  1|Dem  || 14|Baltimore City Council  |District 4  |L   |   4520|20160426| 0|  1|MD   |0|  0|
-|  22232|  21128|  4|R  |N| 3|  2|GOP  || 14|Baltimore City Council  |District 4  |L   |   4530|20160426| 0|  1|MD   |0|  0|
-|  22233|  21470|  5|D  |N| 1|  1|Dem  || 14|Baltimore City Council  |District 5  |L   |   4550|20160426| 0|  1|MD   |0|  0|
-|  22234|  21470|  5|R  |N| 1|  2|GOP  || 14|Baltimore City Council  |District 5  |L   |   4560|20160426| 0|  1|MD   |0|  0|
-|  22235|  21471|  6|D  |N| 1|  1|Dem  || 14|Baltimore City Council  |District 6  |L   |   4660|20160426| 0|  1|MD   |0|  0|
-|  22237|  21472|  0|D  |N| 1|  1|Dem  || 14|Baltimore City Council  |President   |L   |   4390|20160426| 0|  1|MD   |0|  0|
-|  22238|  21472|  0|R  |N| 1|  2|GOP  || 14|Baltimore City Council  |President   |L   |   4400|20160426| 0|  1|MD   |0|  0|
-|  22585|  21533|  7|D  |N| 1|  1|Dem  || 14|Baltimore City Council  |District 7  |L   |   5610|20160426| 0|  1|MD   |0|  0|
-|  22586|  21471|  6|R  |N| 1|  2|GOP  || 14|Baltimore City Council  |District 6  |L   |   5620|20160426| 0|  1|MD   |0|  0|
-|  22587|  21533|  7|R  |N| 1|  2|GOP  || 14|Baltimore City Council  |District 7  |L   |   5630|20160426| 0|  1|MD   |0|  0|
-|  22588|  21534|  8|D  |N| 1|  1|Dem  || 14|Baltimore City Council  |District 8  |L   |   5640|20160426| 0|  1|MD   |0|  0|
-|  22589|  21534|  8|R  |N| 1|  2|GOP  || 14|Baltimore City Council  |District 8  |L   |   5650|20160426| 0|  1|MD   |0|  0|
-|  22590|  21535|  9|D  |N| 1|  1|Dem  || 14|Baltimore City Council  |District 9  |L   |   5660|20160426| 0|  1|MD   |0|  0|
-|  22591|  21536| 10|D  |N| 1|  1|Dem  || 14|Baltimore City Council  |District 10 |L   |   5680|20160426| 0|  1|MD   |0|  0|
-|  22592|  21537| 11|D  |N| 1|  1|Dem  || 14|Baltimore City Council  |District 11 |L   |   5700|20160426| 0|  1|MD   |0|  0|
-|  22593|  21539| 13|D  |N| 1|  1|Dem  || 14|Baltimore City Council  |District 13 |L   |   5760|20160426| 0|  1|MD   |0|  0|
-|  22594|  21540| 14|D  |N| 1|  1|Dem  || 14|Baltimore City Council  |District 14 |L   |   5780|20160426| 0|  1|MD   |0|  0|
-|  22596|  21538| 12|D  |N| 1|  1|Dem  || 14|Baltimore City Council  |District 12 |L   |   5720|20160426| 0|  1|MD   |0|  0|
-|  22648|  21535|  9|R  |N| 1|  2|GOP  || 14|Baltimore City Council  |District 9  |L   |   5670|20160426| 0|  1|MD   |0|  0|
-|  22649|  21536| 10|R  |N| 1|  2|GOP  || 14|Baltimore City Council  |District 10 |L   |   5690|20160426| 0|  1|MD   |0|  0|
-|  22650|  21537| 11|R  |N| 1|  2|GOP  || 14|Baltimore City Council  |District 11 |L   |   5710|20160426| 0|  1|MD   |0|  0|
-|  22651|  21538| 12|R  |N| 1|  2|GOP  || 14|Baltimore City Council  |District 12 |L   |   5730|20160426| 0|  1|MD   |0|  0|
-|  22652|  21539| 13|R  |N| 1|  2|GOP  || 14|Baltimore City Council  |District 13 |L   |   5770|20160426| 0|  1|MD   |0|  0|
-|  22653|  21540| 14|R  |N| 1|  2|GOP  || 14|Baltimore City Council  |District 14 |L   |   5790|20160426| 0|  1|MD   |0|  0|
-|  22818|  21587|  0|D  |P| 1|  1|Dem  ||  1|President   ||S   |198|20160426| 0|  1|MD   |1|  0|
-|  22819|  21587|  0|R  |P| 1|  2|GOP  ||  1|President   ||S   |199|20160426| 0|  1|MD   |1|  0|
-
+t;2009643967881;21757;2016-11-08;MD;21005;24009;Calvert;H;G;5;U.S. House;District 5;;General;South;1;0;0;23;
+t;2010650589577;21746;2016-11-08;MD;21020;24039;Somerset;H;G;1;U.S. House;District 1;;General;Eastern Shore;1;0;0;23;
+t;2009845283209;21746;2016-11-08;MD;21008;24015;Cecil;H;G;1;U.S. House;District 1;;General;Eastern Shore;1;0;0;28;
+t;2010316164489;22839;2016-11-08;MD;21015;24029;Kent;I;G;0;Question;1 - AtyGen and Comptlr Vacancies;;Ballot Issue;Amend replacement rules;1;0;0;10;
+t;2010247939465;21749;2016-11-08;MD;21014;24027;Howard;H;G;2;U.S. House;District 2;;General;Baltimore subs;1;0;0;14;
+t;2009711063433;21744;2016-11-08;MD;21006;24011;Caroline;S;G;0;U.S. Senate;;;General;;1;0;0;8;
+t;2009443749257;22839;2016-11-08;MD;21002;24003;Anne Arundel;I;G;0;Question;1 - AtyGen and Comptlr Vacancies;;Ballot Issue;Amend replacement rules;1;0;0;195;
+t;2009576850825;21749;2016-11-08;MD;21004;24510;Baltimore City;H;G;2;U.S. House;District 2;;General;Baltimore subs;1;0;0;34;
+t;2010449274249;21757;2016-11-08;MD;21017;24033;Prince George's;H;G;5;U.S. House;District 5;;General;South;1;0;0;101;
+t;2010651708809;22839;2016-11-08;MD;21020;24039;Somerset;I;G;0;Question;1 - AtyGen and Comptlr Vacancies;;Ballot Issue;Amend replacement rules;1;0;0;23;
+t;73109257;0;2016-11-08;MD;1;00000;Maryland;P;G;0;President;;;General;;1;0;0;1989;
+t;2010650587529;21744;2016-11-08;MD;21020;24039;Somerset;S;G;0;U.S. Senate;;;General;;1;0;0;23;
+t;2009442638217;21754;2016-11-08;MD;21002;24003;Anne Arundel;H;G;4;U.S. House;District 4;;General;DC subs;1;0;0;73;
+t;95385353;21754;2016-11-08;MD;1;00000;Maryland;H;G;4;U.S. House;District 4;;General;DC subs;1;0;0;246;
+t;2010180827529;21746;2016-11-08;MD;21013;24025;Harford;H;G;1;U.S. House;District 1;;General;Eastern Shore;1;0;0;56;
+t;2010450382217;22839;2016-11-08;MD;21017;24033;Prince George's;I;G;0;Question;1 - AtyGen and Comptlr Vacancies;;Ballot Issue;Amend replacement rules;1;0;0;274;
+t;2010494103945;0;2016-11-08;MD;21018;24035;Queen Anne's;P;G;0;President;;;General;;1;0;0;12;
+t;2010046607753;21744;2016-11-08;MD;21011;24021;Frederick;S;G;0;U.S. Senate;;;General;;1;0;0;79;
+t;2009979498889;21744;2016-11-08;MD;21010;24019;Dorchester;S;G;0;U.S. Senate;;;General;;1;0;0;39;
+t;2009509738889;21746;2016-11-08;MD;21003;24005;Baltimore;H;G;1;U.S. House;District 1;;General;Eastern Shore;1;0;0;20;
+t;2009823015305;0;2016-11-08;MD;21008;24015;Cecil;P;G;0;President;;;General;;1;0;0;28;
+t;2009487470985;0;2016-11-08;MD;21003;24005;Baltimore;P;G;0;President;;;General;;1;0;0;236;
+t;2010247942537;21752;2016-11-08;MD;21014;24027;Howard;H;G;3;U.S. House;District 3;;General;Baltimore subs;1;0;0;37;
+t;2010919022985;21744;2016-11-08;MD;21024;24047;Worcester;S;G;0;U.S. Senate;;;General;;1;0;0;20;
+t;2010583491977;21757;2016-11-08;MD;21019;24037;St. Mary's;H;G;5;U.S. House;District 5;;General;South;1;0;0;36;
+t;2010920144265;22839;2016-11-08;MD;21024;24047;Worcester;I;G;0;Question;1 - AtyGen and Comptlr Vacancies;;Ballot Issue;Amend replacement rules;1;0;0;20;
+t;96086793;22439;2016-11-08;MD;1;00000;Maryland;M;G;0;Mayor;Baltimore City;;General;;1;0;0;296;
+t;2009576853897;21752;2016-11-08;MD;21004;24510;Baltimore City;H;G;3;U.S. House;District 3;;General;Baltimore subs;1;0;0;76;
+t;2010762539401;0;2016-11-08;MD;21022;24043;Washington;P;G;0;President;;;General;;1;0;0;52;
+t;2010315043209;21744;2016-11-08;MD;21015;24029;Kent;S;G;0;U.S. Senate;;;General;;1;0;0;10;
+t;2009913511305;22839;2016-11-08;MD;21009;24017;Charles;I;G;0;Question;1 - AtyGen and Comptlr Vacancies;;Ballot Issue;Amend replacement rules;1;0;0;43;
+t;2010383273353;22839;2016-11-08;MD;21016;24031;Montgomery;I;G;0;Question;1 - AtyGen and Comptlr Vacancies;;Ballot Issue;Amend replacement rules;1;0;0;254;
+t;2009778174345;21746;2016-11-08;MD;21007;24013;Carroll;H;G;1;U.S. House;District 1;;General;Eastern Shore;1;0;0;12;
+t;95388425;21757;2016-11-08;MD;1;00000;Maryland;H;G;5;U.S. House;District 5;;General;South;1;0;0;223;
+t;2010180830601;21749;2016-11-08;MD;21013;24025;Harford;H;G;2;U.S. House;District 2;;General;Baltimore subs;1;0;0;30;
+t;95395593;21764;2016-11-08;MD;1;00000;Maryland;H;G;8;U.S. House;District 8;;General;DC subs/North Central;1;0;0;204;
+t;2009643954569;21744;2016-11-08;MD;21005;24009;Calvert;S;G;0;U.S. Senate;;;General;;1;0;0;23;
+t;2009509755273;21762;2016-11-08;MD;21003;24005;Baltimore;H;G;7;U.S. House;District 7;;General;N Centrl, Baltimore City;1;0;0;60;
+t;2010718817673;22839;2016-11-08;MD;21021;24041;Talbot;I;G;0;Question;1 - AtyGen and Comptlr Vacancies;;Ballot Issue;Amend replacement rules;1;0;0;12;
+t;2009509741961;21749;2016-11-08;MD;21003;24005;Baltimore;H;G;2;U.S. House;District 2;;General;Baltimore subs;1;0;0;121;
+t;2010717698441;21746;2016-11-08;MD;21021;24041;Talbot;H;G;1;U.S. House;District 1;;General;Eastern Shore;1;0;0;12;
+t;2010382168457;21760;2016-11-08;MD;21016;24031;Montgomery;H;G;6;U.S. House;District 6;;General;West;1;0;0;93;
+t;2010382172553;21764;2016-11-08;MD;21016;24031;Montgomery;H;G;8;U.S. House;District 8;;General;DC subs/North Central;1;0;0;137;
+t;2009846402441;22839;2016-11-08;MD;21008;24015;Cecil;I;G;0;Question;1 - AtyGen and Comptlr Vacancies;;Ballot Issue;Amend replacement rules;1;0;0;28;
+t;2010583478665;21744;2016-11-08;MD;21019;24037;St. Mary's;S;G;0;U.S. Senate;;;General;;1;0;0;36;
+t;2010247952777;21762;2016-11-08;MD;21014;24027;Howard;H;G;7;U.S. House;District 7;;General;N Centrl, Baltimore City;1;0;0;67;
+t;2009510858121;22839;2016-11-08;MD;21003;24005;Baltimore;I;G;0;Question;1 - AtyGen and Comptlr Vacancies;;Ballot Issue;Amend replacement rules;1;0;0;236;
+t;2010426995081;0;2016-11-08;MD;21017;24033;Prince George's;P;G;0;President;;;General;;1;0;0;274;
+t;2010114837897;22839;2016-11-08;MD;21012;24023;Garrett;I;G;0;Question;1 - AtyGen and Comptlr Vacancies;;Ballot Issue;Amend replacement rules;1;0;0;19;
+t;2009912390025;21744;2016-11-08;MD;21009;24017;Charles;S;G;0;U.S. Senate;;;General;;1;0;0;43;
+t;2009576864137;21762;2016-11-08;MD;21004;24510;Baltimore City;H;G;7;U.S. House;District 7;;General;N Centrl, Baltimore City;1;0;0;186;
+t;2009442641289;21757;2016-11-08;MD;21002;24003;Anne Arundel;H;G;5;U.S. House;District 5;;General;South;1;0;0;20;
+t;95377161;21746;2016-11-08;MD;1;00000;Maryland;H;G;1;U.S. House;District 1;;General;Eastern Shore;1;0;0;294;
+t;2009554579849;0;2016-11-08;MD;21004;24510;Baltimore City;P;G;0;President;;;General;;1;0;0;296;
+t;2009755906441;0;2016-11-08;MD;21007;24013;Carroll;P;G;0;President;;;General;;1;0;0;35;
+t;95391497;21760;2016-11-08;MD;1;00000;Maryland;H;G;6;U.S. House;District 6;;General;West;1;0;0;236;
+t;96496393;22839;2016-11-08;MD;1;00000;Maryland;I;G;0;Question;1 - AtyGen and Comptlr Vacancies;;Ballot Issue;Amend replacement rules;1;0;0;1989;
+t;2010851914121;21744;2016-11-08;MD;21023;24045;Wicomico;S;G;0;U.S. Senate;;;General;;1;0;0;54;
+t;2010046628233;21764;2016-11-08;MD;21011;24021;Frederick;H;G;8;U.S. House;District 8;;General;DC subs/North Central;1;0;0;44;
+t;2009509745033;21752;2016-11-08;MD;21003;24005;Baltimore;H;G;3;U.S. House;District 3;;General;Baltimore subs;1;0;0;35;
+t;2010695430537;0;2016-11-08;MD;21021;24041;Talbot;P;G;0;President;;;General;;1;0;0;12;
+t;2010247934345;21744;2016-11-08;MD;21014;24027;Howard;S;G;0;U.S. Senate;;;General;;1;0;0;118;
+t;2010113733001;21760;2016-11-08;MD;21012;24023;Garrett;H;G;6;U.S. House;District 6;;General;West;1;0;0;19;
+t;2009577966985;22839;2016-11-08;MD;21004;24510;Baltimore City;I;G;0;Question;1 - AtyGen and Comptlr Vacancies;;Ballot Issue;Amend replacement rules;1;0;0;296;
+t;2009711065481;21746;2016-11-08;MD;21006;24011;Caroline;H;G;1;U.S. House;District 1;;General;Eastern Shore;1;0;0;8;
+t;2010091450761;0;2016-11-08;MD;21012;24023;Garrett;P;G;0;President;;;General;;1;0;0;19;
+t;2010024341897;0;2016-11-08;MD;21011;24021;Frederick;P;G;0;President;;;General;;1;0;0;79;
+t;2009576845705;21744;2016-11-08;MD;21004;24510;Baltimore City;S;G;0;U.S. Senate;;;General;;1;0;0;296;
+t;2009778192777;21764;2016-11-08;MD;21007;24013;Carroll;H;G;8;U.S. House;District 8;;General;DC subs/North Central;1;0;0;23;
+t;2010785926537;22839;2016-11-08;MD;21022;24043;Washington;I;G;0;Question;1 - AtyGen and Comptlr Vacancies;;Ballot Issue;Amend replacement rules;1;0;0;52;
+t;2010158559625;0;2016-11-08;MD;21013;24025;Harford;P;G;0;President;;;General;;1;0;0;86;
+t;2009442633097;21749;2016-11-08;MD;21002;24003;Anne Arundel;H;G;2;U.S. House;District 2;;General;Baltimore subs;1;0;0;24;
+t;95380233;21749;2016-11-08;MD;1;00000;Maryland;H;G;2;U.S. House;District 2;;General;Baltimore subs;1;0;0;223;
+t;2010516369801;21744;2016-11-08;MD;21018;24035;Queen Anne's;S;G;0;U.S. Senate;;;General;;1;0;0;12;
+t;2009979500937;21746;2016-11-08;MD;21010;24019;Dorchester;H;G;1;U.S. House;District 1;;General;Eastern Shore;1;0;0;39;
+t;2010784821641;21760;2016-11-08;MD;21022;24043;Washington;H;G;6;U.S. House;District 6;;General;West;1;0;0;52;
+t;2010359886217;0;2016-11-08;MD;21016;24031;Montgomery;P;G;0;President;;;General;;1;0;0;254;
+t;2010047729033;22839;2016-11-08;MD;21011;24021;Frederick;I;G;0;Question;1 - AtyGen and Comptlr Vacancies;;Ballot Issue;Amend replacement rules;1;0;0;79;
+t;2009845281161;21744;2016-11-08;MD;21008;24015;Cecil;S;G;0;U.S. Senate;;;General;;1;0;0;28;
+t;95383305;21752;2016-11-08;MD;1;00000;Maryland;H;G;3;U.S. House;District 3;;General;Baltimore subs;1;0;0;250;
+t;2010181946761;22839;2016-11-08;MD;21013;24025;Harford;I;G;0;Question;1 - AtyGen and Comptlr Vacancies;;Ballot Issue;Amend replacement rules;1;0;0;86;
+t;2009375519113;21744;2016-11-08;MD;21001;24001;Allegany;S;G;0;U.S. Senate;;;General;;1;0;0;37;
+t;2009688797577;0;2016-11-08;MD;21006;24011;Caroline;P;G;0;President;;;General;;1;0;0;8;
+t;2010919025033;21746;2016-11-08;MD;21024;24047;Worcester;H;G;1;U.S. House;District 1;;General;Eastern Shore;1;0;0;20;
+t;2009645075849;22839;2016-11-08;MD;21005;24009;Calvert;I;G;0;Question;1 - AtyGen and Comptlr Vacancies;;Ballot Issue;Amend replacement rules;1;0;0;23;
+t;2010784805257;21744;2016-11-08;MD;21022;24043;Washington;S;G;0;U.S. Senate;;;General;;1;0;0;52;
+t;2010315045257;21746;2016-11-08;MD;21015;24029;Kent;H;G;1;U.S. House;District 1;;General;Eastern Shore;1;0;0;10;
+t;2009912403337;21757;2016-11-08;MD;21009;24017;Charles;H;G;5;U.S. House;District 5;;General;South;1;0;0;43;
+t;2009442636169;21752;2016-11-08;MD;21002;24003;Anne Arundel;H;G;3;U.S. House;District 3;;General;Baltimore subs;1;0;0;78;
+t;2010628321673;0;2016-11-08;MD;21020;24039;Somerset;P;G;0;President;;;General;;1;0;0;23;
+t;2010180825481;21744;2016-11-08;MD;21013;24025;Harford;S;G;0;U.S. Senate;;;General;;1;0;0;86;
+t;2010853035401;22839;2016-11-08;MD;21023;24045;Wicomico;I;G;0;Question;1 - AtyGen and Comptlr Vacancies;;Ballot Issue;Amend replacement rules;1;0;0;54;
+t;2009957233033;0;2016-11-08;MD;21010;24019;Dorchester;P;G;0;President;;;General;;1;0;0;39;
+t;2009509736841;21744;2016-11-08;MD;21003;24005;Baltimore;S;G;0;U.S. Senate;;;General;;1;0;0;236;
+t;2010382160265;21752;2016-11-08;MD;21016;24031;Montgomery;H;G;3;U.S. House;District 3;;General;Baltimore subs;1;0;0;24;
+t;2010225668489;0;2016-11-08;MD;21014;24027;Howard;P;G;0;President;;;General;;1;0;0;118;
+t;2009980620169;22839;2016-11-08;MD;21010;24019;Dorchester;I;G;0;Question;1 - AtyGen and Comptlr Vacancies;;Ballot Issue;Amend replacement rules;1;0;0;39;
+t;2009353253257;0;2016-11-08;MD;21001;24001;Allegany;P;G;0;President;;;General;;1;0;0;37;
+t;2009577557385;22439;2016-11-08;MD;21004;24510;Baltimore City;M;G;0;Mayor;Baltimore City;;General;;1;0;0;296;
+t;2010896757129;0;2016-11-08;MD;21024;24047;Worcester;P;G;0;President;;;General;;1;0;0;20;
+t;2010449260937;21744;2016-11-08;MD;21017;24033;Prince George's;S;G;0;U.S. Senate;;;General;;1;0;0;274;
+t;2010292777353;0;2016-11-08;MD;21015;24029;Kent;P;G;0;President;;;General;;1;0;0;10;
+t;2010249055625;22839;2016-11-08;MD;21014;24027;Howard;I;G;0;Question;1 - AtyGen and Comptlr Vacancies;;Ballot Issue;Amend replacement rules;1;0;0;118;
+t;2009778172297;21744;2016-11-08;MD;21007;24013;Carroll;S;G;0;U.S. Senate;;;General;;1;0;0;35;
+t;95393545;21762;2016-11-08;MD;1;00000;Maryland;H;G;7;U.S. House;District 7;;General;N Centrl, Baltimore City;1;0;0;313;
+t;2009376640393;22839;2016-11-08;MD;21001;24001;Allegany;I;G;0;Question;1 - AtyGen and Comptlr Vacancies;;Ballot Issue;Amend replacement rules;1;0;0;37;
+t;2009621688713;0;2016-11-08;MD;21005;24009;Calvert;P;G;0;President;;;General;;1;0;0;23;
+t;2010851916169;21746;2016-11-08;MD;21023;24045;Wicomico;H;G;1;U.S. House;District 1;;General;Eastern Shore;1;0;0;54;
+t;2010717696393;21744;2016-11-08;MD;21021;24041;Talbot;S;G;0;U.S. Senate;;;General;;1;0;0;12;
+t;2009712184713;22839;2016-11-08;MD;21006;24011;Caroline;I;G;0;Question;1 - AtyGen and Comptlr Vacancies;;Ballot Issue;Amend replacement rules;1;0;0;8;
+t;2010561212809;0;2016-11-08;MD;21019;24037;St. Mary's;P;G;0;President;;;General;;1;0;0;36;
+t;2010113716617;21744;2016-11-08;MD;21012;24023;Garrett;S;G;0;U.S. Senate;;;General;;1;0;0;19;
+t;2009375535497;21760;2016-11-08;MD;21001;24001;Allegany;H;G;6;U.S. House;District 6;;General;West;1;0;0;37;
+t;2010046624137;21760;2016-11-08;MD;21011;24021;Frederick;H;G;6;U.S. House;District 6;;General;West;1;0;0;35;
+t;2010449271177;21754;2016-11-08;MD;21017;24033;Prince George's;H;G;4;U.S. House;District 4;;General;DC subs;1;0;0;173;
+t;2009779293577;22839;2016-11-08;MD;21007;24013;Carroll;I;G;0;Question;1 - AtyGen and Comptlr Vacancies;;Ballot Issue;Amend replacement rules;1;0;0;35;
+t;2009890124169;0;2016-11-08;MD;21009;24017;Charles;P;G;0;President;;;General;;1;0;0;43;
+t;2009442627977;21744;2016-11-08;MD;21002;24003;Anne Arundel;S;G;0;U.S. Senate;;;General;;1;0;0;195;
+t;95375113;21744;2016-11-08;MD;1;00000;Maryland;S;G;0;U.S. Senate;;;General;;1;0;0;1989;
+t;2009420362121;0;2016-11-08;MD;21002;24003;Anne Arundel;P;G;0;President;;;General;;1;0;0;195;
+t;2010584599945;22839;2016-11-08;MD;21019;24037;St. Mary's;I;G;0;Question;1 - AtyGen and Comptlr Vacancies;;Ballot Issue;Amend replacement rules;1;0;0;36;
+t;2010517491081;22839;2016-11-08;MD;21018;24035;Queen Anne's;I;G;0;Question;1 - AtyGen and Comptlr Vacancies;;Ballot Issue;Amend replacement rules;1;0;0;12;
+t;2010516371849;21746;2016-11-08;MD;21018;24035;Queen Anne's;H;G;1;U.S. House;District 1;;General;Eastern Shore;1;0;0;12;
+t;2010829648265;0;2016-11-08;MD;21023;24045;Wicomico;P;G;0;President;;;General;;1;0;0;54;
+t;2010382152073;21744;2016-11-08;MD;21016;24031;Montgomery;S;G;0;U.S. Senate;;;General;;1;0;0;254;
