@@ -21,7 +21,8 @@ function raceResults(json, races) {
                 if (key.fipscode === null & key.raceid == raceID) {
 
                     /* identify percentage, multiply x 100 and round */
-                    var percent = Math.round((key.votepct) * 100);
+                    var percent = Math.round(((key.electwon) / 270) * 100);
+                    var electoral = key.electwon;
 
                     var updated = new Date(key.lastupdated);
                     updated = updated.toString();
@@ -36,7 +37,7 @@ function raceResults(json, races) {
                        won = "";
                     }
 
-                    html.push("<table class=\"candidate-row\"><tr><td class=\"candidate name ", won, "\"> ", key.first, " ", key.last, "</td><td class=\"party-col\">", key.party, "</td><td class=\"votes\">", votecount.toLocaleString('en'), "</td><td class=\"percent\"><div class=\"percent-bar-bg\"><div class=\"percent-bar\" style=\"width:", percent, "%;\"></div></div><div class=\"vote-percent\">", percent, "%</div></td></tr></table>");
+                    html.push("<table class=\"candidate-row\"><tr><td class=\"candidate name ", won, "\"> ", key.first, " ", key.last, "</td><td class=\"party-col\">", key.party, "</td><td class=\"votes\">", votecount.toLocaleString('en'), "</td><td class=\"percent\"><div class=\"percent-bar-bg\"><div class=\"percent-bar\" style=\"width:", percent, "%;\"></div></div><div class=\"vote-percent\">", electoral, " / 270</div></td></tr></table>");
 
                     //pulls the first updated by and displays it up top. not the best solution for sure.
                     html2.push("<span class=\"update\">Updated: " + updated + "</span>");                
