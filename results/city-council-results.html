@@ -62,7 +62,7 @@
         });
 
       </script>
-      <script language="javascript" src="../scripts/results-w-winner.js"> </script>
+      <script language="javascript" src="../scripts/results-w-winner-council.js"> </script>
       <script language="javascript" src="../scripts/javascript.js"> </script>
       <script language="javascript" src="../scripts/jquery.scrollTo-1.4.3.1-min.js"> </script>
 
@@ -185,9 +185,21 @@
 
       $(document).ready(function(){
         var races = [
+        [100, "#president"],
         [101, "#district1"],
         [102, "#district2"],
-        [103, "#district3"]];
+        [103, "#district3"],
+        [104, "#district5"],
+        [106, "#district6"],
+        [107, "#district7"],
+        [108, "#district8"],
+        [109, "#district9"],
+        [110, "#district10"],
+        [112, "#district12"],
+        [113, "#district13"],
+        [114, "#district14"]
+
+        ];
         raceResults('councilResults.json', races);
       });
 
@@ -299,9 +311,8 @@
             </section>
 
 
-            <span class="updated"></span>
-
-
+            <p style="color: #ed4227;">Last updated: TEST RESULTS *</p>
+            
        
             <section id="council" class="group"><!-- council section -->
 
@@ -318,13 +329,13 @@
                 <li><a href="#council-district2" >District 2</a></li>
                 <li><a href="#council-district3" >District 3</a></li>
                 <li><a href="#council-district4" >District 4</a></li>
-                <li><a href="#council-district5" >District 5</a></li>
+                <!-- <li><a href="#council-district5" >District 5</a></li> -->
                 <li><a href="#council-district6" >District 6</a></li>
                 <li><a href="#council-district7" >District 7</a></li>
                 <li><a href="#council-district8" >District 8</a></li>
                 <li><a href="#council-district9" >District 9</a></li>
                 <li><a href="#council-district10" >District 10</a></li>
-                <li><a href="#council-district11" >District 11</a></li>
+             <!--   <li><a href="#council-district11" >District 11</a></li> -->
                 <li><a href="#council-district12" >District 12</a></li>
                 <li><a href="#council-district13" >District 13</a></li>
                 <li><a href="#council-district14" >District 14</a></li>
@@ -349,7 +360,7 @@
                 </tr>
               </table>
 
-              <span id="council-president" class="dem"></span>
+              <span id="president" class="dem"></span>
 
               <!-- end -->
 
@@ -448,6 +459,7 @@
 
             </div>
 
+<!--
             <div id="council-district5">
 
               <h3  class="grey district">COUNCIL DISTRICT 5</h3>
@@ -464,12 +476,12 @@
 
               <span id="district5" class="dem"></span>
 
-              <!-- end -->
+   
 
 
             </div>
 
-
+-->
             <div id="council-district6">
 
               <h3  class="grey district">COUNCIL DISTRICT 6</h3>
@@ -578,7 +590,7 @@
 
             </div>
 
-
+<!--
             <div id="council-district11">
 
               <h3  class="grey district">COUNCIL DISTRICT 11</h3>
@@ -595,11 +607,9 @@
 
               <span id="district11" class="dem"></span>
 
-              <!-- end -->
-
 
             </div>
-
+-->
 
             <div id="council-district12">
 
@@ -678,14 +688,13 @@
 
 
 
-
-
           </section> <!-- /council section -->
 
 
-
-
           <hr>
+
+
+  <p><em>*These results will be updated approximatly once an hour on election night. Data about the number of precincts reporting is not available for City Council races but we will indicate race winners once individual races have been called. See the <a href="http://elections.maryland.gov/elections/2016/" style="color:#2e98cc;font-weight: bold;text-decoration: underline;">Maryland State Board of Elections results site</a> for the most current results.</em></p>
 
 
 

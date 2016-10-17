@@ -1,114 +1,299 @@
 [
  {
-   "raceid": 101,
-   "first": "John",
-   "last": "Smith",
-   "party": "Dem",
-   "votepct": 0.41,
-   "votecount": 51756,
-   "precinctsreporting": 142,
-   "precinctsreportingpct": 0.483,
-   "precinctstotal": 294,
-   "winner": false,
-   "fipscode": null,
-   "lastupdated": "2016-10-14T17:37:06.740Z"
- },
- {
-   "raceid": 101,
-   "first": "xxx",
-   "last": "Smith",
-   "party": "Gre",
-   "votepct": 0.61,
-   "votecount": 33333,
-   "precinctsreporting": 142,
-   "precinctsreportingpct": 0.483,
-   "precinctstotal": 294,
-   "winner": false,
-   "fipscode": null,
-   "lastupdated": "2016-10-14T17:37:06.740Z"
- },
- {
-   "raceid": 102,
-   "first": "ccc",
-   "last": "Smith",
-   "party": "Dem",
-   "votepct": 0.41,
-   "votecount": 51756,
-   "precinctsreporting": 142,
-   "precinctsreportingpct": 0.483,
-   "precinctstotal": 294,
-   "winner": false,
-   "fipscode": null,
-   "lastupdated": "2016-10-14T17:37:06.740Z"
- },
- {
-   "raceid": 102,
-   "first": "ddd",
-   "last": "Smith",
-   "party": "Rep",
-   "votepct": 0.55,
-   "votecount": 22222,
-   "precinctsreporting": 142,
-   "precinctsreportingpct": 0.483,
-   "precinctstotal": 294,
-   "winner": false,
-   "fipscode": null,
-   "lastupdated": "2016-10-14T17:37:06.740Z"
- },
- {
-   "raceid": 102,
-   "first": "ppp",
-   "last": "Smith",
-   "party": "Dem",
-   "votepct": 0.41,
-   "votecount": 51756,
-   "precinctsreporting": 142,
-   "precinctsreportingpct": 0.483,
-   "precinctstotal": 294,
-   "winner": true,
-   "fipscode": null,
-   "lastupdated": "2016-10-14T17:37:06.740Z"
- },
- {
-   "raceid": 103,
-   "first": "www",
-   "last": "Smith",
+   "raceid": 100,
+   "first": "Sharon",
+   "last": "Black",
    "party": "Ind",
    "votepct": 0.22,
    "votecount": 51756,
-   "precinctsreporting": 142,
-   "precinctsreportingpct": 0.483,
-   "precinctstotal": 294,
-   "winner": false,
-   "fipscode": null,
-   "lastupdated": "2016-10-14T17:37:06.740Z"
+   "winner": false
  },
  {
-   "raceid": 103,
-   "first": "aaa",
-   "last": "Smith",
-   "party": "Gre",
+   "raceid": 100,
+   "first": "Susan",
+   "last": "Gaztanaga",
+   "party": "Lib",
    "votepct": 0.41,
    "votecount": 11111,
-   "precinctsreporting": 111,
-   "precinctsreportingpct": 0.483,
-   "precinctstotal": 294,
-   "winner": false,
-   "fipscode": null,
-   "lastupdated": "2016-10-14T17:37:06.740Z"
+   "winner": false
+ },
+ {
+   "raceid": 100,
+   "first": "Connor",
+   "last": "Meek",
+   "party": "Gre",
+   "votepct": 0.22,
+   "votecount": 51756,
+   "winner": false
+ },
+ {
+   "raceid": 100,
+   "first": "Shannon",
+   "last": "Wright",
+   "party": "Rep",
+   "votepct": 0.41,
+   "votecount": 11111,
+   "winner": false
+ },
+ {
+   "raceid": 100,
+   "first": "Bernard C.",
+   "last": "Young",
+   "party": "Dem",
+   "votepct": 0.22,
+   "votecount": 51756,
+   "winner": false
+ },
+ {
+   "raceid": 101,
+   "first": "Zeke",
+   "last": "Choen",
+   "party": "Dem",
+   "votepct": 0.41,
+   "votecount": 11111,
+   "winner": false
+ },
+ {
+   "raceid": 101,
+   "first": "Matthew",
+   "last": "McDaniel",
+   "party": "Rep",
+   "votepct": 0.22,
+   "votecount": 51756,
+   "winner": false
+ },
+ {
+   "raceid": 102,
+   "first": "Brandon",
+   "last": "Scott",
+   "party": "Dem",
+   "votepct": 0.41,
+   "votecount": 11111,
+   "winner": false
+ },
+ {
+   "raceid": 102,
+   "first": "Gregory",
+   "last": "Yarberough",
+   "party": "Rep",
+   "votepct": 0.22,
+   "votecount": 51756,
+   "winner": false
  },
  {
    "raceid": 103,
-   "first": "vvv",
-   "last": "Smith",
+   "first": "Ryan",
+   "last": "Dorsey",
+   "party": "Dem",
+   "votepct": 0.41,
+   "votecount": 11111,
+   "winner": false
+ },
+ {
+   "raceid": 103,
+   "first": "G. Andreas",
+   "last": "Spiliadis",
+   "party": "Gre",
+   "votepct": 0.22,
+   "votecount": 51756,
+   "winner": false
+ },
+ {
+   "raceid": 104,
+   "first": "William",
+   "last": "Broaddus, III",
    "party": "Rep",
    "votepct": 0.41,
+   "votecount": 11111,
+   "winner": false
+ },
+ {
+   "raceid": 104,
+   "first": "Bill",
+   "last": "Henry",
+   "party": "Dem",
+   "votepct": 0.22,
    "votecount": 51756,
-   "precinctsreporting": 142,
-   "precinctsreportingpct": 0.483,
-   "precinctstotal": 294,
-   "winner": false,
-   "fipscode": null,
-   "lastupdated": "2016-10-14T17:37:06.740Z"
+   "winner": false
+ },
+ {
+   "raceid": 106,
+   "first": "Sharon",
+   "last": "Middleton",
+   "party": "Dem",
+   "votepct": 0.41,
+   "votecount": 11111,
+   "winner": false
+ },
+ {
+   "raceid": 106,
+   "first": "Richard",
+   "last": "White, Jr.",
+   "party": "Gre",
+   "votepct": 0.22,
+   "votecount": 51756,
+   "winner": false
+ },
+ {
+   "raceid": 107,
+   "first": "Leon",
+   "last": "Pinkett, III",
+   "party": "Dem",
+   "votepct": 0.41,
+   "votecount": 11111,
+   "winner": false
+ },
+ {
+   "raceid": 107,
+   "first": "Tamara",
+   "last": "Purnell",
+   "party": "Rep",
+   "votepct": 0.22,
+   "votecount": 51756,
+   "winner": false
+ },
+ {
+   "raceid": 107,
+   "first": "Nnamdi",
+   "last": "Scott",
+   "party": "Ind",
+   "votepct": 0.41,
+   "votecount": 11111,
+   "winner": false
+ },
+ {
+   "raceid": 108,
+   "first": "Joseph",
+   "last": "Brown, Jr.",
+   "party": "Rep",
+   "votepct": 0.22,
+   "votecount": 51756,
+   "winner": false
+ },
+ {
+   "raceid": 108,
+   "first": "Kristerfer",
+   "last": "Burnett",
+   "party": "Dem",
+   "votepct": 0.41,
+   "votecount": 11111,
+   "winner": false
+ },
+ {
+   "raceid": 109,
+   "first": "John",
+   "last": "Bullock",
+   "party": "Dem",
+   "votepct": 0.22,
+   "votecount": 51756,
+   "winner": false
+ },
+ {
+   "raceid": 109,
+   "first": "Kenneth",
+   "last": "Ebron, Jr.",
+   "party": "Rep",
+   "votepct": 0.41,
+   "votecount": 11111,
+   "winner": false
+ },
+ {
+   "raceid": 109,
+   "first": "Jamie",
+   "last": "Frierson",
+   "party": "Gre",
+   "votepct": 0.22,
+   "votecount": 51756,
+   "winner": false
+ },
+ {
+   "raceid": 110,
+   "first": "Christine",
+   "last": "Digman",
+   "party": "Rep",
+   "votepct": 0.41,
+   "votecount": 11111,
+   "winner": false
+ },
+ {
+   "raceid": 110,
+   "first": "Edward",
+   "last": "Reisinger",
+   "party": "Dem",
+   "votepct": 0.22,
+   "votecount": 51756,
+   "winner": false
+ },
+ {
+   "raceid": 112,
+   "first": "Frank",
+   "last": "Richardson",
+   "party": "Ind",
+   "votepct": 0.41,
+   "votecount": 11111,
+   "winner": false
+ },
+ {
+   "raceid": 112,
+   "first": "Ian",
+   "last": "Schlakman",
+   "party": "Gre",
+   "votepct": 0.22,
+   "votecount": 51756,
+   "winner": false
+ },
+ {
+   "raceid": 112,
+   "first": "Dan",
+   "last": "Sparaco",
+   "party": "Ind",
+   "votepct": 0.41,
+   "votecount": 11111,
+   "winner": false
+ },
+ {
+   "raceid": 112,
+   "first": "Robert",
+   "last": "Stokes, Sr.",
+   "party": "Dem",
+   "votepct": 0.22,
+   "votecount": 51756,
+   "winner": false
+ },
+ {
+   "raceid": 113,
+   "first": "George",
+   "last": "Johnson",
+   "party": "Rep",
+   "votepct": 0.41,
+   "votecount": 11111,
+   "winner": false
+ },
+ {
+   "raceid": 113,
+   "first": "Shannon",
+   "last": "Sneed",
+   "party": "Dem",
+   "votepct": 0.22,
+   "votecount": 51756,
+   "winner": false
+ },
+ {
+   "raceid": 114,
+   "first": "Mary Pat",
+   "last": "Clark",
+   "party": "Dem",
+   "votepct": 0.41,
+   "votecount": 11111,
+   "winner": false
+ },
+ {
+   "raceid": 114,
+   "first": "David",
+   "last": "Harding",
+   "party": "Ind",
+   "votepct": 0.22,
+   "votecount": 51756,
+   "winner": false
  }
 ]
