@@ -1,6 +1,6 @@
 /* PULL RESULTS FROM JSON FEED AND DISPLAY ON RESULTS PAGES */
 
-function raceResults(json, races) {
+function raceResultsCouncil(json, races) {
 
     /* set no cache */
     $.ajaxSetup({ cache: false });
