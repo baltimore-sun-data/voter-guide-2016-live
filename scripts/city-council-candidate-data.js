@@ -672,7 +672,7 @@ var District12 = [
     "District":"District 12",
     "candidateName":"Ian Schlakman",
     "candidateLastName":"Schlakman",
-    "photo":"",
+    "photo":"schlakman",
     "party":"Green",
     "dob":"12/15/1984",
     "age":31,
