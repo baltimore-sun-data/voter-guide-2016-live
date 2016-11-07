@@ -4,8 +4,8 @@
    "first": "Sharon",
    "last": "Black",
    "party": "Ind",
-   "votepct": 0.2,
-   "votecount": 1234567,
+   "votepct": 0,
+   "votecount": 0,
    "winner": false
  },
  {
@@ -13,8 +13,8 @@
    "first": "Susan",
    "last": "Gaztanaga",
    "party": "Lib",
-   "votepct": 0.3,
-   "votecount": 123456,
+   "votepct": 0,
+   "votecount": 0,
    "winner": false
  },
  {
@@ -22,8 +22,8 @@
    "first": "Connor",
    "last": "Meek",
    "party": "Gre",
-   "votepct": 0.4,
-   "votecount": 12345,
+   "votepct": 0,
+   "votecount": 0,
    "winner": false
  },
  {
@@ -31,8 +31,8 @@
    "first": "Shannon",
    "last": "Wright",
    "party": "Rep",
-   "votepct": 0.1,
-   "votecount": 1234,
+   "votepct": 0,
+   "votecount": 0,
    "winner": false
  },
  {
@@ -41,7 +41,7 @@
    "last": "Young",
    "party": "Dem",
    "votepct": 0,
-   "votecount": 123,
+   "votecount": 0,
    "winner": false
  },
  {
@@ -49,8 +49,8 @@
    "first": "Zeke",
    "last": "Choen",
    "party": "Dem",
-   "votepct": 0.4,
-   "votecount": 12345,
+   "votepct": 0,
+   "votecount": 0,
    "winner": false
  },
  {
@@ -58,8 +58,8 @@
    "first": "Matthew",
    "last": "McDaniel",
    "party": "Rep",
-   "votepct": 0.6,
-   "votecount": 123,
+   "votepct": 0,
+   "votecount": 0,
    "winner": false
  },
  {
@@ -67,8 +67,8 @@
    "first": "Brandon",
    "last": "Scott",
    "party": "Dem",
-   "votepct": 0.7,
-   "votecount": 123678,
+   "votepct": 0,
+   "votecount": 0,
    "winner": false
  },
  {
@@ -76,8 +76,8 @@
    "first": "Gregory",
    "last": "Yarberough",
    "party": "Rep",
-   "votepct": 0.3,
-   "votecount": 123,
+   "votepct": 0,
+   "votecount": 0,
    "winner": false
  },
  {
@@ -85,8 +85,8 @@
    "first": "Ryan",
    "last": "Dorsey",
    "party": "Dem",
-   "votepct": 0.66,
-   "votecount": 56789,
+   "votepct": 0,
+   "votecount": 0,
    "winner": false
  },
  {
@@ -94,8 +94,8 @@
    "first": "G. Andreas",
    "last": "Spiliadis",
    "party": "Gre",
-   "votepct": 0.34,
-   "votecount": 123,
+   "votepct": 0,
+   "votecount": 0,
    "winner": false
  },
  {
@@ -103,8 +103,8 @@
    "first": "William",
    "last": "Broaddus, III",
    "party": "Rep",
-   "votepct": 0.4,
-   "votecount": 469,
+   "votepct": 0,
+   "votecount": 0,
    "winner": false
  },
  {
@@ -112,8 +112,8 @@
    "first": "Bill",
    "last": "Henry",
    "party": "Dem",
-   "votepct": 0.6,
-   "votecount": 136,
+   "votepct": 0,
+   "votecount": 0,
    "winner": false
  },
  {
@@ -121,8 +121,8 @@
    "first": "Sharon",
    "last": "Middleton",
    "party": "Dem",
-   "votepct": 0.41,
-   "votecount": 56789,
+   "votepct": 0,
+   "votecount": 0,
    "winner": false
  },
  {
@@ -130,17 +130,17 @@
    "first": "Richard",
    "last": "White, Jr.",
    "party": "Gre",
-   "votepct": 0.59,
-   "votecount": 987,
-   "winner": true
+   "votepct": 0,
+   "votecount": 0,
+   "winner": false
  },
  {
    "raceid": 107,
    "first": "Leon",
    "last": "Pinkett, III",
    "party": "Dem",
-   "votepct": 0.4,
-   "votecount": 345,
+   "votepct": 0,
+   "votecount": 0,
    "winner": false
  },
  {
@@ -148,8 +148,8 @@
    "first": "Tamara",
    "last": "Purnell",
    "party": "Rep",
-   "votepct": 0.2,
-   "votecount": 567,
+   "votepct": 0,
+   "votecount": 0,
    "winner": false
  },
  {
@@ -157,8 +157,8 @@
    "first": "Nnamdi",
    "last": "Scott",
    "party": "Ind",
-   "votepct": 0.4,
-   "votecount": 765,
+   "votepct": 0,
+   "votecount": 0,
    "winner": false
  },
  {
@@ -166,8 +166,8 @@
    "first": "Joseph",
    "last": "Brown, Jr.",
    "party": "Rep",
-   "votepct": 0.8,
-   "votecount": 51756,
+   "votepct": 0,
+   "votecount": 0,
    "winner": false
  },
  {
@@ -175,8 +175,8 @@
    "first": "Kristerfer",
    "last": "Burnett",
    "party": "Dem",
-   "votepct": 0.2,
-   "votecount": 434433,
+   "votepct": 0,
+   "votecount": 0,
    "winner": false
  },
  {
@@ -184,8 +184,8 @@
    "first": "John",
    "last": "Bullock",
    "party": "Dem",
-   "votepct": 0.2,
-   "votecount": 434343,
+   "votepct": 0,
+   "votecount": 0,
    "winner": false
  },
  {
@@ -193,8 +193,8 @@
    "first": "Kenneth",
    "last": "Ebron, Jr.",
    "party": "Rep",
-   "votepct": 0.4,
-   "votecount": 434343,
+   "votepct": 0,
+   "votecount": 0,
    "winner": false
  },
  {
@@ -202,8 +202,8 @@
    "first": "Jamie",
    "last": "Frierson",
    "party": "Gre",
-   "votepct": 0.4,
-   "votecount": 434,
+   "votepct": 0,
+   "votecount": 0,
    "winner": false
  },
  {
@@ -211,8 +211,8 @@
    "first": "Christine",
    "last": "Digman",
    "party": "Rep",
-   "votepct": 0.56,
-   "votecount": 7658,
+   "votepct": 0,
+   "votecount": 0,
    "winner": false
  },
  {
@@ -220,8 +220,8 @@
    "first": "Edward",
    "last": "Reisinger",
    "party": "Dem",
-   "votepct": 0.44,
-   "votecount": 874678,
+   "votepct": 0,
+   "votecount": 0,
    "winner": false
  },
  {
@@ -229,17 +229,17 @@
    "first": "Frank",
    "last": "Richardson",
    "party": "Ind",
-   "votepct": 0.4,
-   "votecount": 232323,
-   "winner": true
+   "votepct": 0,
+   "votecount": 0,
+   "winner": false
  },
  {
    "raceid": 112,
    "first": "Ian",
    "last": "Schlakman",
    "party": "Gre",
-   "votepct": 0.2,
-   "votecount": 4564,
+   "votepct": 0,
+   "votecount": 0,
    "winner": false
  },
  {
@@ -247,8 +247,8 @@
    "first": "Dan",
    "last": "Sparaco",
    "party": "Ind",
-   "votepct": 0.2,
-   "votecount": 5456,
+   "votepct": 0,
+   "votecount": 0,
    "winner": false
  },
  {
@@ -256,8 +256,8 @@
    "first": "Robert",
    "last": "Stokes, Sr.",
    "party": "Dem",
-   "votepct": 0.2,
-   "votecount": 5455,
+   "votepct": 0,
+   "votecount": 0,
    "winner": false
  },
  {
@@ -265,8 +265,8 @@
    "first": "George",
    "last": "Johnson",
    "party": "Rep",
-   "votepct": 0.2,
-   "votecount": 45454,
+   "votepct": 0,
+   "votecount": 0,
    "winner": false
  },
  {
@@ -274,8 +274,8 @@
    "first": "Shannon",
    "last": "Sneed",
    "party": "Dem",
-   "votepct": 0.8,
-   "votecount": 45454,
+   "votepct": 0,
+   "votecount": 0,
    "winner": false
  },
  {
@@ -283,8 +283,8 @@
    "first": "Mary Pat",
    "last": "Clark",
    "party": "Dem",
-   "votepct": 0.9,
-   "votecount": 6666,
+   "votepct": 0,
+   "votecount": 0,
    "winner": false
  },
  {
@@ -292,8 +292,8 @@
    "first": "David",
    "last": "Harding",
    "party": "Ind",
-   "votepct": 0.1,
-   "votecount": 443,
+   "votepct": 0,
+   "votecount": 0,
    "winner": false
  }
 ]
