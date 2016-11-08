@@ -9,7 +9,7 @@
       <!-- Basic Page Needs
       ================================================== -->
       <meta charset="utf-8">
-      <title>Maryland General Election Results: Baltimore Sun Voter Guide</title>
+      <title>General Election Results: Baltimore Sun Voter Guide</title>
       <meta name="description" content="">
       <meta name="author" content="">
 
@@ -63,6 +63,7 @@
 
       </script>
       <script language="javascript" src="../scripts/results-w-winner.js"> </script>
+      <script language="javascript" src="../scripts/results-w-winner-pres.js"> </script>
       <script language="javascript" src="../scripts/javascript.js"> </script>
       <script language="javascript" src="../scripts/jquery.scrollTo-1.4.3.1-min.js"> </script>
 
@@ -80,8 +81,8 @@
 
         <!-- Facebook Stuff -->
 
-        <meta property="og:title" content="Maryland General Election Results: Baltimore Sun Voter Guide" />
-        <meta property="og:url" content="http://data.baltimoresun.com/voter-guide-2016/results/maryland-results.html" />
+        <meta property="og:title" content="General Election Results: Baltimore Sun Voter Guide" />
+        <meta property="og:url" content="http://data.baltimoresun.com/voter-guide-2016/results/national-results.html" />
         <meta property="og:image" content="http://data.baltimoresun.com/voter-guide-2016/images/voter-guide-square.png" />
 
         <!-- /Facebook Stuff -->
@@ -91,8 +92,8 @@
         <meta name="twitter:card" content="summary">
         <meta name="twitter:site" content="@baltimoresun">
         <meta name="twitter:creator" content="">
-        <meta name="twitter:title" content="Maryland General Election Results: Baltimore Sun Voter Guide">
-        <meta name="twitter:description" content="See Maryland general election results in the Baltimore Sun's Voter Guide:">
+        <meta name="twitter:title" content="General Election Results: Baltimore Sun Voter Guide">
+        <meta name="twitter:description" content="See general election results in the Baltimore Sun's Voter Guide:">
         <meta name="twitter:image" content="http://data.baltimoresun.com/voter-guide-2016/images/voter-guide-square.png">
         <meta name="twitter:domain" content="baltimoresun.com">
 
@@ -150,7 +151,7 @@
         <script type="text/javascript"> 
 
         //Write the twitter and facebook message for buttons
-        var socialMessage = "See Maryland general election results for Maryland in the Baltimore Sun's Voter Guide:";
+        var socialMessage = "See Baltimore City general election results in the Baltimore Sun's Voter Guide:";
             //This populates the page with the correct json data and social message
 
             $(document).ready(function(){
@@ -178,25 +179,6 @@
 
 
 
-
-      /* Define and populate races */
-
-
-
-      $(document).ready(function(){
-        var races = [
-        [22439, "#mayor-dem"],
-        [21744, "#senate-dem"],
-        [21746, "#house1-dem"],
-        [21749, "#house2-dem"],
-        [21752, "#house3-dem"],
-        [21754, "#house4-dem"],
-        [21757, "#house5-dem"],
-        [21760, "#house6-dem"],
-        [21762, "#house7-dem"],
-        [21764, "#house8-dem"]];
-        raceResults('http://data.baltimoresun.com/news/elections2016/json/generalResults.json', races);
-      });
 
 
     </script>
@@ -267,7 +249,7 @@
 
           <div id="page-header">  <!-- stars logo-->
 
-            <div id="page-header-text"><span class="icon-star mobile-hide"></span> &nbsp;<span class="icon-star"></span>&nbsp;&nbsp;MARYLAND GENERAL ELECTION RESULTS &nbsp;&nbsp;<span class="icon-star"></span> &nbsp;<span class="icon-star mobile-hide"></span> </div>
+            <div id="page-header-text"><span class="icon-star mobile-hide"></span> &nbsp;<span class="icon-star"></span>&nbsp;&nbsp;BALTIMORE CITY GENERAL ELECTION RESULTS &nbsp;&nbsp;<span class="icon-star"></span> &nbsp;<span class="icon-star mobile-hide"></span> </div>
 
           </div>
 
@@ -281,204 +263,17 @@
 
             <section class="group" id="race-page-top">
 
-              <!-- race title --><h1 class="section-header-race blue">MARYLAND GENERAL ELECTION RESULTS<!-- TEST DATA--></h1>
+              <!-- race title --><h1 class="section-header-race blue">BALTIMORE CITY GENERAL ELECTION RESULTS</h1>
 
-              <div class="btn-group">
-                <a href="presidential-results.html" target="_new" class="btn btn-primary btn-lg selected" type="button">
-                  SEE PRESIDENTIAL RACE RESULTS
-                </a>
-              </div> <br><br>                
-
-
-
-              <!-- choose candidate --><section class="group" id="race-candidate-div">JUMP TO: <span id="race-candidate-nav"><a href="#president">President</a> |<a href="#senate">U.S. Senate</a> | <a href="#congress">U.S. Congress</a> | <a href="presidential-results.html">Presidential Race Results</a></span></section>
-
-
+             <hr>
 
             </section>
 
 
             <span class="updated"></span>
+            
+            <p style="font-size: 2em;">Welcome to the The Baltimore Sun's Baltimore City general election results page. Check back after polls have closed on November 8, 2016 for live election results.<br><br><u> <a href="http://www.baltimoresun.com/news/maryland/politics/">Read the latest election coverage here.</a></u></p>
 
-
-            <section id="mayor" class="group"><!-- mayor section -->
-
-              <div id="updated"></div>
-
-              <h2 class="section-header-results grey">BALTIMORE MAYOR</h2>
-
-
-              <!-- single dynamic race result-->     
-
-          
-
-<script language="JavaScript" src="http://hosted.ap.org/elections/2016/general/by_race/MD_22439.js?SITE=MDBAEELN&SECTION=POLITICS"></script>
-
-
-              <!-- end -->
-
-
-            </section> <!-- /mayor section -->
-
-
-
-            <hr>
-
-
-
-            <section id="senate" class="group"><!-- senate section -->
-
-              <h2 class="section-header-results grey">U.S. SENATE</h2>
-
-
-            <script language="JavaScript" src="http://hosted.ap.org/elections/2016/general/by_race/MD_21744.js?SITE=MDBAEELN&SECTION=POLITICS"></script>
-
-
-              <!-- end -->
-
-
-            </section> <!-- /senate section -->
-
-            <hr>
-
-            <section id="congress" class="group"><!-- congress section -->
-
-              <h2 class="section-header-results grey">U.S. CONGRESSIONAL RACES</h2>
-
-              <div class="btn-group" id="testing">
-                <button class="btn btn-primary btn-lg dropdown-toggle" id="chooseDistrict" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                 <span id="chooseDistrictText">Choose district</span> <span class="caret"></span>
-               </button>
-
-               <ul class="dropdown-menu">
-                <li><a href="#congress-district1" >District 1</a></li>
-                <li><a href="#congress-district2" >District 2</a></li>
-                <li><a href="#congress-district3" >District 3</a></li>
-                <li><a href="#congress-district4" >District 4</a></li>
-                <li><a href="#congress-district5" >District 5</a></li>
-                <li><a href="#congress-district6" >District 6</a></li>
-                <li><a href="#congress-district7" >District 7</a></li>
-                <li><a href="#congress-district8" >District 8</a></li>
-              </ul>
-
-            </div>
-
-            <div id="congress-district1">
-
-              <h3  class="grey district">CONGRESSIONAL DISTRICT 1</h3>
-
-
-            <script language="JavaScript" src="http://hosted.ap.org/elections/2016/general/by_race/MD_21746.js?SITE=MDBAEELN&SECTION=POLITICS"></script>
-
-
-              <!-- end -->
-
-
-            </div>
-
-
-            <div id="congress-district2">
-
-              <h3  class="grey district">CONGRESSIONAL DISTRICT 2</h3>
-
-            <script language="JavaScript" src="http://hosted.ap.org/elections/2016/general/by_race/MD_21749.js?SITE=MDBAEELN&SECTION=POLITICS"></script>
-
-
-
-            </div>
-
-
-            <div id="congress-district3">
-
-              <h3  class="grey district">CONGRESSIONAL DISTRICT 3</h3>
-
-
-
-            <script language="JavaScript" src="http://hosted.ap.org/elections/2016/general/by_race/MD_21752.js?SITE=MDBAEELN&SECTION=POLITICS"></script>
-
-
-
-
-            </div>
-
-
-            <div id="congress-district4">
-
-              <h3  class="grey district">CONGRESSIONAL DISTRICT 4</h3>
-
-
-
-
-            <script language="JavaScript" src="http://hosted.ap.org/elections/2016/general/by_race/MD_21754.js?SITE=MDBAEELN&SECTION=POLITICS"></script>
-
-
-
-            </div>
-
-
-            <div id="congress-district5">
-
-              <h3  class="grey district">CONGRESSIONAL DISTRICT 5</h3>
-
-
-
-            <script language="JavaScript" src="http://hosted.ap.org/elections/2016/general/by_race/MD_21757.js?SITE=MDBAEELN&SECTION=POLITICS"></script>
-
-
-
-            </div>
-
-
-            <div id="congress-district6">
-
-              <h3  class="grey district">CONGRESSIONAL DISTRICT 6</h3>
-
-
-
-            <script language="JavaScript" src="http://hosted.ap.org/elections/2016/general/by_race/MD_21760.js?SITE=MDBAEELN&SECTION=POLITICS"></script>
-
-
-
-            </div>
-
-
-            <div id="congress-district7">
-
-              <h3  class="grey district">CONGRESSIONAL DISTRICT 7</h3>
-
-
-
-            <script language="JavaScript" src="http://hosted.ap.org/elections/2016/general/by_race/MD_21762.js?SITE=MDBAEELN&SECTION=POLITICS"></script>
-
-
-
-            </div>
-
-
-            <div id="congress-district8">
-
-              <h3  class="grey district">CONGRESSIONAL DISTRICT 8</h3>
-
-            <script language="JavaScript" src="http://hosted.ap.org/elections/2016/general/by_race/MD_21764.js?SITE=MDBAEELN&SECTION=POLITICS"></script>
-
-
-
-            </div>
-
-
-
-          </section> <!-- /congress section -->
-
-
-
-
-          <hr>
-
-
-
-          <p><strong>SOURCE: ASSOCIATED PRESS</strong>
-
-          </div> <!-- /container -->
 
           <div id="footer"></div>
 
