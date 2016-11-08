@@ -192,6 +192,7 @@
         raceResultsPresident('http://data.baltimoresun.com/news/elections2016/json/natlResults.json', races);
 
         var races = [
+        [0, "#president-md-races"],
         [21744, "#senate-dem"],
         [21746, "#house1-dem"],
         [21749, "#house2-dem"],
@@ -321,7 +322,7 @@
 
             <section id="president" class="group"><!-- president section -->
 
-              <h2 class="section-header-results grey">President of the United States</h2>
+              <h2 class="section-header-results grey">President of the United States - National</h2>
               
 
 
@@ -350,6 +351,33 @@
               </div>
 
 
+
+              <div style="clear:both;"></div>
+
+
+            </section> <!-- /president section -->
+            <section id="president-md" class="group"><!-- president section -->
+
+              <h2 class="section-header-results grey">President of the United States - Maryland</h2>
+              
+
+
+
+              
+              <!-- single dynamic race result-->     
+
+              <table>
+                <tr>
+                  <td class="candidate">CANDIDATE</td>
+                  <td class="party-col">PARTY</td>
+                  <td class="votes">VOTES</td>
+                  <td class="electoral">PERCENT</td>            
+                </tr>
+              </table>
+              
+              <span id="president-md-races"></span>
+
+              <!-- end -->
 
               <div style="clear:both;"></div>
 
