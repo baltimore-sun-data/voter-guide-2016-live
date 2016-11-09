@@ -42,7 +42,7 @@
    "party": "Dem",
    "votepct": 0.76,
    "votecount": "154,158",
-   "winner": false
+   "winner": true
  },
  {
    "raceid": 101,
@@ -51,7 +51,7 @@
    "party": "Dem",
    "votepct": 0.67,
    "votecount": "11,491",
-   "winner": false
+   "winner": true
  },
  {
    "raceid": 101,
@@ -69,7 +69,7 @@
    "party": "Dem",
    "votepct": 0.9,
    "votecount": "12,116",
-   "winner": false
+   "winner": true
  },
  {
    "raceid": 102,
@@ -87,7 +87,7 @@
    "party": "Dem",
    "votepct": 0.86,
    "votecount": "13,383",
-   "winner": false
+   "winner": true
  },
  {
    "raceid": 103,
@@ -112,18 +112,18 @@
    "first": "Bill",
    "last": "Henry",
    "party": "Dem",
-   "votepct": 0.89,
+   "votepct": 0.88,
    "votecount": "14,646",
-   "winner": false
+   "winner": true
  },
  {
    "raceid": 106,
    "first": "Sharon",
    "last": "Middleton",
    "party": "Dem",
-   "votepct": 0.91,
+   "votepct": 0.9,
    "votecount": "12,481",
-   "winner": false
+   "winner": true
  },
  {
    "raceid": 106,
@@ -141,7 +141,7 @@
    "party": "Dem",
    "votepct": 0.83,
    "votecount": "11,667",
-   "winner": false
+   "winner": true
  },
  {
    "raceid": 107,
@@ -177,7 +177,7 @@
    "party": "Dem",
    "votepct": 0.91,
    "votecount": "14,863",
-   "winner": false
+   "winner": true
  },
  {
    "raceid": 109,
@@ -186,7 +186,7 @@
    "party": "Dem",
    "votepct": 0.92,
    "votecount": "10,279",
-   "winner": false
+   "winner": true
  },
  {
    "raceid": 109,
@@ -222,7 +222,7 @@
    "party": "Dem",
    "votepct": 0.78,
    "votecount": "7,560",
-   "winner": false
+   "winner": true
  },
  {
    "raceid": 112,
@@ -258,7 +258,7 @@
    "party": "Dem",
    "votepct": 0.71,
    "votecount": "8,113",
-   "winner": false
+   "winner": true
  },
  {
    "raceid": 113,
@@ -276,16 +276,16 @@
    "party": "Dem",
    "votepct": 0.93,
    "votecount": "11,049",
-   "winner": false
+   "winner": true
  },
  {
    "raceid": 114,
    "first": "Mary Pat",
    "last": "Clarke",
    "party": "Dem",
-   "votepct": 0.92,
+   "votepct": 0.91,
    "votecount": "13,823",
-   "winner": false
+   "winner": true
  },
  {
    "raceid": 114,
