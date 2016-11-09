@@ -51,10 +51,10 @@ span.dem div.percent-bar {background-color:#2e98cc;}
 
 span.rep div.percent-bar {background-color:#ed4227;}
 
-.percent-bar.cand1746 {background-color:#2e98cc;}
-.percent-bar.cand8639 {background-color:#ed4227;}
-.percent-bar.cand31708 {background-color:#d5bc46;}
-.percent-bar.cand898 {background-color:#00a967;}
+.percent-bar.candDem {background-color:#2e98cc;}
+.percent-bar.candGOP {background-color:#ed4227;}
+.percent-bar.candLib {background-color:#d5bc46;}
+.percent-bar.candGrn {background-color:#00a967;}
 
 .vote-percent {
 	float:left;

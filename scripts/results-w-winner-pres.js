@@ -38,7 +38,7 @@ function raceResultsPresident(json, races) {
                        won = "";
                     }
 
-                    html.push("<table class=\"candidate-row\"><tr><td class=\"candidate name ", won, "\"> ", key.first, " ", key.last, "</td><td class=\"party-col\">", key.party, "</td><td class=\"votes\">", votecount.toLocaleString('en'), "</td><td class=\"percent\"><div class=\"percent-bar-bg\"><div class=\"percent-bar cand",key.candidateid,"\" style=\"width:", percent, "%;\"></div></div><div class=\"vote-percent\">", key.electwon, "</div></td></tr></table>");
+                    html.push("<table class=\"candidate-row\"><tr><td class=\"candidate name ", won, "\"> ", key.first, " ", key.last, "</td><td class=\"party-col\">", key.party, "</td><td class=\"votes\">", votecount.toLocaleString('en'), "</td><td class=\"percent\"><div class=\"percent-bar-bg\"><div class=\"percent-bar cand",key.party,"\" style=\"width:", percent, "%;\"></div></div><div class=\"vote-percent\">", key.electwon, "</div></td></tr></table>");
 
                     //pulls the first updated by and displays it up top. not the best solution for sure.
                     html2.push("<span class=\"update\">Updated: " + updated + "</span>");                
