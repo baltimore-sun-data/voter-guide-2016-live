@@ -1,0 +1,67 @@
+<html>
+<head>
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+      <script language="javascript" src="../scripts/jquery.easing.1.3.js"> </script>
+
+
+      <!-- CSS
+      ================================================== -->
+
+      <link rel="stylesheet" type="text/css" href="../stylesheets/base.css" />
+      <link rel="stylesheet" type="text/css" href="../stylesheets/fonts.css" />
+      <link rel="stylesheet" type="text/css" href="../stylesheets/style.css" />
+
+      <!--BOOTSTRAP and MORE JS
+      ================================================== -->
+      <link rel="stylesheet" href="../stylesheets/bootstrap.min.css">
+      <script src="../scripts/bootstrap.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="../stylesheets/buttons.css" />
+
+
+
+
+<script type="text/javascript">
+
+function raceNav(raceData,race) {
+  //Clear the candidate list navigation 
+  $('#race-candidate-nav').empty();
+  //Clear current list of candidates from page
+  $('#democrats').empty(); 
+ 
+  $('#republicans').empty(); 
+
+  $('#greens').empty(); 
+
+  $('#message').empty(); 
+
+  //Populate the function below based on a parameter passed in the dropdown
+  populateData(raceData,race);
+
+};
+
+</script>
+
+</head>
+
+
+<section class="group" id="race-candidate-div">JUMP TO: <span id="race-candidate-nav"></span></section>
+
+              <div class="btn-group" id="testing">
+                <button class="btn btn-primary btn-lg dropdown-toggle" id="chooseDistrict" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     <span id="chooseDistrictText">Choose district</span> <span class="caret"></span>
+                </button>
+                
+                <ul class="dropdown-menu"><!-- choose race district -->
+                  <li onClick="raceNav(District1, race);" >District 1</li>
+                  <li onClick="raceNav(District2, race);">District 2</li>
+                  <li onClick="raceNav(District3, race);">District 3</li>
+                  <li onClick="raceNav(District4, race);">District 4</li>
+                  <li onClick="raceNav(District5, race);">District 5</li>
+                  <li onClick="raceNav(District6, race);">District 6</li>
+                  <li onClick="raceNav(District7, race);">District 7</li>
+                  <li onClick="raceNav(District8, race);">District 8</li>
+                </ul>
+
+              </div>
+</html>

@@ -1,0 +1,77 @@
+<html>
+<head>
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+      <script language="javascript" src="../scripts/jquery.easing.1.3.js"> </script>
+
+
+      <!-- CSS
+      ================================================== -->
+
+      <link rel="stylesheet" type="text/css" href="../stylesheets/base.css" />
+      <link rel="stylesheet" type="text/css" href="../stylesheets/fonts.css" />
+      <link rel="stylesheet" type="text/css" href="../stylesheets/style.css" />
+
+      <!--BOOTSTRAP and MORE JS
+      ================================================== -->
+      <link rel="stylesheet" href="../stylesheets/bootstrap.min.css">
+      <script src="../scripts/bootstrap.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="../stylesheets/buttons.css" />
+
+
+
+
+<script type="text/javascript">
+
+//Populate the function below based on a parameter passed in the dropdown
+//populateData(raceData,race);
+
+
+  function filter(party) {
+  
+  if (party = "dems") {      
+      $("#dems").show();
+      $("#repb").hide();
+      $("#green").hide();
+    };
+
+  if (party = "repb") {      
+      $("#dems").hide();
+      $("#repb").show();
+      $("#green").hide();
+    };
+
+  if (party = "green") {      
+      $("#dems").hide();
+      $("#repb").hide();
+      $("#green").show();
+    };
+
+};
+
+
+</script>
+
+</head>
+
+
+
+              <div class="btn-group" id="testing">
+                <button class="btn btn-primary btn-lg dropdown-toggle" id="chooseDistrict" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     <span id="chooseDistrictText">Choose district</span> <span class="caret"></span>
+                </button>
+                
+                <ul class="dropdown-menu"><!-- choose race district -->
+                  <li onClick="filter(dems);" >Dems</li>
+                  <li onClick="filter(repb);">Repb</li>
+                  <li onClick="filter(green);">Greens</li>
+                </ul>
+
+              </div>
+
+
+              <div id="dems">Dems</div>
+              <div id="repb">Repb</div>
+              <div id="green">Green</div>
+
+</html>
