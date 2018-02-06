@@ -21,36 +21,6 @@
 
 
 
-<script type="text/javascript">
-
-//Populate the function below based on a parameter passed in the dropdown
-//populateData(raceData,race);
-
-
-  function filter(party) {
-  
-  if (party = "dems") {      
-      $("#dems").show();
-      $("#repb").hide();
-      $("#green").hide();
-    };
-
-  if (party = "repb") {      
-      $("#dems").hide();
-      $("#repb").show();
-      $("#green").hide();
-    };
-
-  if (party = "green") {      
-      $("#dems").hide();
-      $("#repb").hide();
-      $("#green").show();
-    };
-
-};
-
-
-</script>
 
 </head>
 
@@ -62,9 +32,9 @@
                 </button>
                 
                 <ul class="dropdown-menu"><!-- choose race district -->
-                  <li onClick="filter(dems);" >Dems</li>
-                  <li onClick="filter(repb);">Repb</li>
-                  <li onClick="filter(green);">Greens</li>
+                  <li onClick="filter('dems');" >Dems</li>
+                  <li onClick="filter('repb');">Repb</li>
+                  <li onClick="filter('green');">Greens</li>
                 </ul>
 
               </div>
@@ -73,5 +43,42 @@
               <div id="dems">Dems</div>
               <div id="repb">Repb</div>
               <div id="green">Green</div>
+              <div id ="text" style="font-size: 2em;"></div>
+
+
+
+<script type="text/javascript">
+
+  function filter(party) {
+  
+  if (party == "dems") {
+
+        $("#dems").show();
+        $("#repb").hide();
+        $("#green").hide();
+        $('#text').empty();
+        $('#text').text('DEMS');
+ 
+    }  else if (party == "repb") {
+
+        $("#dems").hide();
+        $("#repb").show();
+        $("#green").hide();
+        $('#text').empty();
+        $('#text').text('REPB');
+    
+    }  else if (party == "green") {
+
+        $("#dems").hide();
+        $("#repb").hide();
+        $("#green").show();
+        $('#text').empty();
+        $('#text').text('GREENS');
+ }
+
+  }
+
+
+</script>
 
 </html>
